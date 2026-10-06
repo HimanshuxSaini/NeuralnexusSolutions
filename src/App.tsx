@@ -14,7 +14,6 @@ import { LegalModal } from './components/views/LegalModal';
 import { HeroSection } from './components/home/HeroSection';
 import { TechStackStrip } from './components/home/TechStackStrip';
 import { ServicesPillarsSection } from './components/home/ServicesPillarsSection';
-import { AboutSnapshotSection } from './components/home/AboutSnapshotSection';
 import { WhyNeuralNexusSection } from './components/home/WhyNeuralNexusSection';
 import { ExpertTeamSection } from './components/home/ExpertTeamSection';
 import { FeaturedProjectsSection } from './components/home/FeaturedProjectsSection';
@@ -108,10 +107,6 @@ export default function App() {
               onExploreAllServices={() => setCurrentView('services')}
             />
 
-            {/* Section 04: About snapshot with statistics */}
-            <AboutSnapshotSection
-              onReadFullStory={() => setCurrentView('about')}
-            />
 
             {/* Section 05: Why NeuralNexus */}
             <WhyNeuralNexusSection

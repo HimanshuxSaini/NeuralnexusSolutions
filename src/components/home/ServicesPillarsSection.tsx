@@ -1,36 +1,15 @@
-import React, { useState } from 'react';
-import { PILLARS, SERVICES } from '../../data/siteData';
-import { Layers, Cpu, BookOpen, TrendingUp, Palette, ArrowRight, ChevronDown, CheckCircle2 } from 'lucide-react';
+import React from 'react';
+import { SERVICES } from '../../data/siteData';
+import { ArrowRight } from 'lucide-react';
 
 interface ServicesPillarsSectionProps {
   onSelectService: (slug: string) => void;
   onExploreAllServices: () => void;
 }
 
-const PILLAR_ICONS: { [key: string]: any } = {
-  'software-engineering': Layers,
-  'ai-data-automation': Cpu,
-  'research-services': BookOpen,
-  'growth-marketing': TrendingUp,
-  'design-creative': Palette,
-};
-
 export function ServicesPillarsSection({ onSelectService, onExploreAllServices }: ServicesPillarsSectionProps) {
-  // Allow toggling or expanding pillar cards
-  const [expandedPillars, setExpandedPillars] = useState<{ [key: string]: boolean }>({
-    'software-engineering': true,
-    'ai-data-automation': true,
-    'research-services': true,
-    'growth-marketing': true,
-    'design-creative': true,
-  });
-
-  const togglePillar = (id: string) => {
-    setExpandedPillars(prev => ({
-      ...prev,
-      [id]: !prev[id]
-    }));
-  };
+  // Take first 7 services to fit the 8-card grid
+  const featuredServices = SERVICES.slice(0, 7);
 
   return (
     <section className="py-20 lg:py-24 bg-[#F8FAFC]">
@@ -38,10 +17,10 @@ export function ServicesPillarsSection({ onSelectService, onExploreAllServices }
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0B1F3A] tracking-tight font-['Sora']">
-              Engineered for ambitious businesses & research teams
+              Core Capabilities & Solutions
             </h2>
             <p className="mt-3 text-base text-slate-600 max-w-2xl">
-              From low-latency AI models and WhatsApp commerce pipelines to enterprise ERPs and peer-reviewed research replication.
+              Architecting high-performance software, intelligent automation, and scalable digital experiences.
             </p>
           </div>
 
@@ -54,82 +33,55 @@ export function ServicesPillarsSection({ onSelectService, onExploreAllServices }
           </button>
         </div>
 
-        {/* 5 Pillars Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {PILLARS.map((pillar, idx) => {
-            const Icon = PILLAR_ICONS[pillar.id] || Layers;
-            const pillarServices = SERVICES.filter(s => s.pillarId === pillar.id);
-            const isExpanded = !!expandedPillars[pillar.id];
-
+        {/* 8-Card Grid (7 Services + 1 CTA) */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {featuredServices.map((service, index) => {
             return (
               <div
-                key={pillar.id}
-                className={`bg-white rounded-2xl border transition-all duration-200 overflow-hidden flex flex-col justify-between ${
-                  isExpanded ? 'border-slate-300 shadow-sm' : 'border-slate-200 hover:border-slate-300'
-                } ${idx === 0 ? 'lg:col-span-1' : ''}`}
+                key={service.id}
+                onClick={() => onSelectService(service.slug)}
+                className="bg-white rounded-2xl p-5 border border-slate-200 hover:border-[#0FA3B1] hover:shadow-md transition-all duration-200 cursor-pointer group flex flex-col h-full"
               >
-                <div className="p-6">
-                  {/* Pillar Header */}
-                  <div className="flex items-start justify-between gap-3 mb-4">
-                    <div className="w-11 h-11 rounded-xl bg-[#EAF6F8] text-[#0FA3B1] flex items-center justify-center">
-                      <Icon className="w-6 h-6" />
-                    </div>
-
-                  </div>
-
-                  <h3 className="text-xl font-bold text-[#0B1F3A] font-['Sora']">
-                    {pillar.name}
-                  </h3>
-                  <p className="text-xs text-slate-500 font-medium mt-1">
-                    {pillar.tagline}
-                  </p>
-                  <p className="text-xs text-slate-600 mt-2.5 leading-relaxed">
-                    {pillar.description}
-                  </p>
-
-                  <div className="mt-4 pt-3 border-t border-slate-100 text-[11px] text-slate-500">
-                    <strong className="text-slate-700">Typical clients:</strong> {pillar.typicalClients}
-                  </div>
+                <div className="mb-4 group-hover:scale-105 transition-transform origin-left">
+                  <span 
+                    className="text-4xl sm:text-5xl font-black font-['Sora'] text-transparent" 
+                    style={{ WebkitTextStroke: '1.5px #0FA3B1' }}
+                  >
+                    0{index + 1}
+                  </span>
                 </div>
+                
+                <h3 className="text-sm font-bold text-[#0B1F3A] mb-2 font-['Sora'] leading-tight group-hover:text-[#0FA3B1] transition-colors">
+                  {service.title}
+                </h3>
+                
+                <p className="text-xs text-slate-500 line-clamp-3 mb-4 flex-grow leading-relaxed">
+                  {service.shortDesc}
+                </p>
 
-                {/* Sub-services Expandable Accordion/List */}
-                <div className="bg-slate-50/80 p-4 border-t border-slate-100">
-                  <div className="flex items-center justify-between text-xs font-semibold text-slate-700 mb-2">
-                    <span>Included Services ({pillarServices.length})</span>
-                    <button
-                      onClick={() => togglePillar(pillar.id)}
-                      className="text-[#0FA3B1] text-[11px] hover:underline flex items-center gap-0.5 cursor-pointer"
-                    >
-                      <span>{isExpanded ? 'Collapse' : 'Expand'}</span>
-                      <ChevronDown className={`w-3.5 h-3.5 transition-transform ${isExpanded ? 'rotate-180' : ''}`} />
-                    </button>
-                  </div>
-
-                  {isExpanded && (
-                    <div className="space-y-2 mt-2">
-                      {pillarServices.map((service) => (
-                        <div
-                          key={service.id}
-                          onClick={() => onSelectService(service.slug)}
-                          className="p-3 bg-white rounded-xl border border-slate-200/80 hover:border-[#0FA3B1] transition-all cursor-pointer group shadow-2xs"
-                        >
-                          <div className="flex items-center justify-between">
-                            <span className="text-xs font-bold text-slate-900 group-hover:text-[#0FA3B1] transition-colors">
-                              {service.title}
-                            </span>
-                            <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-[#0FA3B1] group-hover:translate-x-0.5 transition-all" />
-                          </div>
-                          <p className="text-[11px] text-slate-500 mt-1 line-clamp-1">
-                            {service.shortDesc}
-                          </p>
-                        </div>
-                      ))}
-                    </div>
-                  )}
+                <div className="mt-auto flex items-center gap-1 text-[11px] font-semibold text-[#0FA3B1]">
+                  <span>Learn more</span>
+                  <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
                 </div>
               </div>
             );
           })}
+
+          {/* 8th Card: Explore All CTA */}
+          <div
+            onClick={onExploreAllServices}
+            className="bg-gradient-to-br from-[#0B1F3A] to-[#0FA3B1] rounded-2xl p-5 border border-transparent hover:shadow-lg hover:-translate-y-1 transition-all duration-200 cursor-pointer group flex flex-col justify-center items-center text-center h-full min-h-[200px]"
+          >
+            <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+              <ArrowRight className="w-6 h-6 text-white" />
+            </div>
+            <h3 className="text-base font-bold text-white mb-2 font-['Sora'] leading-tight">
+              Explore All 15 Services
+            </h3>
+            <p className="text-xs text-white/80 px-2">
+              View our complete engineering, AI, and design offerings.
+            </p>
+          </div>
         </div>
       </div>
     </section>

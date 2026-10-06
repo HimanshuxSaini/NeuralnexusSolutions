@@ -15,33 +15,33 @@ interface SuggestionPair {
 
 const SUGGESTION_PAIRS: SuggestionPair[] = [
   {
-    whatsappText: 'Koi Problem Hai? Chat with Us 👋',
+    whatsappText: 'CHAT WITH US • GET A QUOTE • ',
     whatsappMessage: 'Hi NeuralNexusSolutions! I have an inquiry about my project and need technical assistance.',
-    aiText: 'Hello, I am NeuralNexus AI 🤖',
+    aiText: 'ASK AI ANYTHING • INSTANT HELP • ',
     aiPrompt: 'Hello! What can you tell me about NeuralNexusSolutions?'
   },
   {
-    whatsappText: 'App Development, SEO, Business Growth? 🚀',
+    whatsappText: 'APP DEV • SEO • BUSINESS GROWTH • ',
     whatsappMessage: 'Hi! I am looking for custom app development and growth marketing services.',
-    aiText: 'Ask me anything',
+    aiText: 'EXPLORE SERVICES • VIEW PRICING • ',
     aiPrompt: 'Can you show me the full list of your 15 services and pricing models?'
   },
   {
-    whatsappText: 'WhatsApp Automation & Cloud Demo 📲',
+    whatsappText: 'WHATSAPP CLOUD API • LIVE DEMO • ',
     whatsappMessage: 'Hello Himanshu! Can I get a live demo of the official WhatsApp Cloud API automation?',
-    aiText: 'Business Growth Assistant ✨',
+    aiText: 'GROWTH ASSISTANT • BOOST SALES • ',
     aiPrompt: 'How does WhatsApp automation increase sales conversion and customer support response times?'
   },
   {
-    whatsappText: 'Need a Free Project Quote? 💬',
+    whatsappText: 'FREE PROJECT QUOTE • FAST ESTIMATE • ',
     whatsappMessage: 'Hi team, I would like to get a project scope and cost estimate for our business.',
-    aiText: 'Instant Project Cost Estimator ⚡',
+    aiText: 'COST ESTIMATOR • GET ROI • ',
     aiPrompt: 'How much does custom software, ERP, or AI model development cost?'
   },
   {
-    whatsappText: 'Talk to Senior Engineering Leads 👨‍💻',
+    whatsappText: 'TALK TO EXPERTS • HIRE LEADS • ',
     whatsappMessage: 'Hello! I would like to speak directly with Piyush, Pardeep, or Himanshu for technical consulting.',
-    aiText: 'Research & AI Paper Implementation 🧠',
+    aiText: 'RESEARCH PAPERS • AI MODELS • ',
     aiPrompt: 'Tell me about your research paper reproduction and LaTeX documentation services.'
   }
 ];
@@ -303,28 +303,33 @@ export function FloatingActionStack({ onNavigate }: FloatingActionStackProps) {
   return (
     <>
       {/* Vertically Stacked Floating Action Buttons (Fixed Bottom-Right) */}
-      <div className="fixed bottom-6 right-6 z-40 flex flex-col items-end gap-3.5 select-none">
+      <div className="fixed bottom-10 right-10 z-40 flex flex-col items-center gap-12 select-none">
         
         {/* TOP ITEM: WhatsApp Button & Suggestion Bubble */}
         <div
-          className="flex items-center gap-3 relative"
+          className="relative group flex items-center justify-center w-14 h-14"
           onMouseEnter={() => setIsBubbleHovered(true)}
           onMouseLeave={() => setIsBubbleHovered(false)}
         >
-          {/* Suggestion Bubble (Left of WhatsApp Button) */}
+          {/* Spinning Curved Text SVG */}
           {!isWhatsAppOpen && (
             <div
               onClick={handleWhatsAppBubbleClick}
-              className={`bg-white text-slate-800 text-xs sm:text-sm font-semibold px-4 py-2.5 rounded-full shadow-lg border border-slate-100/80 hover:shadow-xl hover:border-emerald-200 cursor-pointer flex items-center gap-2 whitespace-nowrap group transition-all duration-300 ease-out ${
+              className={`absolute -inset-8 pointer-events-none transition-all duration-500 ease-out cursor-pointer ${
                 isBubbleVisible
-                  ? 'opacity-100 scale-100 translate-x-0 pointer-events-auto'
-                  : 'opacity-0 scale-95 translate-x-3 pointer-events-none'
+                  ? 'opacity-100 scale-100 pointer-events-auto'
+                  : 'opacity-0 scale-75 pointer-events-none'
               }`}
               title="Click to chat this topic on WhatsApp"
             >
-              <span className="group-hover:text-emerald-600 transition-colors">
-                {currentPair.whatsappText}
-              </span>
+              <svg viewBox="0 0 100 100" className="w-full h-full overflow-visible animate-[spin_12s_linear_infinite]">
+                <path id="whatsapp-curve" d="M 50, 50 m -36, 0 a 36,36 0 1,1 72,0 a 36,36 0 1,1 -72,0" fill="none" />
+                <text className="text-[9px] font-semibold uppercase tracking-[0.2em] fill-slate-400 group-hover:fill-slate-600 transition-colors">
+                  <textPath href="#whatsapp-curve" startOffset="0%">
+                    {currentPair.whatsappText}
+                  </textPath>
+                </text>
+              </svg>
             </div>
           )}
 
@@ -334,7 +339,7 @@ export function FloatingActionStack({ onNavigate }: FloatingActionStackProps) {
               setIsWhatsAppOpen(!isWhatsAppOpen);
               if (isAiChatOpen) setIsAiChatOpen(false);
             }}
-            className="w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white flex items-center justify-center shadow-xl hover:scale-105 transition-all duration-200 shrink-0 cursor-pointer"
+            className="w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white flex items-center justify-center shadow-xl hover:scale-105 transition-all duration-200 shrink-0 cursor-pointer relative z-10"
             aria-label="Chat on WhatsApp"
           >
             <MessageCircle className="w-7 h-7 fill-white stroke-none" />
@@ -347,24 +352,29 @@ export function FloatingActionStack({ onNavigate }: FloatingActionStackProps) {
 
         {/* BOTTOM ITEM: AI Assistant / Support Headset Button & Suggestion Bubble */}
         <div
-          className="flex items-center gap-3 relative"
+          className="relative group flex items-center justify-center w-14 h-14"
           onMouseEnter={() => setIsBubbleHovered(true)}
           onMouseLeave={() => setIsBubbleHovered(false)}
         >
-          {/* Suggestion Bubble (Left of AI Assistant Button) */}
+          {/* Spinning Curved Text SVG */}
           {!isAiChatOpen && (
             <div
               onClick={handleAiBubbleClick}
-              className={`bg-white text-slate-800 text-xs sm:text-sm font-semibold px-4 py-2.5 rounded-full shadow-lg border border-slate-100/80 hover:shadow-xl hover:border-blue-200 cursor-pointer flex items-center gap-2 whitespace-nowrap group transition-all duration-300 ease-out ${
+              className={`absolute -inset-8 pointer-events-none transition-all duration-500 ease-out cursor-pointer ${
                 isBubbleVisible
-                  ? 'opacity-100 scale-100 translate-x-0 pointer-events-auto'
-                  : 'opacity-0 scale-95 translate-x-3 pointer-events-none'
+                  ? 'opacity-100 scale-100 pointer-events-auto'
+                  : 'opacity-0 scale-75 pointer-events-none'
               }`}
               title="Click to ask NeuralNexus AI Assistant"
             >
-              <span className="group-hover:text-[#007AFF] transition-colors">
-                {currentPair.aiText}
-              </span>
+              <svg viewBox="0 0 100 100" className="w-full h-full overflow-visible animate-[spin_12s_linear_infinite]">
+                <path id="ai-curve" d="M 50, 50 m -36, 0 a 36,36 0 1,1 72,0 a 36,36 0 1,1 -72,0" fill="none" />
+                <text className="text-[9px] font-semibold uppercase tracking-[0.2em] fill-slate-400 group-hover:fill-slate-600 transition-colors">
+                  <textPath href="#ai-curve" startOffset="0%">
+                    {currentPair.aiText}
+                  </textPath>
+                </text>
+              </svg>
             </div>
           )}
 
@@ -374,7 +384,7 @@ export function FloatingActionStack({ onNavigate }: FloatingActionStackProps) {
               setIsAiChatOpen(!isAiChatOpen);
               if (isWhatsAppOpen) setIsWhatsAppOpen(false);
             }}
-            className="w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-[#007AFF] hover:bg-[#0066d6] text-white flex items-center justify-center shadow-xl hover:scale-105 transition-all duration-200 shrink-0 cursor-pointer relative"
+            className="w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-[#007AFF] hover:bg-[#0066d6] text-white flex items-center justify-center shadow-xl hover:scale-105 transition-all duration-200 shrink-0 cursor-pointer relative z-10"
             aria-label="Open AI Assistant"
           >
             {/* Crisp Headphone / Headset Support Icon matching screenshot */}
