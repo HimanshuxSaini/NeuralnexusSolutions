@@ -268,20 +268,45 @@ export function HeroSection({ onStartProject, onExploreWork }: HeroSectionProps)
 
             {/* Step Progression Timeline Slider (Bottom Right Pill matching Image 2) */}
             <div className="absolute bottom-2 sm:bottom-4 right-2 sm:right-6 z-20 bg-white/90 backdrop-blur-md border border-slate-200/80 shadow-md rounded-2xl px-4 py-2.5 min-w-[210px]">
+              <style>{`
+                @keyframes fillProgress {
+                  0% { width: 0%; }
+                  100% { width: 100%; }
+                }
+                @keyframes dotColor {
+                  0%, 49% { background-color: #CBD5E1; }
+                  50%, 100% { background-color: #0FA3B1; }
+                }
+                @keyframes dotColorEnd {
+                  0%, 95% { background-color: #CBD5E1; }
+                  96%, 100% { background-color: #0FA3B1; }
+                }
+                @keyframes textColorMid {
+                  0%, 49% { color: #475569; }
+                  50%, 100% { color: #0FA3B1; }
+                }
+                @keyframes textColorEnd {
+                  0%, 95% { color: #475569; }
+                  96%, 100% { color: #0FA3B1; }
+                }
+              `}</style>
               <div className="flex items-center justify-between text-[11px] font-semibold text-slate-600 mb-2">
-                <span>Ideas</span>
+                <span className="text-[#0FA3B1]">Ideas</span>
                 <span className="text-slate-400">→</span>
-                <span>Intelligence</span>
+                <span style={{ animation: 'textColorMid 5s infinite' }}>Intelligence</span>
                 <span className="text-slate-400">→</span>
-                <span className="text-[#0FA3B1]">Impact</span>
+                <span style={{ animation: 'textColorEnd 5s infinite' }}>Impact</span>
               </div>
               
               {/* Progress Track */}
               <div className="relative w-full h-1 bg-slate-200 rounded-full flex items-center justify-between">
-                <div className="absolute left-0 top-0 h-full w-2/3 bg-gradient-to-r from-cyan-400 to-[#0FA3B1] rounded-full" />
+                <div 
+                  className="absolute left-0 top-0 h-full bg-gradient-to-r from-cyan-400 to-[#0FA3B1] rounded-full" 
+                  style={{ animation: 'fillProgress 5s linear infinite' }}
+                />
                 <span className="w-2.5 h-2.5 rounded-full bg-[#0FA3B1] border-2 border-white shadow-xs z-10" />
-                <span className="w-2.5 h-2.5 rounded-full bg-[#0FA3B1] border-2 border-white shadow-xs z-10" />
-                <span className="w-2.5 h-2.5 rounded-full bg-slate-300 border-2 border-white shadow-xs z-10" />
+                <span className="w-2.5 h-2.5 rounded-full border-2 border-white shadow-xs z-10 bg-slate-300" style={{ animation: 'dotColor 5s infinite' }} />
+                <span className="w-2.5 h-2.5 rounded-full border-2 border-white shadow-xs z-10 bg-slate-300" style={{ animation: 'dotColorEnd 5s infinite' }} />
               </div>
             </div>
 
