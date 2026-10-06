@@ -6,7 +6,7 @@ export function ProcessSection({ onViewFullProcess }: { onViewFullProcess: () =>
   return (
     <section className="py-20 bg-slate-50 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl sm:text-5xl font-extrabold text-[#0B1F3A] tracking-tight font-['Sora'] mb-6">
@@ -18,7 +18,7 @@ export function ProcessSection({ onViewFullProcess }: { onViewFullProcess: () =>
         </div>
 
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start relative">
-          
+
           {/* Left Side: Sticky Video */}
           <div className="w-full lg:w-1/2 lg:sticky lg:top-32 rounded-3xl overflow-hidden shadow-2xl border border-slate-200/80 bg-white z-10">
             <video 
@@ -33,7 +33,7 @@ export function ProcessSection({ onViewFullProcess }: { onViewFullProcess: () =>
 
           {/* Right Side: Scrolling Timeline */}
           <div className="w-full lg:w-1/2 flex flex-col gap-8 relative">
-            
+
             {/* Optional connecting line behind cards */}
             <div className="hidden lg:block absolute left-8 top-10 bottom-10 w-0.5 bg-[#0FA3B1]/20 -z-10" />
 
