@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ArrowRight, Cpu, Zap, BarChart3, Cloud, Sparkles } from 'lucide-react';
+import { ArrowRight, Cpu, Zap, BarChart3, Cloud, Sparkles, Code, Database, Layout } from 'lucide-react';
 
 function AnimatedNumber({ end, duration = 2000, suffix = "", prefix = "", decimals = 0 }: { end: number, duration?: number, suffix?: string, prefix?: string, decimals?: number }) {
   const [count, setCount] = useState(0);
@@ -173,16 +173,6 @@ export function HeroSection({ onStartProject, onExploreWork }: HeroSectionProps)
           {/* ============================================================== */}
           <div className="lg:col-span-6 xl:col-span-6 relative flex items-center justify-center min-h-[460px] sm:min-h-[520px] lg:min-h-[580px]">
             
-            {/* Top-Right Architectural Typography Watermark (Matching Image 2) */}
-            <div className="absolute top-0 right-2 sm:right-6 text-right select-none pointer-events-none z-0">
-              <div className="text-[10px] sm:text-[11px] font-bold tracking-[0.3em] text-slate-300 leading-relaxed font-mono uppercase">
-                PEOPLE<br />
-                TECHNOLOGY<br />
-                IDEAS<br />
-                A BRIGHTER<br />
-                TOMORROW
-              </div>
-            </div>
 
             {/* Central 3D Metallic Illuminated "N" Sculpture with Orbiting Nodes */}
             <div className="relative w-full max-w-[480px] aspect-square flex items-center justify-center">
@@ -191,19 +181,53 @@ export function HeroSection({ onStartProject, onExploreWork }: HeroSectionProps)
               <div className="absolute inset-0 bg-gradient-to-tr from-cyan-200/50 via-teal-100/40 to-transparent rounded-full blur-2xl pointer-events-none" />
 
               {/* Video Project 8 */}
-              <video
-                src="/Video%20Project%208.mp4"
-                className="w-full h-full object-cover relative z-10 drop-shadow-2xl rounded-full shadow-[0_0_80px_rgba(15,163,177,0.3)] border-2 border-[#0FA3B1]/20"
-                autoPlay
-                loop
-                muted
-                playsInline
-              />
+              <div className="relative w-full h-full flex items-center justify-center rounded-full overflow-hidden shadow-[0_0_80px_rgba(15,163,177,0.2)]">
+                <video
+                  src="/Video%20Project%208.mp4"
+                  className="w-full h-full object-cover relative z-10 rounded-full scale-[1.02]"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                />
+                {/* Edge Blending Overlay to mix boundaries with bg */}
+                <div className="absolute inset-0 z-20 pointer-events-none rounded-full bg-[radial-gradient(circle_at_center,transparent_50%,#F8FAFC_85%,#F8FAFC_100%)] shadow-[inset_0_0_40px_#F8FAFC]" />
+              </div>
             </div>
 
             {/* ============================================================== */}
-            {/* 4 FLOATING GLASSMORPHIC FEATURE CARDS (MATCHING IMAGE 2)        */}
+            {/* 6 FLOATING GLASSMORPHIC FEATURE CARDS (MATCHING IMAGE 2 + MORE) */}
             {/* ============================================================== */}
+
+            {/* Card 5: ERP Systems (Middle-Left) */}
+            <div className="absolute top-1/2 -translate-y-1/2 -left-4 sm:-left-12 z-20 bg-white/90 backdrop-blur-md border border-slate-200/80 shadow-xl shadow-slate-200/50 rounded-2xl p-3 sm:p-3.5 flex items-center gap-3 hover:-translate-y-[calc(50%+4px)] transition-all duration-200">
+              <div className="w-10 h-10 rounded-xl bg-cyan-50 border border-cyan-100/80 flex items-center justify-center text-[#0FA3B1] shrink-0">
+                <Database className="w-5 h-5 text-[#0FA3B1]" />
+              </div>
+              <div>
+                <div className="text-xs sm:text-sm font-bold text-slate-900 leading-tight">
+                  ERP Systems
+                </div>
+                <div className="text-[10px] sm:text-[11px] text-slate-500 font-medium mt-0.5">
+                  Streamline ops
+                </div>
+              </div>
+            </div>
+
+            {/* Card 6: UI/UX Design (Middle-Right) */}
+            <div className="absolute top-1/2 -translate-y-1/2 -right-4 sm:-right-12 z-20 bg-white/90 backdrop-blur-md border border-slate-200/80 shadow-xl shadow-slate-200/50 rounded-2xl p-3 sm:p-3.5 flex items-center gap-3 hover:-translate-y-[calc(50%+4px)] transition-all duration-200">
+              <div className="w-10 h-10 rounded-xl bg-cyan-50 border border-cyan-100/80 flex items-center justify-center text-[#0FA3B1] shrink-0">
+                <Layout className="w-5 h-5 text-[#0FA3B1]" />
+              </div>
+              <div>
+                <div className="text-xs sm:text-sm font-bold text-slate-900 leading-tight">
+                  UI/UX Design
+                </div>
+                <div className="text-[10px] sm:text-[11px] text-slate-500 font-medium mt-0.5">
+                  Engaging experiences
+                </div>
+              </div>
+            </div>
 
             {/* Card 1: AI Solutions (Top-Left of 3D N) */}
             <div className="absolute top-2 sm:top-4 left-0 sm:left-4 z-20 bg-white/90 backdrop-blur-md border border-slate-200/80 shadow-xl shadow-slate-200/50 rounded-2xl p-3 sm:p-3.5 flex items-center gap-3 hover:-translate-y-1 transition-all duration-200">
@@ -212,56 +236,56 @@ export function HeroSection({ onStartProject, onExploreWork }: HeroSectionProps)
               </div>
               <div>
                 <div className="text-xs sm:text-sm font-bold text-slate-900 flex items-center gap-1.5 leading-tight">
-                  <span>AI Solutions</span>
+                  <span>AI & Automation</span>
                   <span className="text-[11px] text-slate-400">→</span>
                 </div>
                 <div className="text-[10px] sm:text-[11px] text-slate-500 font-medium mt-0.5">
-                  From idea to impact
+                  Smarter workflows
                 </div>
               </div>
             </div>
 
-            {/* Card 2: Automation (Bottom-Left of 3D N) */}
+            {/* Card 2: Web Dev (Bottom-Left of 3D N) */}
             <div className="absolute bottom-20 sm:bottom-24 -left-2 sm:left-2 z-20 bg-white/90 backdrop-blur-md border border-slate-200/80 shadow-xl shadow-slate-200/50 rounded-2xl p-3 sm:p-3.5 flex items-center gap-3 hover:-translate-y-1 transition-all duration-200">
               <div className="w-10 h-10 rounded-xl bg-cyan-50 border border-cyan-100/80 flex items-center justify-center text-[#0FA3B1] shrink-0">
-                <Zap className="w-5 h-5 text-[#0FA3B1]" />
+                <Code className="w-5 h-5 text-[#0FA3B1]" />
               </div>
               <div>
                 <div className="text-xs sm:text-sm font-bold text-slate-900 leading-tight">
-                  Automation
+                  Web Development
                 </div>
                 <div className="text-[10px] sm:text-[11px] text-slate-500 font-medium mt-0.5">
-                  Work Smarter
+                  Scalable platforms
                 </div>
               </div>
             </div>
 
-            {/* Card 3: 99.9% Reliable & Scalable (Top-Right of 3D N) */}
+            {/* Card 3: Data Analytics (Top-Right of 3D N) */}
             <div className="absolute top-4 sm:top-6 right-2 sm:right-6 z-20 bg-white/90 backdrop-blur-md border border-slate-200/80 shadow-xl shadow-slate-200/50 rounded-2xl p-3 sm:p-3.5 flex items-center gap-3 hover:-translate-y-1 transition-all duration-200">
               <div className="w-10 h-10 rounded-xl bg-cyan-50 border border-cyan-100/80 flex items-center justify-center text-[#0FA3B1] shrink-0">
                 <BarChart3 className="w-5 h-5 text-[#0FA3B1]" />
               </div>
               <div>
                 <div className="text-xs sm:text-sm font-bold text-slate-900 leading-tight">
-                  99.9%
+                  Data Analytics
                 </div>
                 <div className="text-[10px] sm:text-[11px] text-slate-500 font-medium mt-0.5">
-                  Reliable & Scalable
+                  Actionable insights
                 </div>
               </div>
             </div>
 
-            {/* Card 4: Cloud & Data (Bottom-Right of 3D N) */}
+            {/* Card 4: Growth & SEO (Bottom-Right of 3D N) */}
             <div className="absolute bottom-24 sm:bottom-28 right-0 sm:right-4 z-20 bg-white/90 backdrop-blur-md border border-slate-200/80 shadow-xl shadow-slate-200/50 rounded-2xl p-3 sm:p-3.5 flex items-center gap-3 hover:-translate-y-1 transition-all duration-200">
               <div className="w-10 h-10 rounded-xl bg-cyan-50 border border-cyan-100/80 flex items-center justify-center text-[#0FA3B1] shrink-0">
-                <Cloud className="w-5 h-5 text-[#0FA3B1]" />
+                <Sparkles className="w-5 h-5 text-[#0FA3B1]" />
               </div>
               <div>
                 <div className="text-xs sm:text-sm font-bold text-slate-900 leading-tight">
-                  Cloud & Data
+                  Growth & SEO
                 </div>
                 <div className="text-[10px] sm:text-[11px] text-slate-500 font-medium mt-0.5">
-                  Secure & Flexible
+                  Drive real impact
                 </div>
               </div>
             </div>
