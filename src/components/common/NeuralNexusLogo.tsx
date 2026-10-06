@@ -39,8 +39,8 @@ export function NeuralNexusLogo({
     );
   }
 
-  // Exact image source: light version on white background, white version on dark/scrolled background
-  const logoSrc = theme === 'dark' ? '/logo-white.svg' : '/logo.svg';
+  // Using the new uploaded logo image
+  const logoSrc = '/new-logo.png';
 
   return (
     <div className={`inline-flex items-center select-none ${className}`}>
