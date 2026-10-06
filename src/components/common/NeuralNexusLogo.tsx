@@ -31,7 +31,7 @@ export function NeuralNexusLogo({
   if (variant === 'icon') {
     return (
       <img
-        src="/logo-icon.svg"
+        src="/logo-icon.png"
         alt="NeuralNexus Icon"
         className={`${iconSizes[size]} object-contain shrink-0 ${className}`}
         loading="eager"
