@@ -164,7 +164,7 @@ export function Header({ currentView, onNavigate }: HeaderProps) {
 
               {/* Mega-Menu Dropdown: 5 Columns for 5 Pillars as per Section 4 */}
               {megaMenuOpen && (
-                <div className="absolute left-1/2 -translate-x-1/2 mt-3 w-[92vw] max-w-6xl bg-white rounded-2xl shadow-2xl border border-slate-200 p-6 z-50 text-slate-800 animate-in fade-in slide-in-from-top-2 duration-150">
+                <div className="fixed left-1/2 -translate-x-1/2 top-[76px] w-[95vw] max-w-7xl bg-white rounded-2xl shadow-2xl border border-slate-200 p-6 z-50 text-slate-800 animate-in fade-in slide-in-from-top-2 duration-150">
                   <div className="flex items-center justify-between pb-4 mb-4 border-b border-slate-100">
                     <div>
                       <h4 className="font-bold text-[#0B1F3A] text-base">All 15 Specialized Services</h4>
