@@ -16,7 +16,6 @@ import { TechStackStrip } from './components/home/TechStackStrip';
 import { ServicesPillarsSection } from './components/home/ServicesPillarsSection';
 import { WhyNeuralNexusSection } from './components/home/WhyNeuralNexusSection';
 import { ExpertTeamSection } from './components/home/ExpertTeamSection';
-import { FeaturedProjectsSection } from './components/home/FeaturedProjectsSection';
 import { ProcessSection } from './components/home/ProcessSection';
 import { IndustriesSection } from './components/home/IndustriesSection';
 import { TestimonialsSection } from './components/home/TestimonialsSection';
@@ -119,14 +118,6 @@ export default function App() {
               onViewAllTeam={() => setCurrentView('team')}
             />
 
-            {/* Section 07: Featured projects / case studies */}
-            <FeaturedProjectsSection
-              onSelectCaseStudy={(study) => {
-                setInitialCaseStudyId(study.id);
-                setCurrentView('cases');
-              }}
-              onViewAllCases={() => setCurrentView('cases')}
-            />
 
             {/* Section 08: 6-Step Process */}
             <ProcessSection

@@ -638,13 +638,13 @@ export const TEAM_MEMBERS: TeamMember[] = [
     role: 'Full-Stack & WhatsApp Automation Specialist',
     specialization: 'WhatsApp Cloud API, Webhooks, CRM Pipelines & Mobile Engineering',
     bio: 'Himanshu architects high-converting conversational flows and automated messaging pipelines. He bridges backend CRM systems with WhatsApp Business APIs to drive instant lead conversions and support automation.',
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80',
+    avatar: '/himanshu.jpeg',
     skills: ['WhatsApp Cloud API', 'TypeScript', 'React Native', 'Node.js', 'Webhooks', 'Lead Pipelines', 'PostgreSQL', 'Tailwind CSS'],
-    linkedin: 'https://linkedin.com/in/neuralnexus',
-    github: 'https://github.com/neuralnexus',
-    email: 'himanshu@neuralnexussolutions.com',
+    linkedin: 'https://linkedin.com/in/himanshusaini7988',
+    github: 'https://github.com/himanshuxsaini',
+    email: 'himanshu0481@gmail.com',
     contributedProjects: ['whatsapp-commerce-bot', 'telehealth-platform'],
-    experienceYears: 5
+    experienceYears: 1
   },
   {
     id: 'tannu-antil',
@@ -899,45 +899,52 @@ export const BLOG_POSTS: BlogPost[] = [
 export const PROCESS_STEPS = [
   {
     number: '01',
-    name: 'Discover',
-    tagline: 'Deep dive into objectives & constraints',
-    description: 'We analyze your workflows, current technical roadblocks, target audiences, and measurable business KPIs through an intensive discovery session.',
-    deliverables: ['Requirements specification', 'Technical feasibility study', 'Risk analysis']
+    name: 'Idea',
+    tagline: 'Brainstorming & Concept Validation',
+    description: 'We explore your vision, validate the market fit, and brainstorm technical approaches to turn your idea into a viable product.',
+    deliverables: ['Concept validation report', 'High-level technical approach', 'Initial budget estimate']
   },
   {
     number: '02',
-    name: 'Plan',
+    name: 'Requirement Understand',
+    tagline: 'Deep dive into objectives & constraints',
+    description: 'We analyze your workflows, technical roadblocks, target audiences, and measurable business KPIs through an intensive discovery session.',
+    deliverables: ['Requirements specification', 'Technical feasibility study', 'Risk analysis']
+  },
+  {
+    number: '03',
+    name: 'Design',
     tagline: 'Architecture, UX & milestone roadmap',
     description: 'We construct database schemas, wireframes, technical architecture diagrams, and a transparent sprint-by-sprint timeline with clear milestones.',
     deliverables: ['Figma wireframes & UX flows', 'Database & API schema', 'Fixed milestone plan']
   },
   {
-    number: '03',
+    number: '04',
     name: 'Build',
     tagline: 'Agile sprints with live preview staging',
     description: 'Our senior engineers write clean, tested, and documented code in 2-week agile sprints, providing continuous staging links for your review.',
     deliverables: ['Weekly sprint releases', 'Live staging demo links', 'Code repository commits']
   },
   {
-    number: '04',
-    name: 'Test',
-    tagline: 'Rigorous QA, security & performance verification',
-    description: 'Every endpoint and screen undergoes automated cross-device testing, security vulnerability checks, load testing, and Lighthouse speed audits.',
-    deliverables: ['Lighthouse 90+ score verification', 'Security & edge-case test suite', 'User acceptance testing']
+    number: '05',
+    name: 'Intelligence',
+    tagline: 'AI Integration & Smart Automation',
+    description: 'We embed intelligent capabilities like custom LLMs, RAG pipelines, or automated workflows to give your product a massive competitive edge.',
+    deliverables: ['Custom AI model integration', 'Data pipeline optimization', 'Intelligent workflows']
   },
   {
-    number: '05',
+    number: '06',
     name: 'Launch',
     tagline: 'Production deployment with zero downtime',
     description: 'We manage domain configuration, cloud hosting provisioning, SSL security, database migration, and live production rollout.',
     deliverables: ['Cloud infrastructure setup', 'Production DNS & SSL configuration', 'Automated backup scripts']
   },
   {
-    number: '06',
-    name: 'Support',
-    tagline: 'Post-launch warranty & continuous optimization',
-    description: 'We provide an included 30-day warranty for any technical fixes, complete documentation handover, and optional ongoing growth retainers.',
-    deliverables: ['Full source code & IP handover', 'Admin & staff training documentation', '30-day warranty & SLA support']
+    number: '07',
+    name: 'Grow',
+    tagline: 'Post-launch warranty & continuous scaling',
+    description: 'We provide an included 30-day warranty for any technical fixes, complete documentation handover, and ongoing growth retainers to scale.',
+    deliverables: ['Full source code & IP handover', 'Admin & staff training documentation', 'Ongoing SLA support']
   }
 ];
 

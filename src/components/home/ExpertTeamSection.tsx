@@ -178,7 +178,7 @@ export function ExpertTeamSection({ onSelectMember, onViewAllTeam }: ExpertTeamS
           <div>
 
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0B1F3A] tracking-tight font-['Sora']">
-              Meet the 5 domain specialists
+              Meet the Core Team
             </h2>
             <p className="mt-2.5 text-sm sm:text-base text-slate-600 max-w-2xl">
               No account managers or junior buffers. You build and communicate directly with our five senior leads.
