@@ -37,11 +37,6 @@ export function ServicesPillarsSection({ onSelectService, onExploreAllServices }
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div>
-            <div className="flex items-center gap-2 text-xs font-semibold text-[#0FA3B1] tracking-wider uppercase mb-2">
-              <span>Section 03</span>
-              <span aria-hidden="true" className="text-slate-400">·</span>
-              <span>15 Services Across 5 Pillars</span>
-            </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0B1F3A] tracking-tight font-['Sora']">
               Engineered for ambitious businesses & research teams
             </h2>
@@ -79,7 +74,7 @@ export function ServicesPillarsSection({ onSelectService, onExploreAllServices }
                     <div className="w-11 h-11 rounded-xl bg-[#EAF6F8] text-[#0FA3B1] flex items-center justify-center">
                       <Icon className="w-6 h-6" />
                     </div>
-                    <span className="text-[11px] font-mono text-slate-400">0{idx + 1} / 05</span>
+
                   </div>
 
                   <h3 className="text-xl font-bold text-[#0B1F3A] font-['Sora']">

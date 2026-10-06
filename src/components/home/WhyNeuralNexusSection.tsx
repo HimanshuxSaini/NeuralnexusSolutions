@@ -29,11 +29,6 @@ export function WhyNeuralNexusSection({ onBookCall }: { onBookCall: () => void }
     <section className="py-20 bg-[#0B1F3A] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <div className="flex items-center justify-center gap-2 text-xs font-semibold text-[#0FA3B1] tracking-wider uppercase mb-2">
-            <span>Section 05</span>
-            <span aria-hidden="true" className="text-slate-500">·</span>
-            <span>Why NeuralNexus</span>
-          </div>
 
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight font-['Sora']">
             Built different by design

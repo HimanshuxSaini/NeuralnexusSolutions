@@ -15,11 +15,6 @@ export function AboutSnapshotSection({ onReadFullStory }: { onReadFullStory: () 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Story Column */}
           <div className="lg:col-span-7 space-y-6">
-            <div className="flex items-center gap-2 text-xs font-semibold text-[#0FA3B1] tracking-wider uppercase">
-              <span>Section 04</span>
-              <span aria-hidden="true" className="text-slate-400">·</span>
-              <span>Our Story & Philosophy</span>
-            </div>
 
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0B1F3A] tracking-tight font-['Sora'] leading-tight">
               An engineering-first studio founded on transparency, not agency overhead.

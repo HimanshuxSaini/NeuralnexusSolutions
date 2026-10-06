@@ -19,11 +19,6 @@ export function FeaturedProjectsSection({ onSelectCaseStudy, onViewAllCases }: F
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
           <div>
-            <div className="flex items-center gap-2 text-xs font-semibold text-[#0FA3B1] tracking-wider uppercase mb-2">
-              <span>Section 07</span>
-              <span aria-hidden="true" className="text-slate-400">·</span>
-              <span>Proven Deliverables</span>
-            </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0B1F3A] tracking-tight font-['Sora']">
               Featured projects & case studies
             </h2>

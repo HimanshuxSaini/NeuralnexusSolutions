@@ -176,12 +176,7 @@ export function ExpertTeamSection({ onSelectMember, onViewAllTeam }: ExpertTeamS
         {/* Header Section */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 sm:mb-12">
           <div>
-            <div className="flex items-center gap-2 text-xs font-semibold text-[#0FA3B1] tracking-wider uppercase mb-2">
-              <span className="w-2 h-2 rounded-full bg-[#0FA3B1] animate-pulse" />
-              <span>Section 06</span>
-              <span aria-hidden="true" className="text-slate-400">·</span>
-              <span>Principal Domain Leads</span>
-            </div>
+
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0B1F3A] tracking-tight font-['Sora']">
               Meet the 5 domain specialists
             </h2>
