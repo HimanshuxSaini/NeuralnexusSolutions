@@ -1,0 +1,6 @@
+{
+  "name": "NeuralNexusSolutions",
+  "description": "Where AI, software and growth connect. High-impact software development, AI & automation, research implementation, growth marketing, and design.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
