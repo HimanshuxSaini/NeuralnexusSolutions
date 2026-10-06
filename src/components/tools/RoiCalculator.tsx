@@ -4,7 +4,7 @@ import { MessageSquare, TrendingUp, Clock, DollarSign, ArrowRight, CheckCircle2,
 export function RoiCalculator({ onBookAutomation }: { onBookAutomation?: () => void }) {
   const [inquiriesPerMonth, setInquiriesPerMonth] = useState(2500);
   const [minutesPerInquiry, setMinutesPerInquiry] = useState(12);
-  const [hourlyAgentRate, setHourlyAgentRate] = useState(22);
+  const [hourlyAgentRate, setHourlyAgentRate] = useState(250);
   const [automationRate, setAutomationRate] = useState(75); // % automated
 
   // Calculations
@@ -76,22 +76,22 @@ export function RoiCalculator({ onBookAutomation }: { onBookAutomation?: () => v
           {/* Slider 3: Agent hourly loaded cost */}
           <div>
             <div className="flex items-center justify-between text-sm mb-2">
-              <label className="font-semibold text-slate-800">Support Staff Loaded Hourly Cost ($ USD)</label>
-              <span className="font-mono font-bold text-[#0FA3B1] text-base">${hourlyAgentRate}/hr</span>
+              <label className="font-semibold text-slate-800">Support Staff Loaded Hourly Cost (₹ INR)</label>
+              <span className="font-mono font-bold text-[#0FA3B1] text-base">₹{hourlyAgentRate}/hr</span>
             </div>
             <input
               type="range"
-              min="8"
-              max="65"
-              step="1"
+              min="80"
+              max="800"
+              step="10"
               value={hourlyAgentRate}
               onChange={(e) => setHourlyAgentRate(Number(e.target.value))}
               className="w-full accent-[#0FA3B1] cursor-pointer"
             />
             <div className="flex justify-between text-[11px] text-slate-400 mt-1">
-              <span>$8/hr</span>
-              <span>$30/hr</span>
-              <span>$65/hr</span>
+              <span>₹80/hr</span>
+              <span>₹400/hr</span>
+              <span>₹800/hr</span>
             </div>
           </div>
 
@@ -151,11 +151,11 @@ export function RoiCalculator({ onBookAutomation }: { onBookAutomation?: () => v
             <div className="mt-6">
               <span className="text-xs text-slate-400">Estimated Annual Cost Savings</span>
               <div className="text-4xl sm:text-5xl font-extrabold text-white mt-1 tracking-tight">
-                ${annualCostSavings.toLocaleString()}
+                ₹{annualCostSavings.toLocaleString('en-IN')}
                 <span className="text-base font-normal text-slate-400"> / year</span>
               </div>
               <div className="text-xs text-slate-300 mt-1">
-                Equivalent to <strong className="text-white">${monthlyCostSavings.toLocaleString()}</strong> in reduced support overhead every month.
+                Equivalent to <strong className="text-white">₹{monthlyCostSavings.toLocaleString('en-IN')}</strong> in reduced support overhead every month.
               </div>
             </div>
 

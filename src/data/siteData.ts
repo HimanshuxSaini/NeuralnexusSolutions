@@ -167,8 +167,8 @@ export const SERVICES: ServiceItem[] = [
     tools: ['React', 'Next.js', 'Flutter', 'TypeScript', 'Node.js', 'PostgreSQL', 'Tailwind CSS', 'AWS', 'Docker'],
     relatedCaseStudyId: 'telehealth-platform',
     engagementModels: [
-      { type: 'Fixed Scope Project', typicalDuration: '4 - 10 Weeks', pricingEstimate: '$2,500 – $8,000', description: 'Well-defined product milestones with guaranteed deliverables and delivery dates.', recommendedFor: 'MVPs, product launches, version 2.0 rebuilds' },
-      { type: 'Dedicated Sprint Team', typicalDuration: 'Month-to-Month', pricingEstimate: '$3,200 / Month', description: 'Full-stack engineering capacity working seamlessly with your internal product roadmap.', recommendedFor: 'Ongoing feature expansion, funded startups' }
+      { type: 'Fixed Scope Project', typicalDuration: '4 - 10 Weeks', pricingEstimate: '₹2,15,000 – ₹6,88,000', description: 'Well-defined product milestones with guaranteed deliverables and delivery dates.', recommendedFor: 'MVPs, product launches, version 2.0 rebuilds' },
+      { type: 'Dedicated Sprint Team', typicalDuration: 'Month-to-Month', pricingEstimate: '₹2,75,000 / Month', description: 'Full-stack engineering capacity working seamlessly with your internal product roadmap.', recommendedFor: 'Ongoing feature expansion, funded startups' }
     ],
     faqs: [
       { question: 'Do you deliver complete source code and IP ownership?', answer: 'Yes, 100% of the source code, repositories, and intellectual property belong exclusively to you upon milestone completion.' },
@@ -199,8 +199,8 @@ export const SERVICES: ServiceItem[] = [
     tools: ['Node.js', 'Python', 'PostgreSQL', 'Express', 'React', 'Redis', 'Docker'],
     relatedCaseStudyId: 'enterprise-erp',
     engagementModels: [
-      { type: 'Milestone Contract', typicalDuration: '6 - 12 Weeks', pricingEstimate: '$3,500 – $10,000', description: 'Phased rollout broken down by department or feature module.', recommendedFor: 'Established businesses upgrading internal tooling' },
-      { type: 'Hourly Consulting', typicalDuration: 'Flexible', pricingEstimate: '$45 / Hour', description: 'On-demand architectural guidance, bug fixing, or API integrations.', recommendedFor: 'Technical audits, ad-hoc feature patches' }
+      { type: 'Milestone Contract', typicalDuration: '6 - 12 Weeks', pricingEstimate: '₹3,01,000 – ₹8,60,000', description: 'Phased rollout broken down by department or feature module.', recommendedFor: 'Established businesses upgrading internal tooling' },
+      { type: 'Hourly Consulting', typicalDuration: 'Flexible', pricingEstimate: '₹3,870 / Hour', description: 'On-demand architectural guidance, bug fixing, or API integrations.', recommendedFor: 'Technical audits, ad-hoc feature patches' }
     ],
     faqs: [
       { question: 'Can our internal teams easily operate this software?', answer: 'Yes, we design clean intuitive interfaces with zero bloat, complete with interactive onboarding and administrator guides.' },
@@ -230,8 +230,8 @@ export const SERVICES: ServiceItem[] = [
     tools: ['PostgreSQL', 'Node.js', 'React', 'Redis', 'Docker', 'REST API', 'Tailwind CSS'],
     relatedCaseStudyId: 'enterprise-erp',
     engagementModels: [
-      { type: 'Modular Implementation', typicalDuration: '8 - 16 Weeks', pricingEstimate: '$5,000 – $15,000', description: 'End-to-end ERP customized for your exact industry and accounting standards.', recommendedFor: 'Manufacturing, logistics, and multi-branch retail' },
-      { type: 'Quarterly Retainer', typicalDuration: 'Ongoing', pricingEstimate: '$1,800 / Month', description: 'Continuous module expansion, data backups, and technical support.', recommendedFor: 'Scaling enterprises' }
+      { type: 'Modular Implementation', typicalDuration: '8 - 16 Weeks', pricingEstimate: '₹4,30,000 – ₹12,90,000', description: 'End-to-end ERP customized for your exact industry and accounting standards.', recommendedFor: 'Manufacturing, logistics, and multi-branch retail' },
+      { type: 'Quarterly Retainer', typicalDuration: 'Ongoing', pricingEstimate: '₹1,55,000 / Month', description: 'Continuous module expansion, data backups, and technical support.', recommendedFor: 'Scaling enterprises' }
     ],
     faqs: [
       { question: 'Can we import our existing Excel sheets?', answer: 'Yes, our automated data ingestion pipeline validates, cleans, and imports existing spreadsheets without data loss.' },
@@ -261,8 +261,8 @@ export const SERVICES: ServiceItem[] = [
     tools: ['Python', 'PyTorch', 'TensorFlow', 'Scikit-learn', 'Hugging Face', 'FastAPI', 'Docker', 'AWS SageMaker'],
     relatedCaseStudyId: 'multimodal-ai-research',
     engagementModels: [
-      { type: 'Proof of Concept (PoC)', typicalDuration: '3 - 5 Weeks', pricingEstimate: '$2,800 – $6,500', description: 'Rapid model validation on your data with measurable accuracy metrics before scale.', recommendedFor: 'Early-stage AI initiatives, feasibility testing' },
-      { type: 'Production AI Deployment', typicalDuration: '6 - 12 Weeks', pricingEstimate: '$6,000 – $18,000', description: 'Full pipeline from data ingestion to production inference API with latency SLAs.', recommendedFor: 'Enterprise automation' }
+      { type: 'Proof of Concept (PoC)', typicalDuration: '3 - 5 Weeks', pricingEstimate: '₹2,41,000 – ₹5,59,000', description: 'Rapid model validation on your data with measurable accuracy metrics before scale.', recommendedFor: 'Early-stage AI initiatives, feasibility testing' },
+      { type: 'Production AI Deployment', typicalDuration: '6 - 12 Weeks', pricingEstimate: '₹5,16,000 – ₹15,48,000', description: 'Full pipeline from data ingestion to production inference API with latency SLAs.', recommendedFor: 'Enterprise automation' }
     ],
     faqs: [
       { question: 'Will our proprietary data be kept completely confidential?', answer: 'Yes, we sign strict non-disclosure agreements (NDAs) and configure private self-hosted or dedicated cloud models so your data is never used to train public models.' },
@@ -292,8 +292,8 @@ export const SERVICES: ServiceItem[] = [
     tools: ['Python', 'OpenAI/Gemini API', 'LangChain', 'Pinecone', 'React', 'Node.js', 'Webhooks'],
     relatedCaseStudyId: 'whatsapp-commerce-bot',
     engagementModels: [
-      { type: 'Turnkey Chatbot Setup', typicalDuration: '2 - 4 Weeks', pricingEstimate: '$1,500 – $4,000', description: 'Fully trained chatbot on your business knowledge with CRM routing.', recommendedFor: 'SMEs, service agencies, e-commerce stores' },
-      { type: 'Monthly Optimization Retainer', typicalDuration: 'Ongoing', pricingEstimate: '$600 / Month', description: 'Continuous transcript review, new intent training, and uptime monitoring.', recommendedFor: 'High-volume customer support' }
+      { type: 'Turnkey Chatbot Setup', typicalDuration: '2 - 4 Weeks', pricingEstimate: '₹1,29,000 – ₹3,44,000', description: 'Fully trained chatbot on your business knowledge with CRM routing.', recommendedFor: 'SMEs, service agencies, e-commerce stores' },
+      { type: 'Monthly Optimization Retainer', typicalDuration: 'Ongoing', pricingEstimate: '₹52,000 / Month', description: 'Continuous transcript review, new intent training, and uptime monitoring.', recommendedFor: 'High-volume customer support' }
     ],
     faqs: [
       { question: 'Can the chatbot prevent hallucinations and false claims?', answer: 'Yes, we enforce strict retrieval guardrails and system boundaries: if the answer is not present in your approved documentation, it courteously offers a human callback.' },
@@ -323,8 +323,8 @@ export const SERVICES: ServiceItem[] = [
     tools: ['Meta WhatsApp Cloud API', 'Node.js', 'Python', 'Webhooks', 'PostgreSQL', 'Redis', 'Twilio'],
     relatedCaseStudyId: 'whatsapp-commerce-bot',
     engagementModels: [
-      { type: 'Full WhatsApp Pipeline Setup', typicalDuration: '2 - 4 Weeks', pricingEstimate: '$1,800 – $4,500', description: 'Complete Cloud API setup, interactive menus, lead qualification flows, and CRM integration.', recommendedFor: 'Clinics, education institutes, retail, real estate' },
-      { type: 'Broadcast & Campaign Engine', typicalDuration: '1 - 2 Weeks', pricingEstimate: '$900 – $2,000', description: 'Automated scheduled messaging and event-driven trigger system.', recommendedFor: 'Marketing promotions, recurring updates' }
+      { type: 'Full WhatsApp Pipeline Setup', typicalDuration: '2 - 4 Weeks', pricingEstimate: '₹1,55,000 – ₹3,87,000', description: 'Complete Cloud API setup, interactive menus, lead qualification flows, and CRM integration.', recommendedFor: 'Clinics, education institutes, retail, real estate' },
+      { type: 'Broadcast & Campaign Engine', typicalDuration: '1 - 2 Weeks', pricingEstimate: '₹77,000 – ₹1,72,000', description: 'Automated scheduled messaging and event-driven trigger system.', recommendedFor: 'Marketing promotions, recurring updates' }
     ],
     faqs: [
       { question: 'Do we need an official Meta Business Manager?', answer: 'Yes, we assist you through the complete official Meta verification and phone registration process.' },
@@ -354,8 +354,8 @@ export const SERVICES: ServiceItem[] = [
     tools: ['Python', 'SQL', 'PostgreSQL', 'Power BI', 'Tableau', 'Pandas', 'Metabase', 'BigQuery'],
     relatedCaseStudyId: 'enterprise-erp',
     engagementModels: [
-      { type: 'BI Dashboard Sprint', typicalDuration: '3 - 6 Weeks', pricingEstimate: '$2,200 – $5,500', description: 'Consolidation of up to 4 data sources into interactive executive dashboards.', recommendedFor: 'SMEs needing transparent sales and operational visibility' },
-      { type: 'Fractional Data Analyst', typicalDuration: 'Monthly Retainer', pricingEstimate: '$1,500 / Month', description: 'Ongoing monthly reporting, ad-hoc queries, and predictive modeling.', recommendedFor: 'Growth-stage companies' }
+      { type: 'BI Dashboard Sprint', typicalDuration: '3 - 6 Weeks', pricingEstimate: '₹1,89,000 – ₹4,73,000', description: 'Consolidation of up to 4 data sources into interactive executive dashboards.', recommendedFor: 'SMEs needing transparent sales and operational visibility' },
+      { type: 'Fractional Data Analyst', typicalDuration: 'Monthly Retainer', pricingEstimate: '₹1,29,000 / Month', description: 'Ongoing monthly reporting, ad-hoc queries, and predictive modeling.', recommendedFor: 'Growth-stage companies' }
     ],
     faqs: [
       { question: 'Can you work with Google Sheets, SQL databases, and Stripe together?', answer: 'Yes! We build automated connectors that consolidate all your payment, database, and spreadsheet records into one synchronized view.' }
@@ -384,8 +384,8 @@ export const SERVICES: ServiceItem[] = [
     tools: ['LaTeX', 'Overleaf', 'BibTeX', 'Zotero', 'Python', 'Jupyter', 'Grammarly Academic'],
     relatedCaseStudyId: 'multimodal-ai-research',
     engagementModels: [
-      { type: 'Full Paper Package', typicalDuration: '3 - 6 Weeks', pricingEstimate: '$1,200 – $3,500', description: 'Comprehensive literature review, methodology drafting, LaTeX formatting, and revisions.', recommendedFor: 'Scholars, postgraduate researchers, corporate R&D' },
-      { type: 'Technical Review & Formatting', typicalDuration: '1 - 2 Weeks', pricingEstimate: '$600 – $1,200', description: 'Camera-ready LaTeX typesetting, bibliography standardization, and clarity polish.', recommendedFor: 'Pre-submission conference papers' }
+      { type: 'Full Paper Package', typicalDuration: '3 - 6 Weeks', pricingEstimate: '₹1,03,000 – ₹3,01,000', description: 'Comprehensive literature review, methodology drafting, LaTeX formatting, and revisions.', recommendedFor: 'Scholars, postgraduate researchers, corporate R&D' },
+      { type: 'Technical Review & Formatting', typicalDuration: '1 - 2 Weeks', pricingEstimate: '₹52,000 – ₹1,03,000', description: 'Camera-ready LaTeX typesetting, bibliography standardization, and clarity polish.', recommendedFor: 'Pre-submission conference papers' }
     ],
     faqs: [
       { question: 'Do you ensure academic integrity and originality?', answer: 'Absolutely. All documentation is developed with 100% genuine research citations, original writing, and zero uncredited duplication.' },
@@ -415,8 +415,8 @@ export const SERVICES: ServiceItem[] = [
     tools: ['PyTorch', 'TensorFlow', 'CUDA', 'Python', 'Jupyter', 'Weights & Biases', 'Hugging Face', 'Gradio'],
     relatedCaseStudyId: 'multimodal-ai-research',
     engagementModels: [
-      { type: 'Reproduction Sprint', typicalDuration: '3 - 6 Weeks', pricingEstimate: '$2,000 – $5,500', description: 'Clean reproduction of a published paper’s algorithms and evaluation on target benchmarks.', recommendedFor: 'R&D labs, thesis students, algorithmic trading teams' },
-      { type: 'Custom Extension & Innovation', typicalDuration: '6 - 10 Weeks', pricingEstimate: '$4,000 – $9,000', description: 'Extending a base paper with novel loss functions, custom architectures, or new datasets.', recommendedFor: 'Novel publication submissions' }
+      { type: 'Reproduction Sprint', typicalDuration: '3 - 6 Weeks', pricingEstimate: '₹1,72,000 – ₹4,73,000', description: 'Clean reproduction of a published paper’s algorithms and evaluation on target benchmarks.', recommendedFor: 'R&D labs, thesis students, algorithmic trading teams' },
+      { type: 'Custom Extension & Innovation', typicalDuration: '6 - 10 Weeks', pricingEstimate: '₹3,44,000 – ₹7,74,000', description: 'Extending a base paper with novel loss functions, custom architectures, or new datasets.', recommendedFor: 'Novel publication submissions' }
     ],
     faqs: [
       { question: 'What if the authors did not release their original code?', answer: 'We specialize in reproducing algorithms directly from mathematical descriptions, pseudocode, and hyperparameter tables provided in the paper text.' }
@@ -445,8 +445,8 @@ export const SERVICES: ServiceItem[] = [
     tools: ['Google Ads', 'Meta Ads Manager', 'GA4', 'Google Tag Manager', 'HubSpot', 'Hotjar'],
     relatedCaseStudyId: 'b2b-saas-growth',
     engagementModels: [
-      { type: 'Monthly Growth Retainer', typicalDuration: 'Ongoing (3 Mo. Min)', pricingEstimate: '$1,200 – $3,000 / Mo', description: 'Complete campaign management, creative testing, analytics, and weekly reporting.', recommendedFor: 'Scaling businesses looking for steady lead velocity' },
-      { type: 'Funnel & Audit Sprint', typicalDuration: '2 Weeks', pricingEstimate: '$900', description: 'Comprehensive teardown of your current ad campaigns, tracking, and conversion leaks.', recommendedFor: 'Brands with underperforming ads' }
+      { type: 'Monthly Growth Retainer', typicalDuration: 'Ongoing (3 Mo. Min)', pricingEstimate: '₹1,03,000 – ₹2,58,000 / Mo', description: 'Complete campaign management, creative testing, analytics, and weekly reporting.', recommendedFor: 'Scaling businesses looking for steady lead velocity' },
+      { type: 'Funnel & Audit Sprint', typicalDuration: '2 Weeks', pricingEstimate: '₹77,000', description: 'Comprehensive teardown of your current ad campaigns, tracking, and conversion leaks.', recommendedFor: 'Brands with underperforming ads' }
     ],
     faqs: [
       { question: 'What ad platforms do you specialize in?', answer: 'We manage Google Search & Display, Meta (Instagram & Facebook), LinkedIn Ads for B2B, and YouTube ads.' }
@@ -475,8 +475,8 @@ export const SERVICES: ServiceItem[] = [
     tools: ['Ahrefs', 'SEMrush', 'Google Search Console', 'Screaming Frog', 'PageSpeed Insights', 'Schema.org'],
     relatedCaseStudyId: 'b2b-saas-growth',
     engagementModels: [
-      { type: 'Comprehensive Technical Audit', typicalDuration: '1 - 2 Weeks', pricingEstimate: '$650 – $1,200', description: 'Deep-dive audit with prioritized action items for your developers to implement.', recommendedFor: 'Websites suffering organic traffic drops' },
-      { type: 'Full Monthly SEO Growth', typicalDuration: '6 Months Retainer', pricingEstimate: '$1,000 – $2,500 / Mo', description: 'End-to-end technical optimization, content production, link acquisition, and rank monitoring.', recommendedFor: 'Long-term organic search dominance' }
+      { type: 'Comprehensive Technical Audit', typicalDuration: '1 - 2 Weeks', pricingEstimate: '₹56,000 – ₹1,03,000', description: 'Deep-dive audit with prioritized action items for your developers to implement.', recommendedFor: 'Websites suffering organic traffic drops' },
+      { type: 'Full Monthly SEO Growth', typicalDuration: '6 Months Retainer', pricingEstimate: '₹86,000 – ₹2,15,000 / Mo', description: 'End-to-end technical optimization, content production, link acquisition, and rank monitoring.', recommendedFor: 'Long-term organic search dominance' }
     ],
     faqs: [
       { question: 'How quickly can we see ranking improvements?', answer: 'Technical fixes and indexing updates usually show initial ranking shifts within 3 to 6 weeks, with compounding organic traffic growth visible across 3 to 6 months.' }
@@ -505,7 +505,7 @@ export const SERVICES: ServiceItem[] = [
     tools: ['Figma', 'Buffer', 'Hootsuite', 'Meta Business Suite', 'Canva', 'LinkedIn Creator'],
     relatedCaseStudyId: 'b2b-saas-growth',
     engagementModels: [
-      { type: 'Monthly Social Management', typicalDuration: 'Monthly Retainer', pricingEstimate: '$800 – $1,800 / Mo', description: '16 to 24 customized posts per month, copywriting, scheduling, and community engagement.', recommendedFor: 'Brands wanting a consistent, active presence' }
+      { type: 'Monthly Social Management', typicalDuration: 'Monthly Retainer', pricingEstimate: '₹69,000 – ₹1,55,000 / Mo', description: '16 to 24 customized posts per month, copywriting, scheduling, and community engagement.', recommendedFor: 'Brands wanting a consistent, active presence' }
     ],
     faqs: [
       { question: 'Do we review posts before they are published?', answer: 'Yes! We batch deliver the full content calendar 7 days ahead for your team’s review and sign-off.' }
@@ -534,8 +534,8 @@ export const SERVICES: ServiceItem[] = [
     tools: ['Figma', 'FigJam', 'Tailwind CSS', 'Framer', 'Adobe Creative Suite'],
     relatedCaseStudyId: 'fintech-design-system',
     engagementModels: [
-      { type: 'Full Product Design Sprint', typicalDuration: '3 - 6 Weeks', pricingEstimate: '$2,400 – $6,000', description: 'Complete end-to-end design for up to 15 core screens including design system.', recommendedFor: 'SaaS products, mobile apps, customer portals' },
-      { type: 'Design System Package', typicalDuration: '2 - 3 Weeks', pricingEstimate: '$1,800 – $3,500', description: 'Atomic component library, design tokens, and documentation for internal dev teams.', recommendedFor: 'Engineering teams scaling their product' }
+      { type: 'Full Product Design Sprint', typicalDuration: '3 - 6 Weeks', pricingEstimate: '₹2,06,000 – ₹5,16,000', description: 'Complete end-to-end design for up to 15 core screens including design system.', recommendedFor: 'SaaS products, mobile apps, customer portals' },
+      { type: 'Design System Package', typicalDuration: '2 - 3 Weeks', pricingEstimate: '₹1,55,000 – ₹3,01,000', description: 'Atomic component library, design tokens, and documentation for internal dev teams.', recommendedFor: 'Engineering teams scaling their product' }
     ],
     faqs: [
       { question: 'Do you hand off organized Figma files for our developers?', answer: 'Yes! Our Figma files use Auto-Layout, structured variants, design tokens, and clean naming conventions so developers can build quickly without guesswork.' }
@@ -564,8 +564,8 @@ export const SERVICES: ServiceItem[] = [
     tools: ['Adobe Illustrator', 'Photoshop', 'Figma', 'InDesign'],
     relatedCaseStudyId: 'fintech-design-system',
     engagementModels: [
-      { type: 'Complete Brand Identity Kit', typicalDuration: '2 - 4 Weeks', pricingEstimate: '$1,200 – $2,800', description: 'Primary & secondary logos, typography system, color palette, social templates, and brand book.', recommendedFor: 'New startups and company rebrands' },
-      { type: 'Ad Creative Batch', typicalDuration: '1 Week', pricingEstimate: '$500 – $1,000', description: 'Batch of 10-15 high-converting ad variations for digital campaigns.', recommendedFor: 'Marketing campaigns' }
+      { type: 'Complete Brand Identity Kit', typicalDuration: '2 - 4 Weeks', pricingEstimate: '₹1,03,000 – ₹2,41,000', description: 'Primary & secondary logos, typography system, color palette, social templates, and brand book.', recommendedFor: 'New startups and company rebrands' },
+      { type: 'Ad Creative Batch', typicalDuration: '1 Week', pricingEstimate: '₹43,000 – ₹86,000', description: 'Batch of 10-15 high-converting ad variations for digital campaigns.', recommendedFor: 'Marketing campaigns' }
     ],
     faqs: [
       { question: 'Will we receive vector source files?', answer: 'Yes, we provide all source files in vector AI, EPS, SVG, and high-resolution PNG formats.' }
@@ -594,8 +594,8 @@ export const SERVICES: ServiceItem[] = [
     tools: ['Adobe Premiere Pro', 'After Effects', 'DaVinci Resolve', 'CapCut Pro'],
     relatedCaseStudyId: 'fintech-design-system',
     engagementModels: [
-      { type: 'Short-Form Video Pack (8 Reels)', typicalDuration: '2 Weeks', pricingEstimate: '$700 – $1,400', description: '8 fully edited short-form videos with custom captions, sound effects, and color grading.', recommendedFor: 'Founders, influencers, creators' },
-      { type: 'Product Motion Explainer (60s)', typicalDuration: '2 - 3 Weeks', pricingEstimate: '$1,200 – $2,500', description: 'Custom 2D motion graphics video explaining your software value proposition.', recommendedFor: 'SaaS landing pages and sales pitches' }
+      { type: 'Short-Form Video Pack (8 Reels)', typicalDuration: '2 Weeks', pricingEstimate: '₹60,000 – ₹1,20,000', description: '8 fully edited short-form videos with custom captions, sound effects, and color grading.', recommendedFor: 'Founders, influencers, creators' },
+      { type: 'Product Motion Explainer (60s)', typicalDuration: '2 - 3 Weeks', pricingEstimate: '₹1,03,000 – ₹2,15,000', description: 'Custom 2D motion graphics video explaining your software value proposition.', recommendedFor: 'SaaS landing pages and sales pitches' }
     ],
     faqs: [
       { question: 'Can you work with raw recorded phone or zoom footage?', answer: 'Yes! We enhance audio clarity, remove background hiss, apply color correction, and make your footage look studio-grade.' }
@@ -710,11 +710,11 @@ export const CASE_STUDIES: CaseStudy[] = [
     pillarId: 'software-engineering',
     serviceId: 'erp-development',
     summary: 'Built a zero-license-fee, bespoke ERP system managing 5 warehouses, 18,000 SKUs, automated purchase orders, and multi-role accounting.',
-    problem: 'Client relied on disconnected Excel sheets and an outdated legacy software that charged $30,000/year in user seat licenses while constantly failing during audits.',
+    problem: 'Client relied on disconnected Excel sheets and an outdated legacy software that charged ₹25,80,000/year in user seat licenses while constantly failing during audits.',
     approach: 'Designed a cloud-native modular ERP with real-time inventory tracking, barcode scanner support, automated tax/GST filing, and role-based permissions.',
     techUsed: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Docker', 'AWS RDS', 'Tailwind CSS'],
     results: [
-      { metric: '$30k/yr', value: 'Saved in Licenses', context: 'Zero recurring per-seat fees with 100% owned source code' },
+      { metric: '₹25,80,000/yr', value: 'Saved in Licenses', context: 'Zero recurring per-seat fees with 100% owned source code' },
       { metric: '99.9%', value: 'Inventory Accuracy', context: 'Eliminated stock discrepancies across all 5 warehouses' },
       { metric: '40 hrs', value: 'Saved Per Week', context: 'In manual data entry and invoice reconciliation' }
     ],
@@ -758,7 +758,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     pillarId: 'growth-marketing',
     serviceId: 'seo',
     summary: 'Restructured technical architecture, executed keyword cluster mapping, and propelled organic Google traffic by 340%.',
-    problem: 'SaaS startup had an innovative product but virtually zero organic search presence, burning heavy VC capital on expensive $18 CPC Google Ads.',
+    problem: 'SaaS startup had an innovative product but virtually zero organic search presence, burning heavy VC capital on expensive ₹1,548 CPC Google Ads.',
     approach: 'Executed technical SEO remediation, built 25 long-tail programmatic landing pages, optimized Core Web Vitals to 95+, and built authoritative developer backlinks.',
     techUsed: ['Technical SEO', 'Schema Markup', 'Ahrefs', 'Next.js', 'Google Search Console', 'Content Clusters'],
     results: [
@@ -864,7 +864,7 @@ export const BLOG_POSTS: BlogPost[] = [
     author: 'Pardeep Kumar Singh',
     summary: 'Evaluating the true total cost of ownership: high SaaS per-seat licenses vs. bespoke cloud-native enterprise software.',
     keyTakeaways: [
-      'Legacy software vendors charge between $150 to $300 per user per month in recurrent seat licenses.',
+      'Legacy software vendors charge between ₹13,000 to ₹26,000 per user per month in recurrent seat licenses.',
       'A custom modular ERP pays for itself within 12 to 18 months while matching the exact workflow of the business.',
       'Modern web stacks (Next.js, PostgreSQL, Docker) offer enterprise-grade scalability and sub-second query performance.'
     ],
