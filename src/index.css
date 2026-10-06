@@ -11,17 +11,38 @@
     --font-sans: 'Inter', sans-serif;
   }
 
+  html {
+    overflow-x: hidden;
+  }
+
   body {
     font-family: var(--font-sans);
     color: #1E293B;
     background-color: #F8FAFC;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     color: #0B1F3A;
   }
+
+  /* Prevent iOS tap highlight */
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Hide horizontal scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 /* Custom subtle scrollbars */
@@ -91,4 +112,12 @@
   animation-play-state: paused;
 }
 
-
+/* Responsive touch-friendly improvements */
+@media (max-width: 640px) {
+  .marquee-track {
+    animation-duration: 25s;
+  }
+  .marquee-track-reverse {
+    animation-duration: 25s;
+  }
+}

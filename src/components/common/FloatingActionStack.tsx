@@ -80,7 +80,6 @@ export function FloatingActionStack({ onNavigate }: FloatingActionStackProps) {
       time: 'Just now',
       quickActions: [
         { label: 'Explore 15 Services', action: 'services' },
-        { label: 'Project Cost Estimator', action: 'tools' },
         { label: 'WhatsApp Automation Demo', action: 'whatsapp' },
         { label: 'Meet the 5 Experts', action: 'team' }
       ]
@@ -147,8 +146,7 @@ export function FloatingActionStack({ onNavigate }: FloatingActionStackProps) {
       return {
         text: "Our custom ERP Development service builds bespoke modules for inventory, accounts/GST, HR, and CRM with 0 recurring user-seat license fees. You own 100% of the source code. Pardeep Kumar Singh leads this architecture!",
         quickActions: [
-          { label: 'View ERP Service Details', action: 'service:erp-development' },
-          { label: 'Calculate Project Cost', action: 'tools' }
+          { label: 'View ERP Service Details', action: 'service:erp-development' }
         ]
       };
     }
@@ -157,7 +155,6 @@ export function FloatingActionStack({ onNavigate }: FloatingActionStackProps) {
       return {
         text: "We build official Meta WhatsApp Business Cloud API automated pipelines: broadcasts, 24/7 lead qualification chatbots, and appointment scheduling with 98% open rates and zero number-blocking risk. Led by Himanshu Saini.",
         quickActions: [
-          { label: 'Open WhatsApp ROI Calculator', action: 'tools' },
           { label: 'View WhatsApp Service', action: 'service:whatsapp-automation' }
         ]
       };
@@ -197,7 +194,6 @@ export function FloatingActionStack({ onNavigate }: FloatingActionStackProps) {
       return {
         text: "We offer 3 clear engagement models: Fixed Project Milestones (MVPs from $2,400+), Monthly Retainer Sprints ($1,500 – $3,200/mo), and Hourly Consulting ($45/hr). You can use our interactive Project Cost Estimator for an immediate scope breakdown!",
         quickActions: [
-          { label: 'Launch Cost Estimator', action: 'tools' },
           { label: 'Submit Quote Request', action: 'contact' }
         ]
       };
@@ -217,7 +213,6 @@ export function FloatingActionStack({ onNavigate }: FloatingActionStackProps) {
     return {
       text: "Thanks for asking! We specialize in custom software, AI/ML models, WhatsApp automation, research paper implementation, SEO, and UI/UX design. Would you like to check our pricing estimator or speak with an expert directly?",
       quickActions: [
-        { label: 'Check Cost Estimator', action: 'tools' },
         { label: 'Book a Consultation', action: 'contact' },
         { label: 'View Case Studies', action: 'cases' }
       ]

@@ -64,7 +64,7 @@ interface HeroSectionProps {
 
 export function HeroSection({ onStartProject, onExploreWork }: HeroSectionProps) {
   return (
-    <section className="relative overflow-hidden bg-white text-slate-900 pt-8 pb-16 lg:pt-14 lg:pb-24 border-b border-slate-100">
+    <section className="relative overflow-hidden bg-white text-slate-900 pt-6 sm:pt-8 pb-12 sm:pb-16 lg:pt-14 lg:pb-24 border-b border-slate-100">
       {/* Luminous soft cyan ambient gradient glow in the background */}
       <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-[650px] h-[650px] bg-gradient-to-tr from-[#00D2D3]/12 via-[#0FA3B1]/10 to-transparent rounded-full blur-3xl pointer-events-none" />
       <div className="absolute top-10 right-10 w-[400px] h-[400px] bg-cyan-100/40 rounded-full blur-3xl pointer-events-none" />
@@ -116,7 +116,7 @@ export function HeroSection({ onStartProject, onExploreWork }: HeroSectionProps)
             </div>
 
             {/* Key Performance Stats Row matching Image 2 */}
-            <div className="mt-12 pt-8 border-t border-slate-200/80 flex flex-wrap items-center gap-6 sm:gap-8 lg:gap-7 xl:gap-8 text-left">
+            <div className="mt-10 sm:mt-12 pt-6 sm:pt-8 border-t border-slate-200/80 grid grid-cols-2 sm:flex sm:flex-wrap items-center gap-4 sm:gap-6 lg:gap-7 xl:gap-8 text-left">
               {/* Stat 1: 50+ */}
               <div>
                 <div className="text-2xl sm:text-3xl font-extrabold text-[#0B1F3A] font-['Sora'] leading-tight">
@@ -171,7 +171,7 @@ export function HeroSection({ onStartProject, onExploreWork }: HeroSectionProps)
           {/* ============================================================== */}
           {/* RIGHT COLUMN: 3D HERO GRAPHIC & FLOATING CARDS (IMAGE 2)       */}
           {/* ============================================================== */}
-          <div className="lg:col-span-6 xl:col-span-6 relative flex items-center justify-center min-h-[460px] sm:min-h-[520px] lg:min-h-[580px]">
+          <div className="lg:col-span-6 xl:col-span-6 relative hidden sm:flex items-center justify-center min-h-[460px] sm:min-h-[520px] lg:min-h-[580px]">
             
 
             {/* Central 3D Metallic Illuminated "N" Sculpture with Orbiting Nodes */}

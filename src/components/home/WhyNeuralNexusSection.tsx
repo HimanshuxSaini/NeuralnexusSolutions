@@ -54,7 +54,6 @@ export function WhyNeuralNexusSection({ onBookCall }: { onBookCall: () => void }
         {/* 4-Column Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {differentiators.map((diff, idx) => {
-            const Icon = diff.icon;
             return (
               <div
                 key={idx}

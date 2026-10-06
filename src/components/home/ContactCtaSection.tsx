@@ -173,7 +173,7 @@ export function ContactCtaSection({ initialService, initialNotes }: ContactCtaSe
                     </label>
                     <input
                       type="tel"
-                      placeholder="+1 (555) 000-0000 or +91"
+                      placeholder="+91 99999 99999"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       className="w-full px-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-[#0FA3B1] text-slate-900 placeholder:text-slate-400"

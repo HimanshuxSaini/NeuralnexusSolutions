@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { PILLARS, SERVICES } from '../../data/siteData';
 import { NeuralNexusLogo } from './NeuralNexusLogo';
+import { ContactModal } from './ContactModal';
 import { ChevronDown, Menu, X, ArrowRight, Cpu, Layers, BookOpen, TrendingUp, Palette, Wrench, Users, Info, Workflow, Calculator } from 'lucide-react';
 
 interface HeaderProps {
@@ -18,6 +19,7 @@ const PILLAR_ICONS: { [key: string]: any } = {
 
 export function Header({ currentView, onNavigate }: HeaderProps) {
   const [megaMenuOpen, setMegaMenuOpen] = useState(false);
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
   const [moreMenuOpen, setMoreMenuOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [expandedPillarMobile, setExpandedPillarMobile] = useState<string | null>(null);
@@ -90,13 +92,7 @@ export function Header({ currentView, onNavigate }: HeaderProps) {
       icon: Users,
       view: 'team'
     },
-    {
-      id: 'tools',
-      title: 'Free Interactive Tools',
-      description: 'SEO audit, project cost & ROI calculators',
-      icon: Calculator,
-      view: 'tools'
-    },
+
     {
       id: 'blog',
       title: 'Insights & Blog',
@@ -109,7 +105,7 @@ export function Header({ currentView, onNavigate }: HeaderProps) {
   return (
     <header className="sticky top-0 z-40 bg-white border-b border-slate-200/80 shadow-2xs transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16 sm:h-20">
           
           {/* Logo with 3D Isometric 'N' & NeuralNexus SOLUTIONS */}
           <div
@@ -164,7 +160,7 @@ export function Header({ currentView, onNavigate }: HeaderProps) {
 
               {/* Mega-Menu Dropdown: 5 Columns for 5 Pillars as per Section 4 */}
               {megaMenuOpen && (
-                <div className="fixed left-1/2 -translate-x-1/2 top-[76px] w-[95vw] max-w-7xl bg-white rounded-2xl shadow-2xl border border-slate-200 p-6 z-50 text-slate-800 animate-in fade-in slide-in-from-top-2 duration-150">
+                <div className="fixed left-1/2 -translate-x-1/2 top-[76px] w-[95vw] max-w-7xl bg-white rounded-2xl shadow-2xl border border-slate-200 p-4 sm:p-6 z-50 text-slate-800 animate-in fade-in slide-in-from-top-2 duration-150 max-h-[80vh] overflow-y-auto">
                   <div className="flex items-center justify-between pb-4 mb-4 border-b border-slate-100">
                     <div>
                       <h4 className="font-bold text-[#0B1F3A] text-base">All 15 Specialized Services</h4>
@@ -182,7 +178,7 @@ export function Header({ currentView, onNavigate }: HeaderProps) {
                     </button>
                   </div>
 
-                  <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+                  <div className="grid grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4">
                     {PILLARS.map((pillar) => {
                       const IconComponent = PILLAR_ICONS[pillar.id] || Layers;
                       const pillarServices = SERVICES.filter((s) => s.pillarId === pillar.id);
@@ -227,16 +223,7 @@ export function Header({ currentView, onNavigate }: HeaderProps) {
 
                       <span>100% intellectual property & code ownership transferred to client</span>
                     </span>
-                    <button
-                      onClick={() => {
-                        onNavigate('tools');
-                        setMegaMenuOpen(false);
-                      }}
-                      className="text-[#0B1F3A] font-semibold hover:text-[#0FA3B1] flex items-center gap-1 cursor-pointer"
-                    >
-                      <Wrench className="w-3.5 h-3.5" />
-                      <span>Calculate Scope & Estimate</span>
-                    </button>
+
                   </div>
                 </div>
               )}
@@ -350,11 +337,10 @@ export function Header({ currentView, onNavigate }: HeaderProps) {
               )}
             </button>
           </nav>
-
           {/* Primary Consultation Action */}
           <div className="hidden lg:flex items-center gap-3">
             <button
-              onClick={() => onNavigate('contact')}
+              onClick={() => setIsContactModalOpen(true)}
               className="py-2.5 px-5 bg-[#0FA3B1] hover:bg-[#0D8B97] text-white font-semibold text-sm rounded-xl transition-all shadow-xs hover:shadow-md cursor-pointer flex items-center gap-1.5"
             >
               <span>Get a Free Consultation</span>
@@ -365,7 +351,10 @@ export function Header({ currentView, onNavigate }: HeaderProps) {
           {/* Mobile Menu Button */}
           <div className="flex lg:hidden items-center gap-2">
             <button
-              onClick={() => onNavigate('contact')}
+              onClick={() => {
+                setIsContactModalOpen(true);
+                setMobileMenuOpen(false);
+              }}
               className="py-1.5 px-3 bg-[#0FA3B1] text-white font-medium text-xs rounded-lg cursor-pointer"
             >
               Consultation
@@ -488,6 +477,7 @@ export function Header({ currentView, onNavigate }: HeaderProps) {
           </button>
         </div>
       )}
+      <ContactModal isOpen={isContactModalOpen} onClose={() => setIsContactModalOpen(false)} />
     </header>
   );
 }

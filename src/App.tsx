@@ -28,7 +28,6 @@ import { TeamView } from './components/views/TeamView';
 import { TeamMemberModal } from './components/views/TeamMemberModal';
 import { CaseStudiesView } from './components/views/CaseStudiesView';
 import { ProcessView } from './components/views/ProcessView';
-import { ToolsView } from './components/views/ToolsView';
 import { BlogView } from './components/views/BlogView';
 import { ContactView } from './components/views/ContactView';
 
@@ -69,13 +68,6 @@ export default function App() {
     setCurrentView('contact');
   };
 
-  const handleQuoteReadyFromEstimator = (quoteData: any) => {
-    setQuoteInitialService(quoteData.service);
-    setQuoteInitialNotes(
-      `Estimated budget: ${quoteData.estimateRange} (~${quoteData.weeks} weeks). Scope scale: ${quoteData.scale}. Addons: ${quoteData.addons.join(', ')}`
-    );
-    setCurrentView('contact');
-  };
 
   const currentServiceObj = SERVICES.find(s => s.slug === currentServiceSlug) || SERVICES[0];
 
@@ -203,13 +195,7 @@ export default function App() {
           />
         )}
 
-        {/* Interactive Lead Magnet Tools */}
-        {currentView === 'tools' && (
-          <ToolsView
-            onNavigate={handleNavigate}
-            onQuoteReady={handleQuoteReadyFromEstimator}
-          />
-        )}
+
 
         {/* Blog & Insights Page */}
         {currentView === 'blog' && (

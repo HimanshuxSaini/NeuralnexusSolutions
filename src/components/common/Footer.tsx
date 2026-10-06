@@ -92,7 +92,7 @@ export function Footer({ onNavigate, onOpenLegal }: FooterProps) {
         </div>
 
         {/* 5-Pillars Service Sitemap Matrix */}
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-6 py-12 border-b border-white/10">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 py-12 border-b border-white/10">
           {PILLARS.map((pillar) => {
             const pillarServices = SERVICES.filter((s) => s.pillarId === pillar.id);
 
@@ -119,7 +119,7 @@ export function Footer({ onNavigate, onOpenLegal }: FooterProps) {
         </div>
 
         {/* Studio Quick Links & Expert Team */}
-        <div className="py-8 grid grid-cols-1 md:grid-cols-4 gap-6 text-xs text-slate-400 border-b border-white/10">
+        <div className="py-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-xs text-slate-400 border-b border-white/10">
           <div>
             <div className="font-semibold text-white mb-2 uppercase tracking-wider text-[11px]">Core Navigation</div>
             <ul className="space-y-1.5">
@@ -131,12 +131,11 @@ export function Footer({ onNavigate, onOpenLegal }: FooterProps) {
           </div>
 
           <div>
-            <div className="font-semibold text-white mb-2 uppercase tracking-wider text-[11px]">Tools & Case Studies</div>
+            <div className="font-semibold text-white mb-2 uppercase tracking-wider text-[11px]">Resources</div>
             <ul className="space-y-1.5">
               <li><button onClick={() => onNavigate('cases')} className="hover:text-white">Filterable Case Studies</button></li>
-              <li><button onClick={() => onNavigate('tools')} className="hover:text-white">Website SEO Audit Tool</button></li>
-              <li><button onClick={() => onNavigate('tools')} className="hover:text-white">Project Cost Estimator</button></li>
-              <li><button onClick={() => onNavigate('tools')} className="hover:text-white">WhatsApp & Bot ROI Calculator</button></li>
+              <li><button onClick={() => onNavigate('blog')} className="hover:text-white">Engineering Blog</button></li>
+              <li><button onClick={() => onNavigate('process')} className="hover:text-white">Delivery Process</button></li>
             </ul>
           </div>
 
