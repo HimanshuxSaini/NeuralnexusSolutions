@@ -80,12 +80,12 @@ export function HeroSection({ onStartProject, onExploreWork }: HeroSectionProps)
             {/* Main Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-[58px] xl:text-[66px] font-extrabold text-[#0B1F3A] tracking-tight leading-[1.08] font-['Sora']">
               Intelligence that{' '}
-              <span className="text-[#0FA3B1] bg-gradient-to-r from-[#00A896] via-[#0FA3B1] to-[#00B4D8] bg-clip-text text-transparent">
+              <span className="text-[#0FA3B1]">
                 connects.
               </span>
               <br />
               Solutions that{' '}
-              <span className="text-[#0FA3B1] bg-gradient-to-r from-[#00A896] via-[#0FA3B1] to-[#00B4D8] bg-clip-text text-transparent">
+              <span className="text-[#0FA3B1]">
                 scale.
               </span>
             </h1>
