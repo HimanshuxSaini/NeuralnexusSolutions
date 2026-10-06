@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, CheckCircle2, Award, Users, Code, Sparkles } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Award, Users, Code } from 'lucide-react';
 
 export function AboutSnapshotSection({ onReadFullStory }: { onReadFullStory: () => void }) {
   const stats = [

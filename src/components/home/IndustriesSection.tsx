@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { INDUSTRIES_SERVED } from '../../data/siteData';
-import { GraduationCap, HeartPulse, ShoppingBag, Rocket, FlaskConical, CheckCircle2, ArrowRight } from 'lucide-react';
+import { GraduationCap, HeartPulse, ShoppingBag, Building2, FlaskConical, CheckCircle2, ArrowRight } from 'lucide-react';
 
 const INDUSTRY_ICONS: { [key: string]: any } = {
-  'Startups & SMEs': Rocket,
+  'Startups & SMEs': Building2,
   'Education & Academics': GraduationCap,
   'Healthcare & Clinics': HeartPulse,
   'Retail & E-Commerce': ShoppingBag,
@@ -13,7 +13,7 @@ const INDUSTRY_ICONS: { [key: string]: any } = {
 export function IndustriesSection({ onConsultIndustry }: { onConsultIndustry: (industry: string) => void }) {
   const [activeIdx, setActiveIdx] = useState(0);
   const activeIndustry = INDUSTRIES_SERVED[activeIdx];
-  const Icon = INDUSTRY_ICONS[activeIndustry.name] || Rocket;
+  const Icon = INDUSTRY_ICONS[activeIndustry.name] || Building2;
 
   return (
     <section className="py-20 bg-white">

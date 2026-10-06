@@ -18,10 +18,7 @@ import { WhyNeuralNexusSection } from './components/home/WhyNeuralNexusSection';
 import { ExpertTeamSection } from './components/home/ExpertTeamSection';
 import { ProcessSection } from './components/home/ProcessSection';
 import { IndustriesSection } from './components/home/IndustriesSection';
-import { TestimonialsSection } from './components/home/TestimonialsSection';
-import { BlogPreviewSection } from './components/home/BlogPreviewSection';
 import { FaqSection } from './components/home/FaqSection';
-import { ContactCtaSection } from './components/home/ContactCtaSection';
 
 // Subpage Views
 import { ServiceDetailView } from './components/views/ServiceDetailView';
@@ -132,31 +129,13 @@ export default function App() {
               }}
             />
 
-            {/* Section 10: Verified Testimonials */}
-            <TestimonialsSection />
-
-            {/* Section 11: Blog / Insights */}
-            <BlogPreviewSection
-              onSelectPost={(post) => {
-                setInitialBlogPost(post);
-                setCurrentView('blog');
-              }}
-              onViewAllBlog={() => {
-                setInitialBlogPost(null);
-                setCurrentView('blog');
-              }}
-            />
 
             {/* Section 12: FAQ with schema markup */}
             <FaqSection
               onAskCustomQuestion={() => setCurrentView('contact')}
             />
 
-            {/* Section 13: Final CTA and Contact Form */}
-            <ContactCtaSection
-              initialService={quoteInitialService}
-              initialNotes={quoteInitialNotes}
-            />
+
           </>
         )}
 

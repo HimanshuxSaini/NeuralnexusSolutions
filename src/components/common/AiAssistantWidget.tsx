@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Bot, X, Send, Sparkles, MessageCircle, User, CheckCircle2, ChevronRight } from 'lucide-react';
+import { Bot, X, Send, MessageCircle, User, CheckCircle2, ChevronRight } from 'lucide-react';
 import { SERVICES, TEAM_MEMBERS, PILLARS } from '../../data/siteData';
 
 interface Message {
@@ -29,7 +29,7 @@ export function AiAssistantWidget({ onNavigate }: { onNavigate?: (target: string
     {
       id: 'welcome',
       sender: 'bot',
-      text: "👋 Hello! I am the NeuralNexus AI Assistant. I can answer questions about our 15 software & AI services, team members, pricing models, or help you book a consultation.",
+      text: "Hello! I am the NeuralNexus AI Assistant. I can answer questions about our 15 software & AI services, team members, pricing models, or help you book a consultation.",
       time: 'Just now',
       quickActions: [
         { label: 'Explore 15 Services', action: 'services' },

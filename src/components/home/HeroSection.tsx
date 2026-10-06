@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ArrowRight, Cpu, Zap, BarChart3, Cloud, Sparkles, Code, Database, Layout } from 'lucide-react';
+import { ArrowRight, Cpu, Zap, BarChart3, Cloud, TrendingUp, Code, Database, Layout } from 'lucide-react';
 
 function AnimatedNumber({ end, duration = 2000, suffix = "", prefix = "", decimals = 0 }: { end: number, duration?: number, suffix?: string, prefix?: string, decimals?: number }) {
   const [count, setCount] = useState(0);
@@ -278,7 +278,7 @@ export function HeroSection({ onStartProject, onExploreWork }: HeroSectionProps)
             {/* Card 4: Growth & SEO (Bottom-Right of 3D N) */}
             <div className="absolute bottom-24 sm:bottom-28 right-0 sm:right-4 z-20 bg-white/90 backdrop-blur-md border border-slate-200/80 shadow-xl shadow-slate-200/50 rounded-2xl p-3 sm:p-3.5 flex items-center gap-3 hover:-translate-y-1 transition-all duration-200">
               <div className="w-10 h-10 rounded-xl bg-cyan-50 border border-cyan-100/80 flex items-center justify-center text-[#0FA3B1] shrink-0">
-                <Sparkles className="w-5 h-5 text-[#0FA3B1]" />
+                <TrendingUp className="w-5 h-5 text-[#0FA3B1]" />
               </div>
               <div>
                 <div className="text-xs sm:text-sm font-bold text-slate-900 leading-tight">

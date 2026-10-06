@@ -13,11 +13,7 @@ export function TestimonialsSection() {
     <section className="py-20 bg-slate-50 border-t border-slate-200/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="flex items-center justify-center gap-2 text-xs font-semibold text-[#0FA3B1] tracking-wider uppercase mb-2">
-            <span>Section 10</span>
-            <span aria-hidden="true" className="text-slate-400">·</span>
-            <span>Client Voices</span>
-          </div>
+
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0B1F3A] tracking-tight font-['Sora']">
             Verifiable client testimonials
           </h2>

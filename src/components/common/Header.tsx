@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { PILLARS, SERVICES } from '../../data/siteData';
 import { NeuralNexusLogo } from './NeuralNexusLogo';
-import { ChevronDown, Menu, X, ArrowRight, Sparkles, Cpu, Layers, BookOpen, TrendingUp, Palette, Wrench, Users, Info, Workflow, Calculator } from 'lucide-react';
+import { ChevronDown, Menu, X, ArrowRight, Cpu, Layers, BookOpen, TrendingUp, Palette, Wrench, Users, Info, Workflow, Calculator } from 'lucide-react';
 
 interface HeaderProps {
   currentView: string;
@@ -224,7 +224,7 @@ export function Header({ currentView, onNavigate }: HeaderProps) {
 
                   <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
                     <span className="flex items-center gap-1.5">
-                      <Sparkles className="w-3.5 h-3.5 text-[#0FA3B1]" />
+
                       <span>100% intellectual property & code ownership transferred to client</span>
                     </span>
                     <button

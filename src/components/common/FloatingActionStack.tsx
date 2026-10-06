@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { MessageCircle, X, Send, Bot, Headphones, Sparkles, ChevronRight, CheckCircle2, ArrowUpRight } from 'lucide-react';
+import { MessageCircle, X, Send, Bot, Headphones, ChevronRight, CheckCircle2, ArrowUpRight } from 'lucide-react';
 import { SERVICES, TEAM_MEMBERS } from '../../data/siteData';
 
 interface FloatingActionStackProps {
@@ -76,7 +76,7 @@ export function FloatingActionStack({ onNavigate }: FloatingActionStackProps) {
     {
       id: 'welcome',
       sender: 'bot',
-      text: "👋 Hello! I am your NeuralNexus AI Assistant. I can answer questions about our 15 software & AI services, team members, pricing models, or help you book a consultation.",
+      text: "Hello! I am your NeuralNexus AI Assistant. I can answer questions about our 15 software & AI services, team members, pricing models, or help you book a consultation.",
       time: 'Just now',
       quickActions: [
         { label: 'Explore 15 Services', action: 'services' },

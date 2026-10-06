@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { TEAM_MEMBERS, TeamMember } from '../../data/siteData';
-import { ArrowRight, Linkedin, Github, Mail, ChevronLeft, ChevronRight, Pause, Play, RotateCw, LayoutGrid, Orbit, Sparkles } from 'lucide-react';
+import { ArrowRight, Linkedin, Github, Mail, ChevronLeft, ChevronRight, Pause, Play, RotateCw, LayoutGrid, Orbit, Award } from 'lucide-react';
 
 interface ExpertTeamSectionProps {
   onSelectMember: (member: TeamMember) => void;
@@ -253,7 +253,7 @@ export function ExpertTeamSection({ onSelectMember, onViewAllTeam }: ExpertTeamS
                     {/* Front-focused indicator badge */}
                     {isFrontCard && (
                       <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#0B1F3A] text-[#0FA3B1] text-[10px] font-bold px-2.5 py-0.5 rounded-full border border-[#0FA3B1]/40 flex items-center gap-1 shadow-sm uppercase tracking-wider">
-                        <Sparkles className="w-2.5 h-2.5 text-[#0FA3B1]" />
+                        <Award className="w-2.5 h-2.5 text-[#0FA3B1]" />
                         <span>Lead 0{index + 1}</span>
                       </div>
                     )}

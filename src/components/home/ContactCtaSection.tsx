@@ -61,11 +61,6 @@ export function ContactCtaSection({ initialService, initialNotes }: ContactCtaSe
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           {/* Left Column: Context & Direct Contact Channels */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="flex items-center gap-2 text-xs font-semibold text-[#0FA3B1] tracking-wider uppercase">
-              <span>Section 13</span>
-              <span aria-hidden="true" className="text-slate-400">·</span>
-              <span>Final Conversion Block</span>
-            </div>
 
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0B1F3A] tracking-tight font-['Sora'] leading-tight">
               Start your project with a senior technical team.
@@ -187,7 +182,7 @@ export function ContactCtaSection({ initialService, initialNotes }: ContactCtaSe
 
                   <div>
                     <label className="block text-xs font-semibold text-slate-700 mb-1">
-                      Target Service (Select from 15) *
+                      Target Service *
                     </label>
                     <select
                       value={formData.service}
@@ -199,44 +194,26 @@ export function ContactCtaSection({ initialService, initialNotes }: ContactCtaSe
                           [{s.pillarName.split('&')[0].trim()}] {s.title}
                         </option>
                       ))}
+                      <option value="Other / Custom">Other / Custom</option>
                     </select>
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-xs font-semibold text-slate-700 mb-1">
-                      Indicative Budget Range
-                    </label>
-                    <select
-                      value={formData.budget}
-                      onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
-                      className="w-full px-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-[#0FA3B1] text-slate-900"
-                    >
-                      {budgetOptions.map((opt) => (
-                        <option key={opt} value={opt}>
-                          {opt}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
-
-                  <div>
-                    <label className="block text-xs font-semibold text-slate-700 mb-1">
-                      Desired Delivery Timeline
-                    </label>
-                    <select
-                      value={formData.timeline}
-                      onChange={(e) => setFormData({ ...formData, timeline: e.target.value })}
-                      className="w-full px-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-[#0FA3B1] text-slate-900"
-                    >
-                      {timelineOptions.map((opt) => (
-                        <option key={opt} value={opt}>
-                          {opt}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
+                <div>
+                  <label className="block text-xs font-semibold text-slate-700 mb-1">
+                    Desired Delivery Timeline
+                  </label>
+                  <select
+                    value={formData.timeline}
+                    onChange={(e) => setFormData({ ...formData, timeline: e.target.value })}
+                    className="w-full px-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-[#0FA3B1] text-slate-900"
+                  >
+                    {timelineOptions.map((opt) => (
+                      <option key={opt} value={opt}>
+                        {opt}
+                      </option>
+                    ))}
+                  </select>
                 </div>
 
                 <div>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { PILLARS, SERVICES } from '../../data/siteData';
-import { Calculator, ArrowRight, Check, Sparkles, RefreshCw, Send } from 'lucide-react';
+import { Calculator, ArrowRight, Check, RefreshCw, Send } from 'lucide-react';
 
 export function ProjectCostEstimator({ onQuoteReady }: { onQuoteReady?: (quoteData: any) => void }) {
   const [selectedPillar, setSelectedPillar] = useState(PILLARS[0].id);

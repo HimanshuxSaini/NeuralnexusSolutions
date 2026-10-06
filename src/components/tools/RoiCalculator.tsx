@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MessageSquare, TrendingUp, Clock, DollarSign, ArrowRight, CheckCircle2, Bot, Sparkles } from 'lucide-react';
+import { MessageSquare, TrendingUp, Clock, DollarSign, ArrowRight, CheckCircle2, Bot } from 'lucide-react';
 
 export function RoiCalculator({ onBookAutomation }: { onBookAutomation?: () => void }) {
   const [inquiriesPerMonth, setInquiriesPerMonth] = useState(2500);
@@ -170,7 +170,7 @@ export function RoiCalculator({ onBookAutomation }: { onBookAutomation?: () => v
 
               <div className="p-3.5 bg-white/5 rounded-xl border border-white/10">
                 <div className="flex items-center gap-1.5 text-xs text-slate-400">
-                  <Sparkles className="w-3.5 h-3.5 text-amber-400" /> Lead Conversion
+                  <TrendingUp className="w-3.5 h-3.5 text-amber-400" /> Lead Conversion
                 </div>
                 <div className="text-2xl font-bold text-white mt-1">+{estimatedAdditionalLeads} leads</div>
                 <div className="text-[11px] text-slate-400 mt-0.5">captured via instant replies</div>
