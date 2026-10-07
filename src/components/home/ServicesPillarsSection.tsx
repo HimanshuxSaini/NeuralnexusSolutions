@@ -12,7 +12,7 @@ export function ServicesPillarsSection({ onSelectService, onExploreAllServices }
   const featuredServices = SERVICES.slice(0, 7);
 
   return (
-    <section className="py-20 lg:py-24 bg-[#F8FAFC]">
+    <section className="py-8 lg:py-8 bg-[#F8FAFC]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div>

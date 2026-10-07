@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ServiceItem, CASE_STUDIES, PILLARS } from '../../data/siteData';
+import { ServiceItem, PILLARS } from '../../data/siteData';
 import { ArrowRight, CheckCircle2, ChevronDown, Layers, MessageCircle, ShieldCheck, Clock, Zap, ExternalLink } from 'lucide-react';
 import { Breadcrumbs } from '../common/Breadcrumbs';
 
@@ -7,18 +7,16 @@ interface ServiceDetailViewProps {
   service: ServiceItem;
   onNavigate: (view: string, param?: string) => void;
   onRequestQuote: (serviceTitle: string, modelType?: string) => void;
-  onOpenCaseStudy: (caseId: string) => void;
 }
 
 export function ServiceDetailView({
   service,
   onNavigate,
-  onRequestQuote,
-  onOpenCaseStudy
+  onRequestQuote
 }: ServiceDetailViewProps) {
   const [openFaqIdx, setOpenFaqIdx] = useState<number | null>(0);
 
-  const relatedCase = CASE_STUDIES.find(c => c.id === service.relatedCaseStudyId) || CASE_STUDIES[0];
+
   const currentPillar = PILLARS.find(p => p.id === service.pillarId);
 
   const breadcrumbs = [
@@ -31,15 +29,15 @@ export function ServiceDetailView({
     const text = encodeURIComponent(
       `Hi NeuralNexusSolutions! I am interested in your ${service.title} service. Can we discuss scope and availability?`
     );
-    window.open(`https://wa.me/919999999999?text=${text}`, '_blank');
+    window.open(`https://wa.me/918299032271?text=${text}`, '_blank');
   };
 
   return (
-    <div className="bg-[#F8FAFC] min-h-screen pb-20">
+    <div className="bg-[#F8FAFC] min-h-screen pb-8">
       <Breadcrumbs items={breadcrumbs} onNavigate={onNavigate} />
 
       {/* Block 1: Hero */}
-      <section className="bg-[#0B1F3A] text-white py-16 lg:py-20 border-b border-slate-800">
+      <section className="bg-[#0B1F3A] text-white py-8 lg:py-8 border-b border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             {/* Unboxed clean metadata (frontend design skill) */}
@@ -79,7 +77,7 @@ export function ServiceDetailView({
       </section>
 
       {/* Block 2: What We Deliver */}
-      <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-10">
           <span className="text-xs font-semibold text-[#0FA3B1] uppercase tracking-wider">Capabilities</span>
           <h2 className="text-2xl sm:text-3xl font-bold text-[#0B1F3A] font-['Sora'] mt-1">
@@ -111,7 +109,7 @@ export function ServiceDetailView({
       </section>
 
       {/* Block 3: Process (Service-Specific Steps) */}
-      <section className="py-16 bg-white border-y border-slate-200/80">
+      <section className="py-8 bg-white border-y border-slate-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-10">
             <span className="text-xs font-semibold text-[#0FA3B1] uppercase tracking-wider">Methodology</span>
@@ -172,50 +170,9 @@ export function ServiceDetailView({
         </div>
       </section>
 
-      {/* Block 5: Related Case Study */}
-      {relatedCase && (
-        <section className="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-[#EAF6F8]/60 border border-[#0FA3B1]/20 rounded-3xl p-8 sm:p-10">
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
-              <div>
-                <span className="text-xs font-semibold text-[#0FA3B1] uppercase tracking-wider">Related Case Study</span>
-                <h3 className="text-2xl font-bold text-[#0B1F3A] font-['Sora'] mt-1">
-                  {relatedCase.title}
-                </h3>
-                <div className="text-xs text-slate-500 mt-1">
-                  Client: {relatedCase.client} · {relatedCase.clientIndustry}
-                </div>
-                <p className="text-xs sm:text-sm text-slate-700 mt-3 max-w-2xl leading-relaxed">
-                  {relatedCase.summary}
-                </p>
-
-                {/* Metrics */}
-                <div className="mt-4 flex flex-wrap gap-4">
-                  {relatedCase.results.map((res, i) => (
-                    <div key={i} className="bg-white px-3.5 py-2 rounded-xl border border-slate-200/80 shadow-2xs">
-                      <div className="text-base font-extrabold text-[#0B1F3A]">{res.metric}</div>
-                      <div className="text-[10px] text-slate-600 font-medium">{res.value}</div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div className="shrink-0">
-                <button
-                  onClick={() => onOpenCaseStudy(relatedCase.id)}
-                  className="py-3 px-5 bg-[#0B1F3A] hover:bg-[#061224] text-white text-xs font-semibold rounded-xl transition-colors flex items-center gap-1.5 cursor-pointer whitespace-nowrap"
-                >
-                  <span>View Full Case Breakdown</span>
-                  <ExternalLink className="w-3.5 h-3.5" />
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
-      )}
 
       {/* Block 6: Engagement Models */}
-      <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-10 text-center max-w-2xl mx-auto">
           <span className="text-xs font-semibold text-[#0FA3B1] uppercase tracking-wider">Pricing Structure</span>
           <h2 className="text-2xl sm:text-3xl font-bold text-[#0B1F3A] font-['Sora'] mt-1">

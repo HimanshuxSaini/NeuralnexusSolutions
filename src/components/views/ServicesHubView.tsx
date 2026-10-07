@@ -33,11 +33,11 @@ export function ServicesHubView({ onNavigate, onSelectService }: ServicesHubView
   });
 
   return (
-    <div className="bg-[#F8FAFC] min-h-screen pb-20">
+    <div className="bg-[#F8FAFC] min-h-screen pb-8">
       <Breadcrumbs items={breadcrumbs} onNavigate={onNavigate} />
 
       {/* Header */}
-      <section className="bg-[#0B1F3A] text-white py-16 lg:py-20 border-b border-slate-800">
+      <section className="bg-[#0B1F3A] text-white py-8 lg:py-8 border-b border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <span className="text-xs font-semibold text-[#0FA3B1] tracking-wider uppercase">
@@ -146,7 +146,7 @@ export function ServicesHubView({ onNavigate, onSelectService }: ServicesHubView
         </div>
 
         {filteredServices.length === 0 && (
-          <div className="text-center py-16 bg-white rounded-2xl border border-slate-200">
+          <div className="text-center py-8 bg-white rounded-2xl border border-slate-200">
             <p className="text-sm text-slate-500">No services match your search query "{searchQuery}".</p>
             <button
               onClick={() => {

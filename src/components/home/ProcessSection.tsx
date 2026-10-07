@@ -4,7 +4,7 @@ import { ArrowRight, CheckCircle2 } from 'lucide-react';
 
 export function ProcessSection({ onViewFullProcess }: { onViewFullProcess: () => void }) {
   return (
-    <section className="py-20 bg-slate-50 relative">
+    <section className="py-8 bg-slate-50 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Section Header */}

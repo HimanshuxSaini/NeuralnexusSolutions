@@ -19,7 +19,7 @@ export function Footer({ onNavigate, onOpenLegal }: FooterProps) {
   };
 
   return (
-    <footer className="bg-[#0B1F3A] text-white pt-16 pb-12 border-t border-slate-800">
+    <footer className="bg-[#0B1F3A] text-white pt-8 pb-6 border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top Grid: Brand & Newsletter */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 pb-12 border-b border-white/10">
@@ -42,7 +42,7 @@ export function Footer({ onNavigate, onOpenLegal }: FooterProps) {
               </div>
               <div className="flex items-center gap-1.5">
                 <Phone className="w-3.5 h-3.5 text-[#0FA3B1]" />
-                <span>+91 99999 99999</span>
+                <span>+91 82990 32271</span>
               </div>
             </div>
           </div>
@@ -133,7 +133,6 @@ export function Footer({ onNavigate, onOpenLegal }: FooterProps) {
           <div>
             <div className="font-semibold text-white mb-2 uppercase tracking-wider text-[11px]">Resources</div>
             <ul className="space-y-1.5">
-              <li><button onClick={() => onNavigate('cases')} className="hover:text-white">Filterable Case Studies</button></li>
               <li><button onClick={() => onNavigate('blog')} className="hover:text-white">Engineering Blog</button></li>
               <li><button onClick={() => onNavigate('process')} className="hover:text-white">Delivery Process</button></li>
             </ul>
@@ -154,7 +153,7 @@ export function Footer({ onNavigate, onOpenLegal }: FooterProps) {
             <div className="font-semibold text-white mb-2 uppercase tracking-wider text-[11px]">Direct Contact</div>
             <ul className="space-y-1.5">
               <li><span>Email: contact@neuralnexussolutions.com</span></li>
-              <li><span>WhatsApp: +91 99999 99999</span></li>
+
               <li><span>Response SLA: Within 24 Business Hours</span></li>
               <li className="pt-2">
                 <button

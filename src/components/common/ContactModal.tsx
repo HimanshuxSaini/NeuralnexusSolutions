@@ -92,7 +92,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                     required
                     type="tel" 
                     className="w-full pl-12 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-[#0FA3B1]/20 focus:border-[#0FA3B1] outline-none transition-all text-sm"
-                    placeholder="99999 99999"
+                    placeholder="82990 32271"
                     value={formData.phone}
                     onChange={(e) => setFormData({...formData, phone: e.target.value})}
                   />

@@ -24,7 +24,7 @@ export function FaqSection({ onAskCustomQuestion }: { onAskCustomQuestion: () =>
   };
 
   return (
-    <section className="py-20 bg-slate-50 border-t border-slate-200/80">
+    <section className="py-8 bg-slate-50 border-t border-slate-200/80">
       {/* Injected JSON-LD FAQ schema for search engines */}
       <script
         type="application/ld+json"

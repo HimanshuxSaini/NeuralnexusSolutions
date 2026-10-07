@@ -68,7 +68,7 @@ export function Header({ currentView, onNavigate }: HeaderProps) {
     }, 180);
   };
 
-  const isMoreActive = ['about', 'process', 'team', 'tools', 'blog'].includes(currentView);
+  const isMoreActive = ['about', 'process', 'tools', 'blog'].includes(currentView);
 
   const moreItems = [
     {
@@ -85,13 +85,7 @@ export function Header({ currentView, onNavigate }: HeaderProps) {
       icon: Workflow,
       view: 'process'
     },
-    {
-      id: 'team',
-      title: 'Expert Team',
-      description: '5 senior domain leads, no junior subcontractors',
-      icon: Users,
-      view: 'team'
-    },
+
 
     {
       id: 'blog',
@@ -229,17 +223,19 @@ export function Header({ currentView, onNavigate }: HeaderProps) {
               )}
             </div>
 
-            {/* Case Studies */}
+
+
+            {/* Expert Team */}
             <button
-              onClick={() => onNavigate('cases')}
+              onClick={() => onNavigate('team')}
               className={`px-3 py-1.5 text-xs sm:text-sm font-semibold transition-colors cursor-pointer relative ${
-                currentView === 'cases'
+                currentView === 'team'
                   ? 'text-[#0FA3B1]'
                   : 'text-slate-600 hover:text-[#0B1F3A]'
               }`}
             >
-              <span>Case Studies</span>
-              {currentView === 'cases' && (
+              <span>Expert Team</span>
+              {currentView === 'team' && (
                 <span className="absolute bottom-0 left-3 right-3 h-0.5 bg-[#0FA3B1] rounded-full animate-in fade-in" />
               )}
             </button>
@@ -427,15 +423,6 @@ export function Header({ currentView, onNavigate }: HeaderProps) {
             ))}
           </div>
 
-          <button
-            onClick={() => {
-              onNavigate('cases');
-              setMobileMenuOpen(false);
-            }}
-            className="w-full text-left py-2 px-3 text-sm font-medium text-slate-800 hover:bg-slate-50 rounded-lg"
-          >
-            Case Studies
-          </button>
 
           {/* More Sections Accordion for Mobile */}
           <div className="border-t border-slate-100 pt-2">

@@ -1,23 +1,19 @@
 import React from 'react';
-import { TeamMember, CASE_STUDIES } from '../../data/siteData';
+import { TeamMember } from '../../data/siteData';
 import { X, Linkedin, Github, Mail, ExternalLink, CheckCircle2, ArrowRight } from 'lucide-react';
 
 interface TeamMemberModalProps {
   member: TeamMember | null;
   onClose: () => void;
-  onOpenCaseStudy: (caseId: string) => void;
   onBookCallWithMember: (memberName: string) => void;
 }
 
 export function TeamMemberModal({
   member,
   onClose,
-  onOpenCaseStudy,
   onBookCallWithMember
 }: TeamMemberModalProps) {
   if (!member) return null;
-
-  const contributedStudies = CASE_STUDIES.filter(c => member.contributedProjects.includes(c.id));
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/60 backdrop-blur-xs p-4 overflow-y-auto">
@@ -82,60 +78,9 @@ export function TeamMemberModal({
             </div>
           </div>
 
-          {/* Contributed Case Studies */}
-          {contributedStudies.length > 0 && (
-            <div>
-              <h4 className="font-bold text-xs uppercase tracking-wider text-slate-400 mb-2">
-                Key Contributed Client Projects
-              </h4>
-              <div className="space-y-2">
-                {contributedStudies.map((study) => (
-                  <div
-                    key={study.id}
-                    onClick={() => {
-                      onClose();
-                      onOpenCaseStudy(study.id);
-                    }}
-                    className="p-3 bg-slate-50 hover:bg-[#EAF6F8]/60 rounded-xl border border-slate-200/80 transition-colors flex items-center justify-between cursor-pointer group"
-                  >
-                    <div>
-                      <div className="font-semibold text-xs text-[#0B1F3A] group-hover:text-[#0FA3B1] transition-colors">
-                        {study.title}
-                      </div>
-                      <div className="text-[11px] text-slate-500">
-                        {study.client} · {study.clientIndustry}
-                      </div>
-                    </div>
-                    <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-[#0FA3B1] group-hover:translate-x-0.5 transition-all" />
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
 
-          {/* Social Profiles */}
-          <div className="pt-2 flex items-center gap-4 text-slate-500 border-t border-slate-100">
-            <a
-              href={member.linkedin}
-              target="_blank"
-              rel="noreferrer"
-              className="flex items-center gap-1.5 hover:text-[#0FA3B1] transition-colors"
-            >
-              <Linkedin className="w-4 h-4" />
-              <span>LinkedIn</span>
-            </a>
-            <a
-              href={member.github}
-              target="_blank"
-              rel="noreferrer"
-              className="flex items-center gap-1.5 hover:text-slate-900 transition-colors"
-            >
-              <Github className="w-4 h-4" />
-              <span>GitHub</span>
-            </a>
-            <span className="text-slate-300">|</span>
-            <span className="text-slate-600 font-mono text-[11px]">{member.email}</span>
-          </div>
+
+
         </div>
 
         {/* Footer CTA */}

@@ -16,7 +16,7 @@ export interface ServiceItem {
     description: string;
   }[];
   tools: string[];
-  relatedCaseStudyId: string;
+
   engagementModels: {
     type: string;
     typicalDuration: string;
@@ -55,30 +55,7 @@ export interface TeamMember {
   experienceYears: number;
 }
 
-export interface CaseStudy {
-  id: string;
-  slug: string;
-  title: string;
-  client: string;
-  clientIndustry: string;
-  pillarId: string;
-  serviceId: string;
-  summary: string;
-  problem: string;
-  approach: string;
-  techUsed: string[];
-  results: {
-    metric: string;
-    value: string;
-    context: string;
-  }[];
-  testimonial?: {
-    quote: string;
-    author: string;
-    role: string;
-    company: string;
-  };
-}
+
 
 export interface BlogPost {
   id: string;
@@ -165,7 +142,7 @@ export const SERVICES: ServiceItem[] = [
       { step: 4, title: 'Deployment & Knowledge Handover', description: 'Production release, DNS setup, and complete source code repository transfer.' }
     ],
     tools: ['React', 'Next.js', 'Flutter', 'TypeScript', 'Node.js', 'PostgreSQL', 'Tailwind CSS', 'AWS', 'Docker'],
-    relatedCaseStudyId: 'telehealth-platform',
+
     engagementModels: [
       { type: 'Fixed Scope Project', typicalDuration: '4 - 10 Weeks', pricingEstimate: '₹2,15,000 – ₹6,88,000', description: 'Well-defined product milestones with guaranteed deliverables and delivery dates.', recommendedFor: 'MVPs, product launches, version 2.0 rebuilds' },
       { type: 'Dedicated Sprint Team', typicalDuration: 'Month-to-Month', pricingEstimate: '₹2,75,000 / Month', description: 'Full-stack engineering capacity working seamlessly with your internal product roadmap.', recommendedFor: 'Ongoing feature expansion, funded startups' }
@@ -197,7 +174,7 @@ export const SERVICES: ServiceItem[] = [
       { step: 4, title: 'Training & Rollout', description: 'Team onboarding, documentation, and safe data migration.' }
     ],
     tools: ['Node.js', 'Python', 'PostgreSQL', 'Express', 'React', 'Redis', 'Docker'],
-    relatedCaseStudyId: 'enterprise-erp',
+
     engagementModels: [
       { type: 'Milestone Contract', typicalDuration: '6 - 12 Weeks', pricingEstimate: '₹3,01,000 – ₹8,60,000', description: 'Phased rollout broken down by department or feature module.', recommendedFor: 'Established businesses upgrading internal tooling' },
       { type: 'Hourly Consulting', typicalDuration: 'Flexible', pricingEstimate: '₹3,870 / Hour', description: 'On-demand architectural guidance, bug fixing, or API integrations.', recommendedFor: 'Technical audits, ad-hoc feature patches' }
@@ -228,7 +205,7 @@ export const SERVICES: ServiceItem[] = [
       { step: 4, title: 'Data Migration & Staff Training', description: 'Clean import of historical spreadsheets and live staff training sessions.' }
     ],
     tools: ['PostgreSQL', 'Node.js', 'React', 'Redis', 'Docker', 'REST API', 'Tailwind CSS'],
-    relatedCaseStudyId: 'enterprise-erp',
+
     engagementModels: [
       { type: 'Modular Implementation', typicalDuration: '8 - 16 Weeks', pricingEstimate: '₹4,30,000 – ₹12,90,000', description: 'End-to-end ERP customized for your exact industry and accounting standards.', recommendedFor: 'Manufacturing, logistics, and multi-branch retail' },
       { type: 'Quarterly Retainer', typicalDuration: 'Ongoing', pricingEstimate: '₹1,55,000 / Month', description: 'Continuous module expansion, data backups, and technical support.', recommendedFor: 'Scaling enterprises' }
@@ -259,7 +236,7 @@ export const SERVICES: ServiceItem[] = [
       { step: 4, title: 'Monitoring & Drift Detection', description: 'Setting up model performance telemetry and automated retraining hooks.' }
     ],
     tools: ['Python', 'PyTorch', 'TensorFlow', 'Scikit-learn', 'Hugging Face', 'FastAPI', 'Docker', 'AWS SageMaker'],
-    relatedCaseStudyId: 'multimodal-ai-research',
+
     engagementModels: [
       { type: 'Proof of Concept (PoC)', typicalDuration: '3 - 5 Weeks', pricingEstimate: '₹2,41,000 – ₹5,59,000', description: 'Rapid model validation on your data with measurable accuracy metrics before scale.', recommendedFor: 'Early-stage AI initiatives, feasibility testing' },
       { type: 'Production AI Deployment', typicalDuration: '6 - 12 Weeks', pricingEstimate: '₹5,16,000 – ₹15,48,000', description: 'Full pipeline from data ingestion to production inference API with latency SLAs.', recommendedFor: 'Enterprise automation' }
@@ -290,7 +267,7 @@ export const SERVICES: ServiceItem[] = [
       { step: 4, title: 'Analytics & Continuous Tuning', description: 'Reviewing conversation drop-offs and tuning prompt responses.' }
     ],
     tools: ['Python', 'OpenAI/Gemini API', 'LangChain', 'Pinecone', 'React', 'Node.js', 'Webhooks'],
-    relatedCaseStudyId: 'whatsapp-commerce-bot',
+
     engagementModels: [
       { type: 'Turnkey Chatbot Setup', typicalDuration: '2 - 4 Weeks', pricingEstimate: '₹1,29,000 – ₹3,44,000', description: 'Fully trained chatbot on your business knowledge with CRM routing.', recommendedFor: 'SMEs, service agencies, e-commerce stores' },
       { type: 'Monthly Optimization Retainer', typicalDuration: 'Ongoing', pricingEstimate: '₹52,000 / Month', description: 'Continuous transcript review, new intent training, and uptime monitoring.', recommendedFor: 'High-volume customer support' }
@@ -321,7 +298,7 @@ export const SERVICES: ServiceItem[] = [
       { step: 4, title: 'Live Testing & Staff Dashboard', description: 'End-to-end testing, team inbox configuration, and operator training.' }
     ],
     tools: ['Meta WhatsApp Cloud API', 'Node.js', 'Python', 'Webhooks', 'PostgreSQL', 'Redis', 'Twilio'],
-    relatedCaseStudyId: 'whatsapp-commerce-bot',
+
     engagementModels: [
       { type: 'Full WhatsApp Pipeline Setup', typicalDuration: '2 - 4 Weeks', pricingEstimate: '₹1,55,000 – ₹3,87,000', description: 'Complete Cloud API setup, interactive menus, lead qualification flows, and CRM integration.', recommendedFor: 'Clinics, education institutes, retail, real estate' },
       { type: 'Broadcast & Campaign Engine', typicalDuration: '1 - 2 Weeks', pricingEstimate: '₹77,000 – ₹1,72,000', description: 'Automated scheduled messaging and event-driven trigger system.', recommendedFor: 'Marketing promotions, recurring updates' }
@@ -352,7 +329,7 @@ export const SERVICES: ServiceItem[] = [
       { step: 4, title: 'Deployment & Auto-Refresh', description: 'Setting up automated refresh schedules, alerting thresholds, and documentation.' }
     ],
     tools: ['Python', 'SQL', 'PostgreSQL', 'Power BI', 'Tableau', 'Pandas', 'Metabase', 'BigQuery'],
-    relatedCaseStudyId: 'enterprise-erp',
+
     engagementModels: [
       { type: 'BI Dashboard Sprint', typicalDuration: '3 - 6 Weeks', pricingEstimate: '₹1,89,000 – ₹4,73,000', description: 'Consolidation of up to 4 data sources into interactive executive dashboards.', recommendedFor: 'SMEs needing transparent sales and operational visibility' },
       { type: 'Fractional Data Analyst', typicalDuration: 'Monthly Retainer', pricingEstimate: '₹1,29,000 / Month', description: 'Ongoing monthly reporting, ad-hoc queries, and predictive modeling.', recommendedFor: 'Growth-stage companies' }
@@ -382,7 +359,7 @@ export const SERVICES: ServiceItem[] = [
       { step: 4, title: 'Peer Review & Proofing', description: 'Rigorous technical proofreading, formatting verification, and final submission prep.' }
     ],
     tools: ['LaTeX', 'Overleaf', 'BibTeX', 'Zotero', 'Python', 'Jupyter', 'Grammarly Academic'],
-    relatedCaseStudyId: 'multimodal-ai-research',
+
     engagementModels: [
       { type: 'Full Paper Package', typicalDuration: '3 - 6 Weeks', pricingEstimate: '₹1,03,000 – ₹3,01,000', description: 'Comprehensive literature review, methodology drafting, LaTeX formatting, and revisions.', recommendedFor: 'Scholars, postgraduate researchers, corporate R&D' },
       { type: 'Technical Review & Formatting', typicalDuration: '1 - 2 Weeks', pricingEstimate: '₹52,000 – ₹1,03,000', description: 'Camera-ready LaTeX typesetting, bibliography standardization, and clarity polish.', recommendedFor: 'Pre-submission conference papers' }
@@ -413,7 +390,7 @@ export const SERVICES: ServiceItem[] = [
       { step: 4, title: 'Report & Demo Delivery', description: 'Generating comprehensive comparative metric charts and clean Jupyter notebooks.' }
     ],
     tools: ['PyTorch', 'TensorFlow', 'CUDA', 'Python', 'Jupyter', 'Weights & Biases', 'Hugging Face', 'Gradio'],
-    relatedCaseStudyId: 'multimodal-ai-research',
+
     engagementModels: [
       { type: 'Reproduction Sprint', typicalDuration: '3 - 6 Weeks', pricingEstimate: '₹1,72,000 – ₹4,73,000', description: 'Clean reproduction of a published paper’s algorithms and evaluation on target benchmarks.', recommendedFor: 'R&D labs, thesis students, algorithmic trading teams' },
       { type: 'Custom Extension & Innovation', typicalDuration: '6 - 10 Weeks', pricingEstimate: '₹3,44,000 – ₹7,74,000', description: 'Extending a base paper with novel loss functions, custom architectures, or new datasets.', recommendedFor: 'Novel publication submissions' }
@@ -443,7 +420,7 @@ export const SERVICES: ServiceItem[] = [
       { step: 4, title: 'Scale & ROAS Optimization', description: 'Reallocating budget to highest ROI channels while driving down customer acquisition cost.' }
     ],
     tools: ['Google Ads', 'Meta Ads Manager', 'GA4', 'Google Tag Manager', 'HubSpot', 'Hotjar'],
-    relatedCaseStudyId: 'b2b-saas-growth',
+
     engagementModels: [
       { type: 'Monthly Growth Retainer', typicalDuration: 'Ongoing (3 Mo. Min)', pricingEstimate: '₹1,03,000 – ₹2,58,000 / Mo', description: 'Complete campaign management, creative testing, analytics, and weekly reporting.', recommendedFor: 'Scaling businesses looking for steady lead velocity' },
       { type: 'Funnel & Audit Sprint', typicalDuration: '2 Weeks', pricingEstimate: '₹77,000', description: 'Comprehensive teardown of your current ad campaigns, tracking, and conversion leaks.', recommendedFor: 'Brands with underperforming ads' }
@@ -473,7 +450,7 @@ export const SERVICES: ServiceItem[] = [
       { step: 4, title: 'Rank Tracking & Reporting', description: 'Bi-weekly ranking reports, organic click telemetry, and continuous algorithm adaptations.' }
     ],
     tools: ['Ahrefs', 'SEMrush', 'Google Search Console', 'Screaming Frog', 'PageSpeed Insights', 'Schema.org'],
-    relatedCaseStudyId: 'b2b-saas-growth',
+
     engagementModels: [
       { type: 'Comprehensive Technical Audit', typicalDuration: '1 - 2 Weeks', pricingEstimate: '₹56,000 – ₹1,03,000', description: 'Deep-dive audit with prioritized action items for your developers to implement.', recommendedFor: 'Websites suffering organic traffic drops' },
       { type: 'Full Monthly SEO Growth', typicalDuration: '6 Months Retainer', pricingEstimate: '₹86,000 – ₹2,15,000 / Mo', description: 'End-to-end technical optimization, content production, link acquisition, and rank monitoring.', recommendedFor: 'Long-term organic search dominance' }
@@ -503,7 +480,7 @@ export const SERVICES: ServiceItem[] = [
       { step: 4, title: 'Monthly Retrospective', description: 'Reviewing top-performing formats and refining subsequent month strategy.' }
     ],
     tools: ['Figma', 'Buffer', 'Hootsuite', 'Meta Business Suite', 'Canva', 'LinkedIn Creator'],
-    relatedCaseStudyId: 'b2b-saas-growth',
+
     engagementModels: [
       { type: 'Monthly Social Management', typicalDuration: 'Monthly Retainer', pricingEstimate: '₹69,000 – ₹1,55,000 / Mo', description: '16 to 24 customized posts per month, copywriting, scheduling, and community engagement.', recommendedFor: 'Brands wanting a consistent, active presence' }
     ],
@@ -532,7 +509,7 @@ export const SERVICES: ServiceItem[] = [
       { step: 4, title: 'Developer Handoff', description: 'Annotated Figma files with exact spacing, assets, and responsive auto-layout.' }
     ],
     tools: ['Figma', 'FigJam', 'Tailwind CSS', 'Framer', 'Adobe Creative Suite'],
-    relatedCaseStudyId: 'fintech-design-system',
+
     engagementModels: [
       { type: 'Full Product Design Sprint', typicalDuration: '3 - 6 Weeks', pricingEstimate: '₹2,06,000 – ₹5,16,000', description: 'Complete end-to-end design for up to 15 core screens including design system.', recommendedFor: 'SaaS products, mobile apps, customer portals' },
       { type: 'Design System Package', typicalDuration: '2 - 3 Weeks', pricingEstimate: '₹1,55,000 – ₹3,01,000', description: 'Atomic component library, design tokens, and documentation for internal dev teams.', recommendedFor: 'Engineering teams scaling their product' }
@@ -562,7 +539,7 @@ export const SERVICES: ServiceItem[] = [
       { step: 4, title: 'Master Asset Handover', description: 'Delivering SVG, EPS, PNG, PDF, and source design files with usage manual.' }
     ],
     tools: ['Adobe Illustrator', 'Photoshop', 'Figma', 'InDesign'],
-    relatedCaseStudyId: 'fintech-design-system',
+
     engagementModels: [
       { type: 'Complete Brand Identity Kit', typicalDuration: '2 - 4 Weeks', pricingEstimate: '₹1,03,000 – ₹2,41,000', description: 'Primary & secondary logos, typography system, color palette, social templates, and brand book.', recommendedFor: 'New startups and company rebrands' },
       { type: 'Ad Creative Batch', typicalDuration: '1 Week', pricingEstimate: '₹43,000 – ₹86,000', description: 'Batch of 10-15 high-converting ad variations for digital campaigns.', recommendedFor: 'Marketing campaigns' }
@@ -592,7 +569,7 @@ export const SERVICES: ServiceItem[] = [
       { step: 4, title: 'Final Polish & Multi-Format Render', description: 'Delivering 9:16 vertical and 16:9 widescreen formats ready for platform upload.' }
     ],
     tools: ['Adobe Premiere Pro', 'After Effects', 'DaVinci Resolve', 'CapCut Pro'],
-    relatedCaseStudyId: 'fintech-design-system',
+
     engagementModels: [
       { type: 'Short-Form Video Pack (8 Reels)', typicalDuration: '2 Weeks', pricingEstimate: '₹60,000 – ₹1,20,000', description: '8 fully edited short-form videos with custom captions, sound effects, and color grading.', recommendedFor: 'Founders, influencers, creators' },
       { type: 'Product Motion Explainer (60s)', typicalDuration: '2 - 3 Weeks', pricingEstimate: '₹1,03,000 – ₹2,15,000', description: 'Custom 2D motion graphics video explaining your software value proposition.', recommendedFor: 'SaaS landing pages and sales pitches' }
@@ -676,140 +653,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
   }
 ];
 
-export const CASE_STUDIES: CaseStudy[] = [
-  {
-    id: 'whatsapp-commerce-bot',
-    slug: 'whatsapp-commerce-bot',
-    title: 'Automated WhatsApp Commerce & AI Support Pipeline',
-    client: 'OmniRetail Healthcare',
-    clientIndustry: 'Retail & Telehealth',
-    pillarId: 'ai-data-automation',
-    serviceId: 'whatsapp-automation',
-    summary: 'Engineered an official WhatsApp Business Cloud API assistant that automated order refills, appointment scheduling, and lead routing.',
-    problem: 'Client received over 4,500 daily customer inquiries on WhatsApp. Support agents suffered a 45-minute average response time, leading to high drop-offs and lost repeat orders.',
-    approach: 'Deployed a WhatsApp Cloud API pipeline with RAG-powered intent classification, automated catalog checkout, and intelligent human escalation for emergency queries.',
-    techUsed: ['WhatsApp Cloud API', 'Node.js', 'Python', 'FastAPI', 'Redis Queue', 'PostgreSQL'],
-    results: [
-      { metric: '88%', value: 'Instant Resolution', context: 'Of all repetitive customer queries answered in < 3 seconds' },
-      { metric: '3.4x', value: 'Conversion Surge', context: 'Increase in completed prescription and product re-orders' },
-      { metric: '< 2 min', value: 'Avg First Response', context: 'Down from 45 minutes across all customer touchpoints' }
-    ],
-    testimonial: {
-      quote: 'NeuralNexusSolutions transformed our WhatsApp channel from an unmanageable support bottleneck into our #1 revenue-generating customer touchpoint.',
-      author: 'Aakash Verma',
-      role: 'Head of Operations',
-      company: 'OmniRetail Healthcare'
-    }
-  },
-  {
-    id: 'enterprise-erp',
-    slug: 'enterprise-erp',
-    title: 'Custom Modular ERP for Multi-Warehouse Manufacturing',
-    client: 'Apex Industrial Components',
-    clientIndustry: 'Manufacturing & Logistics',
-    pillarId: 'software-engineering',
-    serviceId: 'erp-development',
-    summary: 'Built a zero-license-fee, bespoke ERP system managing 5 warehouses, 18,000 SKUs, automated purchase orders, and multi-role accounting.',
-    problem: 'Client relied on disconnected Excel sheets and an outdated legacy software that charged ₹25,80,000/year in user seat licenses while constantly failing during audits.',
-    approach: 'Designed a cloud-native modular ERP with real-time inventory tracking, barcode scanner support, automated tax/GST filing, and role-based permissions.',
-    techUsed: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Docker', 'AWS RDS', 'Tailwind CSS'],
-    results: [
-      { metric: '₹25,80,000/yr', value: 'Saved in Licenses', context: 'Zero recurring per-seat fees with 100% owned source code' },
-      { metric: '99.9%', value: 'Inventory Accuracy', context: 'Eliminated stock discrepancies across all 5 warehouses' },
-      { metric: '40 hrs', value: 'Saved Per Week', context: 'In manual data entry and invoice reconciliation' }
-    ],
-    testimonial: {
-      quote: 'Pardeep and the NeuralNexus engineering team built an ERP that fits our exact manufacturing workflow. We gained complete control over our data.',
-      author: 'Rajesh Mittal',
-      role: 'Managing Director',
-      company: 'Apex Industrial Components'
-    }
-  },
-  {
-    id: 'multimodal-ai-research',
-    slug: 'multimodal-ai-research',
-    title: 'Reproducing & Extending Multi-Modal Vision-Language Benchmarks',
-    client: 'Cognitive Computing R&D Lab',
-    clientIndustry: 'Academic & Corporate R&D',
-    pillarId: 'research-services',
-    serviceId: 'research-technical-implementation',
-    summary: 'Successfully reproduced cutting-edge vision-language model research from arXiv, implemented custom loss formulation, and delivered publication-ready LaTeX documentation.',
-    problem: 'The research lab needed to validate a complex multi-modal attention paper with zero official code released by the original authors within a strict 6-week conference deadline.',
-    approach: 'Deconstructed mathematical equations into clean PyTorch architectures, built token alignment pipelines, benchmarked on ImageNet/COCO, and prepared camera-ready IEEE paper formatting.',
-    techUsed: ['PyTorch', 'CUDA', 'Python', 'LaTeX', 'Weights & Biases', 'Hugging Face', 'Docker'],
-    results: [
-      { metric: '99.2%', value: 'Metric Parity', context: 'Replicated original author reported Top-1 accuracy within 0.1% margin' },
-      { metric: '6 Weeks', value: 'Turnaround', context: 'From raw arXiv equations to fully trained checkpoints and runnable code' },
-      { metric: 'Accepted', value: 'Conference Paper', context: 'Paper accepted with high reviewer marks on reproducibility' }
-    ],
-    testimonial: {
-      quote: 'Piyush and Tannu demonstrated rare technical depth. They turned theoretical formulas into elegant, reproducible PyTorch code and polished LaTeX documentation.',
-      author: 'Dr. S. K. Nair',
-      role: 'Principal Research Scientist',
-      company: 'Cognitive Computing Lab'
-    }
-  },
-  {
-    id: 'b2b-saas-growth',
-    slug: 'b2b-saas-growth',
-    title: 'Organic Search Engine Dominance & Inbound Pipeline',
-    client: 'CloudFlow DevOps',
-    clientIndustry: 'B2B Software',
-    pillarId: 'growth-marketing',
-    serviceId: 'seo',
-    summary: 'Restructured technical architecture, executed keyword cluster mapping, and propelled organic Google traffic by 340%.',
-    problem: 'SaaS startup had an innovative product but virtually zero organic search presence, burning heavy VC capital on expensive ₹1,548 CPC Google Ads.',
-    approach: 'Executed technical SEO remediation, built 25 long-tail programmatic landing pages, optimized Core Web Vitals to 95+, and built authoritative developer backlinks.',
-    techUsed: ['Technical SEO', 'Schema Markup', 'Ahrefs', 'Next.js', 'Google Search Console', 'Content Clusters'],
-    results: [
-      { metric: '+340%', value: 'Organic Clicks', context: 'Growth in monthly organic search visits within 5 months' },
-      { metric: '#1 Rank', value: 'For 18 Target Keywords', context: 'High-commercial intent developer tooling search terms' },
-      { metric: '62%', value: 'CAC Reduction', context: 'Decreased blended cost of customer acquisition significantly' }
-    ],
-    testimonial: {
-      quote: 'Pintu took our search presence from non-existent to outranking multi-million dollar venture-backed competitors for our core keywords.',
-      author: 'Vikram Joshi',
-      role: 'Co-Founder & CEO',
-      company: 'CloudFlow DevOps'
-    }
-  },
-  {
-    id: 'telehealth-platform',
-    slug: 'telehealth-platform',
-    title: 'HIPAA-Compliant Telehealth Web & Mobile Consultation Platform',
-    client: 'VitalCare Health',
-    clientIndustry: 'Healthcare & Telemedicine',
-    pillarId: 'software-engineering',
-    serviceId: 'web-mobile-app-development',
-    summary: 'Engineered a real-time video consultation platform with digital prescriptions, calendar booking, and secure medical record storage.',
-    problem: 'Clinic network required a reliable, ultra-secure telemedicine solution enabling patients to consult verified doctors with minimal friction.',
-    approach: 'Built a responsive React web app and Flutter mobile application featuring WebRTC encrypted video, automated appointment reminders, and digital prescription generation.',
-    techUsed: ['React', 'Flutter', 'WebRTC', 'Node.js', 'PostgreSQL', 'AWS KMS', 'Tailwind CSS'],
-    results: [
-      { metric: '50k+', value: 'Consultations', context: 'Conducted successfully with zero downtime' },
-      { metric: '4.9/5', value: 'Patient Rating', context: 'Average user satisfaction across app stores' },
-      { metric: '100%', value: 'Compliance', context: 'Adherence to healthcare data encryption and privacy laws' }
-    ]
-  },
-  {
-    id: 'fintech-design-system',
-    slug: 'fintech-design-system',
-    title: 'Design System & UX Overhaul for High-Frequency Trading App',
-    client: 'QuantMatrix Capital',
-    clientIndustry: 'Fintech & Investment',
-    pillarId: 'design-creative',
-    serviceId: 'ui-ux-design',
-    summary: 'Created a comprehensive Figma design system and high-density dashboard UX for institutional traders.',
-    problem: 'Traders struggled with cognitive overload due to fragmented UI components, slow rendering tables, and poor contrast ratios.',
-    approach: 'Audited user journeys, implemented WCAG AAA high-contrast dark theme, atomic design tokens, and optimized tabular micro-interactions.',
-    techUsed: ['Figma', 'Design Systems', 'Micro-Interactions', 'Auto-Layout', 'Tailwind Tokens'],
-    results: [
-      { metric: '-42%', value: 'Execution Errors', context: 'Reduction in erroneous trade inputs by traders' },
-      { metric: '3x', value: 'Dev Speed', context: 'Faster frontend implementation using unified design tokens' },
-      { metric: '100%', value: 'Dark Mode Contrast', context: 'Full compliance with high-stress trading ergonomics' }
-    ]
-  }
-];
+
 
 export const BLOG_POSTS: BlogPost[] = [
   {

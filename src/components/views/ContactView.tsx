@@ -17,11 +17,11 @@ export function ContactView({ onNavigate, initialService, initialNotes }: Contac
 
 
   return (
-    <div className="bg-[#F8FAFC] min-h-screen pb-20">
+    <div className="bg-[#F8FAFC] min-h-screen pb-8">
       <Breadcrumbs items={breadcrumbs} onNavigate={onNavigate} />
 
       {/* Header */}
-      <section className="bg-[#0B1F3A] text-white py-16 lg:py-20 border-b border-slate-800">
+      <section className="bg-[#0B1F3A] text-white py-8 lg:py-8 border-b border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <span className="text-xs font-semibold text-[#0FA3B1] tracking-wider uppercase">

@@ -166,7 +166,7 @@ export function ExpertTeamSection({ onSelectMember, onViewAllTeam }: ExpertTeamS
   );
 
   return (
-    <section className="py-20 bg-gradient-to-b from-slate-50 via-white to-slate-50 border-t border-slate-200/80 overflow-hidden relative select-none">
+    <section className="py-8 bg-gradient-to-b from-slate-50 via-white to-slate-50 border-t border-slate-200/80 overflow-hidden relative select-none">
       {/* Background architectural glow & subtle grid pattern */}
       <div className="absolute inset-0 pointer-events-none opacity-40">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-[#0FA3B1]/5 rounded-full blur-3xl" />
@@ -195,7 +195,7 @@ export function ExpertTeamSection({ onSelectMember, onViewAllTeam }: ExpertTeamS
         {/* VIEW MODE 1: ROUND AND ROUND REVOLVING 3D STAGE CAROUSEL       */}
         {/* ============================================================== */}
         {viewMode === 'revolving' && (
-          <div className="relative pt-4 pb-12 sm:pb-16">
+          <div className="relative pt-4 pb-12 sm:pb-8">
             
 
             {/* 3D Circular Revolving Stage Container */}
@@ -320,28 +320,7 @@ export function ExpertTeamSection({ onSelectMember, onViewAllTeam }: ExpertTeamS
                         <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
                       </button>
 
-                      <div className="flex items-center gap-2 text-slate-400">
-                        <a
-                          href={member.linkedin}
-                          target="_blank"
-                          rel="noreferrer"
-                          onClick={(e) => e.stopPropagation()}
-                          className="p-1 rounded hover:text-[#0FA3B1] hover:bg-slate-50 transition-colors"
-                          aria-label={`${member.name} LinkedIn`}
-                        >
-                          <Linkedin className="w-3.5 h-3.5" />
-                        </a>
-                        <a
-                          href={member.github}
-                          target="_blank"
-                          rel="noreferrer"
-                          onClick={(e) => e.stopPropagation()}
-                          className="p-1 rounded hover:text-slate-900 hover:bg-slate-50 transition-colors"
-                          aria-label={`${member.name} GitHub`}
-                        >
-                          <Github className="w-3.5 h-3.5" />
-                        </a>
-                      </div>
+
                     </div>
                   </div>
                 );
@@ -439,26 +418,7 @@ export function ExpertTeamSection({ onSelectMember, onViewAllTeam }: ExpertTeamS
                     <ArrowRight className="w-3.5 h-3.5" />
                   </button>
 
-                  <div className="flex items-center gap-2 text-slate-400">
-                    <a
-                      href={member.linkedin}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="hover:text-[#0FA3B1] transition-colors"
-                      aria-label={`${member.name} LinkedIn`}
-                    >
-                      <Linkedin className="w-3.5 h-3.5" />
-                    </a>
-                    <a
-                      href={member.github}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="hover:text-slate-900 transition-colors"
-                      aria-label={`${member.name} GitHub`}
-                    >
-                      <Github className="w-3.5 h-3.5" />
-                    </a>
-                  </div>
+
                 </div>
               </div>
             ))}

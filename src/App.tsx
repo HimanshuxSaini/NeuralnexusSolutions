@@ -26,18 +26,16 @@ import { ServicesHubView } from './components/views/ServicesHubView';
 import { AboutView } from './components/views/AboutView';
 import { TeamView } from './components/views/TeamView';
 import { TeamMemberModal } from './components/views/TeamMemberModal';
-import { CaseStudiesView } from './components/views/CaseStudiesView';
 import { ProcessView } from './components/views/ProcessView';
 import { BlogView } from './components/views/BlogView';
 import { ContactView } from './components/views/ContactView';
 
-import { SERVICES, TEAM_MEMBERS, CASE_STUDIES, TeamMember, CaseStudy, BlogPost } from './data/siteData';
+import { SERVICES, TEAM_MEMBERS, TeamMember, BlogPost } from './data/siteData';
 
 export default function App() {
   const [currentView, setCurrentView] = useState<string>('home');
   const [currentServiceSlug, setCurrentServiceSlug] = useState<string>(SERVICES[0].slug);
   const [selectedTeamMember, setSelectedTeamMember] = useState<TeamMember | null>(null);
-  const [initialCaseStudyId, setInitialCaseStudyId] = useState<string | null>(null);
   const [initialBlogPost, setInitialBlogPost] = useState<BlogPost | null>(null);
   const [quoteInitialService, setQuoteInitialService] = useState<string | undefined>(undefined);
   const [quoteInitialNotes, setQuoteInitialNotes] = useState<string | undefined>(undefined);
@@ -83,7 +81,7 @@ export default function App() {
             {/* Section 01: Hero */}
             <HeroSection
               onStartProject={() => setCurrentView('contact')}
-              onExploreWork={() => setCurrentView('cases')}
+              onExploreWork={() => setCurrentView('services')}
             />
 
             {/* Section 02: Tech stack strip */}
@@ -137,10 +135,6 @@ export default function App() {
             service={currentServiceObj}
             onNavigate={handleNavigate}
             onRequestQuote={handleRequestQuoteFromService}
-            onOpenCaseStudy={(caseId) => {
-              setInitialCaseStudyId(caseId);
-              setCurrentView('cases');
-            }}
           />
         )}
 
@@ -164,10 +158,6 @@ export default function App() {
         {currentView === 'team' && (
           <TeamView
             onNavigate={handleNavigate}
-            onOpenCaseStudy={(caseId) => {
-              setInitialCaseStudyId(caseId);
-              setCurrentView('cases');
-            }}
             onBookCallWithMember={(memberName) => {
               setQuoteInitialNotes(`Requested direct discovery consultation with ${memberName}`);
               setCurrentView('contact');
@@ -175,17 +165,7 @@ export default function App() {
           />
         )}
 
-        {/* Case Studies / Portfolio */}
-        {currentView === 'cases' && (
-          <CaseStudiesView
-            onNavigate={handleNavigate}
-            onRequestSimilarProject={(title) => {
-              setQuoteInitialNotes(`Interested in architecture similar to case study: ${title}`);
-              setCurrentView('contact');
-            }}
-            initialSelectedCaseId={initialCaseStudyId}
-          />
-        )}
+
 
         {/* Process Page */}
         {currentView === 'process' && (
@@ -244,11 +224,6 @@ export default function App() {
         <TeamMemberModal
           member={selectedTeamMember}
           onClose={() => setSelectedTeamMember(null)}
-          onOpenCaseStudy={(caseId) => {
-            setSelectedTeamMember(null);
-            setInitialCaseStudyId(caseId);
-            setCurrentView('cases');
-          }}
           onBookCallWithMember={(memberName) => {
             setSelectedTeamMember(null);
             setQuoteInitialNotes(`Requested direct discovery consultation with ${memberName}`);

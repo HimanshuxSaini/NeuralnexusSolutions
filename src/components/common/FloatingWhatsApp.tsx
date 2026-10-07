@@ -6,7 +6,7 @@ export function FloatingWhatsApp() {
   const [selectedIntent, setSelectedIntent] = useState('Need a project quotation');
   const [customNote, setCustomNote] = useState('');
 
-  const phone = '919999999999'; // Studio WhatsApp line
+  const phone = '918299032271'; // Studio WhatsApp line
 
   const intents = [
     'Need a project quotation',

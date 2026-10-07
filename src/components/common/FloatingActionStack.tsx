@@ -87,7 +87,7 @@ export function FloatingActionStack({ onNavigate }: FloatingActionStackProps) {
   ]);
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
-  const phone = '919999999999';
+  const phone = '918299032271';
 
   // Exact cadence requested: Visible for 1.5s -> 2.0s gap hidden -> Next suggestion visible for 1.5s
   useEffect(() => {

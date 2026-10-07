@@ -64,7 +64,7 @@ interface HeroSectionProps {
 
 export function HeroSection({ onStartProject, onExploreWork }: HeroSectionProps) {
   return (
-    <section className="relative overflow-hidden bg-white text-slate-900 pt-6 sm:pt-8 pb-12 sm:pb-16 lg:pt-14 lg:pb-24 border-b border-slate-100">
+    <section className="relative overflow-hidden bg-white text-slate-900 pt-4 sm:pt-6 pb-6 sm:pb-8 lg:pt-8 lg:pb-12 border-b border-slate-100">
       {/* Luminous soft cyan ambient gradient glow in the background */}
       <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-[650px] h-[650px] bg-gradient-to-tr from-[#00D2D3]/12 via-[#0FA3B1]/10 to-transparent rounded-full blur-3xl pointer-events-none" />
       <div className="absolute top-10 right-10 w-[400px] h-[400px] bg-cyan-100/40 rounded-full blur-3xl pointer-events-none" />

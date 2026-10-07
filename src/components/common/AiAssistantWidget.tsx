@@ -189,7 +189,7 @@ export function AiAssistantWidget({ onNavigate }: { onNavigate?: (target: string
       if (onNavigate) onNavigate('cases');
       setIsOpen(false);
     } else if (action === 'whatsapp' || action === 'whatsapp-direct') {
-      window.open('https://wa.me/919999999999?text=Hello%20NeuralNexusSolutions,%20I%20am%20interested%20in%20a%20consultation', '_blank');
+      window.open('https://wa.me/918299032271?text=Hello%20NeuralNexusSolutions,%20I%20am%20interested%20in%20a%20consultation', '_blank');
     }
   };
 

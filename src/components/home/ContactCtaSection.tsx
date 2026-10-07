@@ -50,13 +50,13 @@ export function ContactCtaSection({ initialService, initialNotes }: ContactCtaSe
 
   const handleWhatsAppDirect = () => {
     const text = encodeURIComponent(
-      `Hi NeuralNexusSolutions! My name is ${formData.name || 'a visitor'}. I am interested in ${formData.service} with budget ${formData.budget}. Can we schedule a discovery call?`
+      `Hi NeuralNexusSolutions, this is ${formData.name || 'a visitor'}. I am reaching out to discuss a potential project regarding ${formData.service}. Are you available for a discovery call?`
     );
-    window.open(`https://wa.me/919999999999?text=${text}`, '_blank');
+    window.open(`https://wa.me/918299032271?text=${text}`, '_blank');
   };
 
   return (
-    <section className="py-20 lg:py-24 bg-white" id="contact-form">
+    <section className="py-8 lg:py-8 bg-white" id="contact-form">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           {/* Left Column: Context & Direct Contact Channels */}
@@ -173,7 +173,7 @@ export function ContactCtaSection({ initialService, initialNotes }: ContactCtaSe
                     </label>
                     <input
                       type="tel"
-                      placeholder="+91 99999 99999"
+                      placeholder="+91 82990 32271"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       className="w-full px-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-[#0FA3B1] text-slate-900 placeholder:text-slate-400"

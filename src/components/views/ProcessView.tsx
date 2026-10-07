@@ -14,28 +14,41 @@ export function ProcessView({ onNavigate, onBookDiscovery }: ProcessViewProps) {
   ];
 
   return (
-    <div className="bg-[#F8FAFC] min-h-screen pb-20">
+    <div className="bg-[#F8FAFC] min-h-screen pb-8">
       <Breadcrumbs items={breadcrumbs} onNavigate={onNavigate} />
 
       {/* Header */}
-      <section className="bg-[#0B1F3A] text-white py-16 lg:py-20 border-b border-slate-800">
+      <section className="bg-[#0B1F3A] text-white py-8 lg:py-8 border-b border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <span className="text-xs font-semibold text-[#0FA3B1] tracking-wider uppercase">
-              Proven Delivery Framework
-            </span>
-            <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight font-['Sora'] leading-tight mt-2">
-              Our 6-Phase Engineering Lifecycle
-            </h1>
-            <p className="mt-4 text-base text-slate-300 leading-relaxed">
-              How we take projects from raw problem statement to battle-tested production deployment with zero scope creep and clear weekly milestones.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div className="max-w-3xl">
+              <span className="text-xs font-semibold text-[#0FA3B1] tracking-wider uppercase">
+                Proven Delivery Framework
+              </span>
+              <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight font-['Sora'] leading-tight mt-2">
+                Our 6-Phase Engineering Lifecycle
+              </h1>
+              <p className="mt-4 text-base text-slate-300 leading-relaxed">
+                How we take projects from raw problem statement to battle-tested production deployment with zero scope creep and clear weekly milestones.
+              </p>
+            </div>
+            
+            <div className="w-full rounded-2xl overflow-hidden shadow-2xl border border-white/10 hidden lg:block aspect-video bg-slate-900/50">
+              <video 
+                src="/ideavideo.mp4" 
+                className="w-full h-full object-cover"
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+              />
+            </div>
           </div>
         </div>
       </section>
 
       {/* Process Deep Dive */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="space-y-12">
           {PROCESS_STEPS.map((step, idx) => (
             <div

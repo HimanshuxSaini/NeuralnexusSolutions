@@ -10,7 +10,7 @@ export function TestimonialsSection() {
   }));
 
   return (
-    <section className="py-20 bg-slate-50 border-t border-slate-200/80">
+    <section className="py-8 bg-slate-50 border-t border-slate-200/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12">
 

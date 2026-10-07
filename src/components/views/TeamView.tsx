@@ -6,11 +6,10 @@ import { TeamMemberModal } from './TeamMemberModal';
 
 interface TeamViewProps {
   onNavigate: (view: string, param?: string) => void;
-  onOpenCaseStudy: (caseId: string) => void;
   onBookCallWithMember: (memberName: string) => void;
 }
 
-export function TeamView({ onNavigate, onOpenCaseStudy, onBookCallWithMember }: TeamViewProps) {
+export function TeamView({ onNavigate, onBookCallWithMember }: TeamViewProps) {
   const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);
 
   const breadcrumbs = [
@@ -18,11 +17,11 @@ export function TeamView({ onNavigate, onOpenCaseStudy, onBookCallWithMember }: 
   ];
 
   return (
-    <div className="bg-[#F8FAFC] min-h-screen pb-20">
+    <div className="bg-[#F8FAFC] min-h-screen pb-8">
       <Breadcrumbs items={breadcrumbs} onNavigate={onNavigate} />
 
       {/* Hero */}
-      <section className="bg-[#0B1F3A] text-white py-16 lg:py-20 border-b border-slate-800">
+      <section className="bg-[#0B1F3A] text-white py-8 lg:py-8 border-b border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <span className="text-xs font-semibold text-[#0FA3B1] tracking-wider uppercase">
@@ -39,7 +38,7 @@ export function TeamView({ onNavigate, onOpenCaseStudy, onBookCallWithMember }: 
       </section>
 
       {/* Team Grid */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {TEAM_MEMBERS.map((member) => (
             <div
@@ -94,24 +93,7 @@ export function TeamView({ onNavigate, onOpenCaseStudy, onBookCallWithMember }: 
                   <ArrowRight className="w-3.5 h-3.5" />
                 </button>
 
-                <div className="flex items-center gap-3 text-slate-400">
-                  <a
-                    href={member.linkedin}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="hover:text-[#0FA3B1] transition-colors"
-                  >
-                    <Linkedin className="w-4 h-4" />
-                  </a>
-                  <a
-                    href={member.github}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="hover:text-slate-900 transition-colors"
-                  >
-                    <Github className="w-4 h-4" />
-                  </a>
-                </div>
+
               </div>
             </div>
           ))}
@@ -122,7 +104,6 @@ export function TeamView({ onNavigate, onOpenCaseStudy, onBookCallWithMember }: 
       <TeamMemberModal
         member={selectedMember}
         onClose={() => setSelectedMember(null)}
-        onOpenCaseStudy={onOpenCaseStudy}
         onBookCallWithMember={onBookCallWithMember}
       />
     </div>
