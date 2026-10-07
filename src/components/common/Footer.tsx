@@ -5,7 +5,7 @@ import { Mail, Phone, MapPin, Send, CheckCircle2, Github, Linkedin, Twitter, Arr
 
 interface FooterProps {
   onNavigate: (view: string, param?: string) => void;
-  onOpenLegal: (type: 'privacy' | 'terms' | 'sitemap') => void;
+  onOpenLegal: (type: 'privacy' | 'terms' | 'sitemap' | 'refund' | 'cookie') => void;
 }
 
 export function Footer({ onNavigate, onOpenLegal }: FooterProps) {
@@ -29,6 +29,11 @@ export function Footer({ onNavigate, onOpenLegal }: FooterProps) {
               className="cursor-pointer inline-block"
             >
               <NeuralNexusLogo variant="full" theme="dark" size="md" />
+            </div>
+
+            <div className="pt-2">
+              <h3 className="text-white font-bold text-base tracking-wide font-['Sora']">Neural Nexus Solutions</h3>
+              <p className="text-[#0FA3B1] text-[11px] font-medium uppercase tracking-wider mt-1">A technology solutions brand by Webunitech Solutions LLP</p>
             </div>
 
             <p className="text-sm text-slate-300 max-w-md leading-relaxed">
@@ -169,20 +174,26 @@ export function Footer({ onNavigate, onOpenLegal }: FooterProps) {
         </div>
 
         {/* Bottom Bar: Copyright & Legal */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
-          <div>
-            © {new Date().getFullYear()} NeuralNexusSolutions. All rights reserved.
+        <div className="pt-8 flex flex-col lg:flex-row items-center justify-between gap-6 text-xs text-slate-400">
+          <div className="text-center lg:text-left">
+            © {new Date().getFullYear()} Neuralnexus Solutions (powered by Webunitech solutions llp). All rights reserved.
           </div>
 
-          <div className="flex items-center space-x-6">
+          <div className="flex flex-wrap justify-center lg:justify-end items-center gap-x-6 gap-y-3">
+            <button onClick={() => onNavigate('about')} className="hover:text-white transition-colors cursor-pointer">About</button>
+            <button onClick={() => onNavigate('services')} className="hover:text-white transition-colors cursor-pointer">Services</button>
+            <button onClick={() => onNavigate('contact')} className="hover:text-white transition-colors cursor-pointer">Contact</button>
             <button onClick={() => onOpenLegal('privacy')} className="hover:text-white transition-colors cursor-pointer">
               Privacy Policy
             </button>
             <button onClick={() => onOpenLegal('terms')} className="hover:text-white transition-colors cursor-pointer">
-              Terms of Service
+              Terms & Conditions
             </button>
-            <button onClick={() => onOpenLegal('sitemap')} className="hover:text-white transition-colors cursor-pointer">
-              HTML Sitemap
+            <button onClick={() => onOpenLegal('refund')} className="hover:text-white transition-colors cursor-pointer">
+              Refund/Cancellation Policy
+            </button>
+            <button onClick={() => onOpenLegal('cookie')} className="hover:text-white transition-colors cursor-pointer">
+              Cookie Policy
             </button>
           </div>
         </div>

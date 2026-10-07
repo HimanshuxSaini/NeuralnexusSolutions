@@ -18,7 +18,7 @@ export function FloatingWhatsApp() {
 
   const handleLaunchWhatsApp = () => {
     const text = encodeURIComponent(
-      `Hello NeuralNexusSolutions! I would like to discuss: ${selectedIntent}.${customNote ? ` Note: ${customNote}` : ''}`
+      `Hello NeuralNexus Solutions! I would like to discuss: ${selectedIntent}.${customNote ? ` Note: ${customNote}` : ''}`
     );
     window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
     setIsOpen(false);

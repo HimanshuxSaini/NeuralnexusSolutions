@@ -41,7 +41,7 @@ export default function App() {
   const [quoteInitialNotes, setQuoteInitialNotes] = useState<string | undefined>(undefined);
 
   // Legal Modal
-  const [legalModalType, setLegalModalType] = useState<'privacy' | 'terms' | 'sitemap' | null>(null);
+  const [legalModalType, setLegalModalType] = useState<'privacy' | 'terms' | 'sitemap' | 'refund' | 'cookie' | null>(null);
 
   // Scroll to top when view changes
   useEffect(() => {

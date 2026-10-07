@@ -183,12 +183,13 @@ export function HeroSection({ onStartProject, onExploreWork }: HeroSectionProps)
               {/* Video Project 8 */}
               <div className="relative w-full h-full flex items-center justify-center rounded-full overflow-hidden shadow-[0_0_80px_rgba(15,163,177,0.2)]">
                 <video
-                  src="/Video%20Project%208.mp4"
+                  src="/Video_Project_8_opt.mp4"
                   className="w-full h-full object-cover relative z-10 rounded-full scale-[1.02]"
                   autoPlay
                   loop
                   muted
                   playsInline
+                  preload="auto"
                 />
                 {/* Edge Blending Overlay to mix boundaries with bg */}
                 <div className="absolute inset-0 z-20 pointer-events-none rounded-full bg-[radial-gradient(circle_at_center,transparent_50%,#F8FAFC_85%,#F8FAFC_100%)] shadow-[inset_0_0_40px_#F8FAFC]" />

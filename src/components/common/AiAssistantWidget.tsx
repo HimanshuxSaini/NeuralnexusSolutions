@@ -90,7 +90,7 @@ export function AiAssistantWidget({ onNavigate }: { onNavigate?: (target: string
 
     if (q.includes('team') || q.includes('expert') || q.includes('who are you') || q.includes('piyush') || q.includes('himanshu')) {
       return {
-        text: "NeuralNexusSolutions is powered by 5 verified senior experts: Piyush Pandey (AI/ML & Research), Pardeep Kumar Singh (Software & Cloud), Himanshu Saini (Full-Stack & WhatsApp Automation), Tannu Antil (Data Analytics & Research Docs), and Pintu Singh (Growth Marketing & SEO).",
+        text: "NeuralNexus Solutions is powered by 5 verified senior experts: Piyush Pandey (AI/ML & Research), Pardeep Kumar Singh (Software & Cloud), Himanshu Saini (Full-Stack & WhatsApp Automation), Tannu Antil (Data Analytics & Research Docs), and Pintu Singh (Growth Marketing & SEO).",
         quickActions: [
           { label: 'View All Team Profiles', action: 'team' },
           { label: 'Book Discovery Call', action: 'contact' }
@@ -189,7 +189,7 @@ export function AiAssistantWidget({ onNavigate }: { onNavigate?: (target: string
       if (onNavigate) onNavigate('cases');
       setIsOpen(false);
     } else if (action === 'whatsapp' || action === 'whatsapp-direct') {
-      window.open('https://wa.me/918299032271?text=Hello%20NeuralNexusSolutions,%20I%20am%20interested%20in%20a%20consultation', '_blank');
+      window.open('https://wa.me/918299032271?text=Hello%20NeuralNexus%20Solutions,%20I%20am%20interested%20in%20a%20consultation', '_blank');
     }
   };
 

@@ -35,12 +35,13 @@ export function ProcessView({ onNavigate, onBookDiscovery }: ProcessViewProps) {
             
             <div className="w-full rounded-2xl overflow-hidden shadow-2xl border border-white/10 hidden lg:block aspect-video bg-slate-900/50">
               <video 
-                src="/ideavideo.mp4" 
+                src="/ideavideo_opt.mp4" 
                 className="w-full h-full object-cover"
                 autoPlay 
                 loop 
                 muted 
                 playsInline
+                preload="auto"
               />
             </div>
           </div>

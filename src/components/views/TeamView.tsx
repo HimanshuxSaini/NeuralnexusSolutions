@@ -28,7 +28,7 @@ export function TeamView({ onNavigate, onBookCallWithMember }: TeamViewProps) {
               Principal Leadership
             </span>
             <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight font-['Sora'] leading-tight mt-2">
-              The 5 Experts Behind NeuralNexusSolutions
+              The 5 Experts Behind NeuralNexus Solutions
             </h1>
             <p className="mt-4 text-base text-slate-300 leading-relaxed">
               We do not hide behind anonymous offshore rosters. You work directly with experienced software engineers, AI architects, researchers, and growth strategists.

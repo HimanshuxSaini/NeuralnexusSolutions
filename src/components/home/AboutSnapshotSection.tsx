@@ -22,7 +22,7 @@ export function AboutSnapshotSection({ onReadFullStory }: { onReadFullStory: () 
 
             <div className="space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed">
               <p>
-                NeuralNexusSolutions was formed by five specialists who grew frustrated with traditional agencies: heavy account management markup, outsourced offshore junior contractors, and inflated marketing claims without reproducible technical rigor.
+                NeuralNexus Solutions was formed by five specialists who grew frustrated with traditional agencies: heavy account management markup, outsourced offshore junior contractors, and inflated marketing claims without reproducible technical rigor.
               </p>
               <p>
                 We operate as a startup-style freelance studio. When you work with us, you collaborate directly with the five senior engineers and strategists building your software, deploying your machine learning pipelines, reproducing your academic research, and scaling your search rankings.

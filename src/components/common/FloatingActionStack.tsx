@@ -16,9 +16,9 @@ interface SuggestionPair {
 const SUGGESTION_PAIRS: SuggestionPair[] = [
   {
     whatsappText: 'CHAT WITH US • GET A QUOTE • ',
-    whatsappMessage: 'Hi NeuralNexusSolutions! I have an inquiry about my project and need technical assistance.',
+    whatsappMessage: 'Hi NeuralNexus Solutions! I have an inquiry about my project and need technical assistance.',
     aiText: 'ASK AI ANYTHING • INSTANT HELP • ',
-    aiPrompt: 'Hello! What can you tell me about NeuralNexusSolutions?'
+    aiPrompt: 'Hello! What can you tell me about NeuralNexus Solutions?'
   },
   {
     whatsappText: 'APP DEV • SEO • BUSINESS GROWTH • ',
@@ -129,7 +129,7 @@ export function FloatingActionStack({ onNavigate }: FloatingActionStackProps) {
 
   // WhatsApp handlers
   const handleLaunchWhatsApp = (prefilledText?: string) => {
-    const textToUse = prefilledText || `Hello NeuralNexusSolutions! I would like to discuss: ${whatsAppIntent}.${whatsAppCustomNote ? ` Note: ${whatsAppCustomNote}` : ''}`;
+    const textToUse = prefilledText || `Hello NeuralNexus Solutions! I would like to discuss: ${whatsAppIntent}.${whatsAppCustomNote ? ` Note: ${whatsAppCustomNote}` : ''}`;
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(textToUse)}`, '_blank');
     setIsWhatsAppOpen(false);
   };
@@ -182,7 +182,7 @@ export function FloatingActionStack({ onNavigate }: FloatingActionStackProps) {
 
     if (q.includes('team') || q.includes('expert') || q.includes('piyush') || q.includes('himanshu') || q.includes('pardeep')) {
       return {
-        text: "NeuralNexusSolutions is powered by 5 verified senior experts: Piyush Pandey (AI/ML & Research), Pardeep Kumar Singh (Software & Cloud), Himanshu Saini (Full-Stack & WhatsApp Automation), Tannu Antil (Data Analytics & Research Docs), and Pintu Singh (Growth Marketing & SEO).",
+        text: "NeuralNexus Solutions is powered by 5 verified senior experts: Piyush Pandey (AI/ML & Research), Pardeep Kumar Singh (Software & Cloud), Himanshu Saini (Full-Stack & WhatsApp Automation), Tannu Antil (Data Analytics & Research Docs), and Pintu Singh (Growth Marketing & SEO).",
         quickActions: [
           { label: 'View All Team Profiles', action: 'team' },
           { label: 'Book Discovery Call', action: 'contact' }
@@ -276,7 +276,7 @@ export function FloatingActionStack({ onNavigate }: FloatingActionStackProps) {
       if (onNavigate) onNavigate('cases');
       setIsAiChatOpen(false);
     } else if (action === 'whatsapp' || action === 'whatsapp-direct') {
-      handleLaunchWhatsApp('Hello NeuralNexusSolutions, I would like to schedule a consultation.');
+      handleLaunchWhatsApp('Hello NeuralNexus Solutions, I would like to schedule a consultation.');
     }
   };
 

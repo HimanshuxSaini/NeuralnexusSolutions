@@ -22,11 +22,12 @@ export function ProcessSection({ onViewFullProcess }: { onViewFullProcess: () =>
           {/* Left Side: Sticky Video */}
           <div className="w-full lg:w-1/2 lg:sticky lg:top-32 rounded-3xl overflow-hidden shadow-2xl border border-slate-200/80 bg-white z-10">
             <video 
-              src="/ideavideo.mp4" 
+              src="/ideavideo_opt.mp4" 
               autoPlay 
               loop 
               muted 
               playsInline 
+              preload="auto"
               className="w-full h-auto object-cover aspect-video"
             />
           </div>

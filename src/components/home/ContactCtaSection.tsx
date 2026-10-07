@@ -50,7 +50,7 @@ export function ContactCtaSection({ initialService, initialNotes }: ContactCtaSe
 
   const handleWhatsAppDirect = () => {
     const text = encodeURIComponent(
-      `Hi NeuralNexusSolutions, this is ${formData.name || 'a visitor'}. I am reaching out to discuss a potential project regarding ${formData.service}. Are you available for a discovery call?`
+      `Hi NeuralNexus Solutions, this is ${formData.name || 'a visitor'}. I am reaching out to discuss a potential project regarding ${formData.service}. Are you available for a discovery call?`
     );
     window.open(`https://wa.me/918299032271?text=${text}`, '_blank');
   };

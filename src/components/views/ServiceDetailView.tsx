@@ -27,7 +27,7 @@ export function ServiceDetailView({
 
   const handleWhatsAppChat = () => {
     const text = encodeURIComponent(
-      `Hi NeuralNexusSolutions! I am interested in your ${service.title} service. Can we discuss scope and availability?`
+      `Hi NeuralNexus Solutions! I am interested in your ${service.title} service. Can we discuss scope and availability?`
     );
     window.open(`https://wa.me/918299032271?text=${text}`, '_blank');
   };
@@ -174,12 +174,12 @@ export function ServiceDetailView({
       {/* Block 6: Engagement Models */}
       <section className="py-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-10 text-center max-w-2xl mx-auto">
-          <span className="text-xs font-semibold text-[#0FA3B1] uppercase tracking-wider">Pricing Structure</span>
+          <span className="text-xs font-semibold text-[#0FA3B1] uppercase tracking-wider">Engagement Models</span>
           <h2 className="text-2xl sm:text-3xl font-bold text-[#0B1F3A] font-['Sora'] mt-1">
             Transparent engagement models
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 mt-1">
-            Predictable costs with zero hidden agency markups or surprises.
+            Flexible engagement models tailored to your project scope and timelines.
           </p>
         </div>
 
@@ -195,10 +195,7 @@ export function ServiceDetailView({
                   <span className="text-[11px] font-mono text-slate-500">{model.typicalDuration}</span>
                 </div>
 
-                <div className="text-2xl font-extrabold text-[#0B1F3A] font-['Sora'] mt-4">
-                  {model.pricingEstimate}
-                </div>
-                <p className="text-xs text-slate-600 mt-2 leading-relaxed">
+                <p className="text-xs text-slate-600 mt-4 leading-relaxed">
                   {model.description}
                 </p>
 

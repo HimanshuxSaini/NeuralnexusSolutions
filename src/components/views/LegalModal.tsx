@@ -3,7 +3,7 @@ import { X, Shield, FileText, Map, ExternalLink } from 'lucide-react';
 import { PILLARS, SERVICES } from '../../data/siteData';
 
 interface LegalModalProps {
-  type: 'privacy' | 'terms' | 'sitemap';
+  type: 'privacy' | 'terms' | 'sitemap' | 'refund' | 'cookie';
   onClose: () => void;
   onNavigateService?: (slug: string) => void;
 }
@@ -18,10 +18,14 @@ export function LegalModal({ type, onClose, onNavigateService }: LegalModalProps
             {type === 'privacy' && <Shield className="w-5 h-5 text-[#0FA3B1]" />}
             {type === 'terms' && <FileText className="w-5 h-5 text-[#0FA3B1]" />}
             {type === 'sitemap' && <Map className="w-5 h-5 text-[#0FA3B1]" />}
-            <h3 className="font-bold text-lg">
+            {type === 'refund' && <FileText className="w-5 h-5 text-[#0FA3B1]" />}
+            {type === 'cookie' && <Shield className="w-5 h-5 text-[#0FA3B1]" />}
+            <h3 className="font-bold text-lg text-white">
               {type === 'privacy' && 'Privacy Policy & Data Security'}
               {type === 'terms' && 'Terms of Service & IP Ownership'}
               {type === 'sitemap' && 'HTML Sitemap & Canonical URLs'}
+              {type === 'refund' && 'Refund & Cancellation Policy'}
+              {type === 'cookie' && 'Cookie Policy'}
             </h3>
           </div>
           <button
@@ -39,7 +43,7 @@ export function LegalModal({ type, onClose, onNavigateService }: LegalModalProps
               <p className="text-xs text-slate-500">Last updated: March 2026 · Compliant with GDPR & IT Act standards</p>
               <h4 className="font-bold text-base text-[#0B1F3A]">1. Data We Collect</h4>
               <p>
-                NeuralNexusSolutions only collects contact details (name, email, phone number, organization) that you voluntarily submit via our quote inquiry forms, WhatsApp chat links, or newsletter subscription. We do not sell, rent, or trade your personal information.
+                NeuralNexus Solutions only collects contact details (name, email, phone number, organization) that you voluntarily submit via our quote inquiry forms, WhatsApp chat links, or newsletter subscription. We do not sell, rent, or trade your personal information.
               </p>
 
               <h4 className="font-bold text-base text-[#0B1F3A]">2. Client Confidentiality & NDAs</h4>
@@ -56,10 +60,10 @@ export function LegalModal({ type, onClose, onNavigateService }: LegalModalProps
 
           {type === 'terms' && (
             <>
-              <p className="text-xs text-slate-500">Effective: 2026 · NeuralNexusSolutions Studio</p>
+              <p className="text-xs text-slate-500">Effective: 2026 · NeuralNexus Solutions Studio</p>
               <h4 className="font-bold text-base text-[#0B1F3A]">1. 100% Intellectual Property (IP) Ownership</h4>
               <p>
-                Unlike traditional agencies that retain proprietary licenses or charge recurring per-user fees, NeuralNexusSolutions transfers 100% full intellectual property, source code, repositories, and custom design assets to the client upon milestone payment completion.
+                Unlike traditional agencies that retain proprietary licenses or charge recurring per-user fees, NeuralNexus Solutions transfers 100% full intellectual property, source code, repositories, and custom design assets to the client upon milestone payment completion.
               </p>
 
               <h4 className="font-bold text-base text-[#0B1F3A]">2. Engagement Models & Guarantees</h4>
@@ -70,6 +74,31 @@ export function LegalModal({ type, onClose, onNavigateService }: LegalModalProps
               <h4 className="font-bold text-base text-[#0B1F3A]">3. Non-Compete & Ethical Research Standards</h4>
               <p>
                 Our Research Services division adheres strictly to peer-review academic integrity standards. Code reproductions are developed with clean implementations from published papers and cited datasets.
+              </p>
+            </>
+          )}
+
+          {type === 'refund' && (
+            <>
+              <p className="text-xs text-slate-500">Effective: 2026 · Webunitech Solutions LLP</p>
+              <h4 className="font-bold text-base text-[#0B1F3A]">1. Service Cancellations</h4>
+              <p>
+                Clients may request project cancellation prior to the commencement of the development phase. Once work has commenced under an active Statement of Work (SOW), cancellation terms will be governed by the specific clauses within that SOW.
+              </p>
+
+              <h4 className="font-bold text-base text-[#0B1F3A]">2. Refund Eligibility</h4>
+              <p>
+                Refunds are considered on a case-by-case basis and only applicable for un-utilized sprint hours or undelivered milestone phases. Completed phases and approved deliverables are non-refundable.
+              </p>
+            </>
+          )}
+
+          {type === 'cookie' && (
+            <>
+              <p className="text-xs text-slate-500">Effective: 2026</p>
+              <h4 className="font-bold text-base text-[#0B1F3A]">1. Usage of Cookies</h4>
+              <p>
+                NeuralNexus Solutions uses essential cookies to ensure the basic functionality of the website and to improve your browsing experience. We do not use third-party tracking cookies for targeted advertising.
               </p>
             </>
           )}

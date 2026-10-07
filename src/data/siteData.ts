@@ -48,9 +48,6 @@ export interface TeamMember {
   bio: string;
   avatar: string;
   skills: string[];
-  linkedin: string;
-  github: string;
-  email: string;
   contributedProjects: string[];
   experienceYears: number;
 }
@@ -586,12 +583,9 @@ export const TEAM_MEMBERS: TeamMember[] = [
     name: 'Piyush Pandey',
     role: 'Lead AI/ML Architect & Research Systems',
     specialization: 'Large Language Models, Deep Learning & Paper Replication',
-    bio: 'Piyush leads the AI, Machine Learning, and Research Engineering division at NeuralNexusSolutions. He specializes in deploying production LLMs, reproducing complex arXiv research papers into clean code, and fine-tuning custom domain models.',
-    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80',
+    bio: 'Piyush leads the AI, Machine Learning, and Research Engineering division at NeuralNexus Solutions. He specializes in deploying production LLMs, reproducing complex arXiv research papers into clean code, and fine-tuning custom domain models.',
+    avatar: '/piyush.png',
     skills: ['Python', 'PyTorch', 'TensorFlow', 'LLMs & RAG', 'Computer Vision', 'FastAPI', 'Research Reproducibility', 'CUDA'],
-    linkedin: 'https://linkedin.com/in/neuralnexus',
-    github: 'https://github.com/neuralnexus',
-    email: 'piyush@neuralnexussolutions.com',
     contributedProjects: ['multimodal-ai-research', 'whatsapp-commerce-bot'],
     experienceYears: 6
   },
@@ -601,11 +595,8 @@ export const TEAM_MEMBERS: TeamMember[] = [
     role: 'Lead Software & Cloud Architect',
     specialization: 'Scalable Full-Stack Systems, ERP Architecture & DevOps',
     bio: 'Pardeep oversees full-stack software development and cloud operations. He has architected enterprise ERPs, microservices, and database systems that process millions of daily transactions with 99.99% uptime.',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80',
+    avatar: '/pardeep.png',
     skills: ['React', 'Next.js', 'Node.js', 'PostgreSQL', 'Docker', 'AWS Cloud', 'ERP Modules', 'System Security'],
-    linkedin: 'https://linkedin.com/in/neuralnexus',
-    github: 'https://github.com/neuralnexus',
-    email: 'pardeep@neuralnexussolutions.com',
     contributedProjects: ['enterprise-erp', 'telehealth-platform'],
     experienceYears: 7
   },
@@ -617,9 +608,6 @@ export const TEAM_MEMBERS: TeamMember[] = [
     bio: 'Himanshu architects high-converting conversational flows and automated messaging pipelines. He bridges backend CRM systems with WhatsApp Business APIs to drive instant lead conversions and support automation.',
     avatar: '/himanshu.jpeg',
     skills: ['WhatsApp Cloud API', 'TypeScript', 'React Native', 'Node.js', 'Webhooks', 'Lead Pipelines', 'PostgreSQL', 'Tailwind CSS'],
-    linkedin: 'https://linkedin.com/in/himanshusaini7988',
-    github: 'https://github.com/himanshuxsaini',
-    email: 'himanshu0481@gmail.com',
     contributedProjects: ['whatsapp-commerce-bot', 'telehealth-platform'],
     experienceYears: 1
   },
@@ -629,11 +617,8 @@ export const TEAM_MEMBERS: TeamMember[] = [
     role: 'Data Analytics & Research Documentation Lead',
     specialization: 'Business Intelligence, Statistical Modeling & Technical Literature',
     bio: 'Tannu spearheads data analytics, automated reporting, and academic research documentation. She specializes in turning messy enterprise data into clear Power BI/Tableau insights and writing publication-grade research papers.',
-    avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80',
+    avatar: '/tannu.png',
     skills: ['Data Analytics', 'LaTeX', 'Power BI & Tableau', 'Python', 'SQL', 'Academic Writing', 'ETL Pipelines', 'Pandas'],
-    linkedin: 'https://linkedin.com/in/neuralnexus',
-    github: 'https://github.com/neuralnexus',
-    email: 'tannu@neuralnexussolutions.com',
     contributedProjects: ['multimodal-ai-research', 'enterprise-erp'],
     experienceYears: 5
   },
@@ -643,11 +628,8 @@ export const TEAM_MEMBERS: TeamMember[] = [
     role: 'Growth Marketing & SEO Strategist / UI/UX',
     specialization: 'Technical SEO, Conversion Optimization & Brand Growth',
     bio: 'Pintu drives growth strategy, organic search dominance, and digital design. He combines technical SEO with conversion rate optimization and crisp UI design to generate consistent inbound revenue for clients.',
-    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80',
+    avatar: '/pintu.png',
     skills: ['Technical SEO', 'Conversion Rate Optimization', 'Google Ads', 'Figma', 'UI/UX Design', 'Content Strategy', 'Social Campaigns'],
-    linkedin: 'https://linkedin.com/in/neuralnexus',
-    github: 'https://github.com/neuralnexus',
-    email: 'pintu@neuralnexussolutions.com',
     contributedProjects: ['b2b-saas-growth', 'fintech-design-system'],
     experienceYears: 6
   }
@@ -794,7 +776,7 @@ export const PROCESS_STEPS = [
 
 export const GLOBAL_FAQS = [
   {
-    question: 'What makes NeuralNexusSolutions different from typical freelance agencies?',
+    question: 'What makes NeuralNexus Solutions different from typical freelance agencies?',
     answer: 'We lead with deep technical depth in AI/ML, automation, and research implementation, complemented by seasoned full-stack software engineers, growth marketers, and UI/UX specialists. We do not use inflated claims or junior subcontracting: you collaborate directly with the five senior experts responsible for engineering your project.'
   },
   {

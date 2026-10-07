@@ -27,7 +27,7 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
-    color: #0B1F3A;
+    /* Color is omitted to allow Tailwind text color utility inheritance (e.g. text-white on wrappers) */
   }
 
   /* Prevent iOS tap highlight */

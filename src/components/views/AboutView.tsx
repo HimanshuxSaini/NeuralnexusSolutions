@@ -1,16 +1,16 @@
 import React from 'react';
 import { Breadcrumbs } from '../common/Breadcrumbs';
 import { ShieldCheck, Target, Users, Zap, CheckCircle2, Award, Clock, ArrowRight, Lightbulb, Compass, Link as LinkIcon, Briefcase } from 'lucide-react';
-import { motion } from 'motion/react';
+import { motion, Variants } from 'motion/react';
 
 interface AboutViewProps {
   onNavigate: (view: string, param?: string) => void;
   onBookCall: () => void;
 }
 
-const fadeInUp = {
+const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } }
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as any } }
 };
 
 const staggerContainer = {
@@ -42,7 +42,7 @@ export function AboutView({ onNavigate, onBookCall }: AboutViewProps) {
     { num: '02', title: 'THE CHALLENGE', desc: 'We entered a national-level hackathon and challenged ourselves to build an innovative solution under real-world constraints.' },
     { num: '03', title: 'THE BREAKTHROUGH', desc: 'Our team secured Second Position, proving that a small team with the right combination of ideas, technology, and determination can create meaningful impact.' },
     { num: '04', title: 'THE DECISION', desc: 'Instead of allowing the journey to end with a trophy, we decided to build something bigger from the experience.' },
-    { num: '05', title: 'THE NEXUS', desc: 'Neural Nexus Solutions was envisioned as a multi-domain technology hub bringing 15 specialized services together.' },
+    { num: '05', title: 'THE NEXUS', desc: 'NeuralNexus Solutions was envisioned as a multi-domain technology hub bringing 15 specialized services together.' },
     { num: '06', title: 'THE FUTURE', desc: 'Our ambition is to take this ecosystem beyond borders and build lasting partnerships with clients in India and across the world.' }
   ];
 
@@ -64,7 +64,7 @@ export function AboutView({ onNavigate, onBookCall }: AboutViewProps) {
               className="max-w-2xl"
             >
               <motion.span variants={fadeInUp} className="text-sm font-bold text-[#0FA3B1] tracking-widest uppercase mb-4 block">
-                About Neural Nexus Solutions
+                About NeuralNexus Solutions
               </motion.span>
               <motion.h1 variants={fadeInUp} className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight font-['Sora'] leading-tight">
                 Five Minds. One Vision. <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0FA3B1] to-blue-400">A Nexus of Possibilities.</span>
@@ -72,7 +72,7 @@ export function AboutView({ onNavigate, onBookCall }: AboutViewProps) {
               
               <motion.div variants={fadeInUp} className="mt-8 space-y-6 text-lg text-slate-300 leading-relaxed">
                 <p>
-                  Neural Nexus Solutions began with five final-year engineering students who believed that technology should do more than solve a single problem — it should create possibilities across industries.
+                  NeuralNexus Solutions began with five final-year engineering students who believed that technology should do more than solve a single problem — it should create possibilities across industries.
                 </p>
                 <p>
                   Our journey started on a national-level hackathon stage, where our team came together to turn an idea into a working solution under pressure, uncertainty, and a limited timeframe.
@@ -84,7 +84,7 @@ export function AboutView({ onNavigate, onBookCall }: AboutViewProps) {
                   "What if the same spirit of innovation could be turned into a platform where businesses, startups, organizations, and individuals could access technology solutions across multiple domains — under one roof?"
                 </p>
                 <p className="font-bold text-white text-xl">
-                  That question gave birth to Neural Nexus Solutions.
+                  That question gave birth to NeuralNexus Solutions.
                 </p>
               </motion.div>
             </motion.div>
@@ -108,7 +108,7 @@ export function AboutView({ onNavigate, onBookCall }: AboutViewProps) {
                 >
                   <img 
                     src="/team%20image.jpeg" 
-                    alt="Neural Nexus Solutions Team" 
+                    alt="NeuralNexus Solutions Team" 
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F3A]/60 to-transparent"></div>
@@ -195,7 +195,7 @@ export function AboutView({ onNavigate, onBookCall }: AboutViewProps) {
               A technology hub where multiple capabilities could come together to solve diverse real-world challenges.
             </h3>
             <p className="text-slate-600 mt-6 relative z-10 text-lg">
-              Today, Neural Nexus Solutions is being built around <strong className="text-[#0FA3B1]">15 specialized service domains</strong>, bringing technology, creativity, business, and digital capabilities together under one ecosystem.
+              Today, NeuralNexus Solutions is being built around <strong className="text-[#0FA3B1]">15 specialized service domains</strong>, bringing technology, creativity, business, and digital capabilities together under one ecosystem.
             </p>
           </motion.div>
         </div>
@@ -284,7 +284,7 @@ export function AboutView({ onNavigate, onBookCall }: AboutViewProps) {
               Building a Global Nexus of Innovation
             </h2>
             <p className="mt-6 text-lg text-slate-600 leading-relaxed">
-              Our vision is to establish Neural Nexus Solutions as a <strong>global multi-domain technology hub</strong> where people, ideas, expertise, and emerging technologies connect to create meaningful solutions.
+              Our vision is to establish NeuralNexus Solutions as a <strong>global multi-domain technology hub</strong> where people, ideas, expertise, and emerging technologies connect to create meaningful solutions.
             </p>
             
             <div className="my-12 p-8 md:p-12 bg-white rounded-[2rem] shadow-xl border border-slate-100">
@@ -296,7 +296,7 @@ export function AboutView({ onNavigate, onBookCall }: AboutViewProps) {
             </div>
 
             <p className="text-lg text-slate-600 leading-relaxed">
-              From a team of five students on a hackathon stage to a global network of technology and creative capabilities, we want Neural Nexus Solutions to grow into an ecosystem that connects <strong>innovation with opportunity</strong>.
+              From a team of five students on a hackathon stage to a global network of technology and creative capabilities, we want NeuralNexus Solutions to grow into an ecosystem that connects <strong>innovation with opportunity</strong>.
             </p>
             <p className="mt-4 text-lg text-slate-600 leading-relaxed">
               Our long-term vision is to serve organizations across borders while continuously expanding our expertise, partnerships, technologies, and service capabilities.
@@ -383,6 +383,50 @@ export function AboutView({ onNavigate, onBookCall }: AboutViewProps) {
         </div>
       </section>
 
+      {/* Who You're Working With */}
+      <section className="py-8 lg:py-12 bg-white border-t border-slate-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="text-center mb-12">
+            <span className="text-xs font-semibold text-[#0FA3B1] uppercase tracking-widest">Who You're Working With</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#0B1F3A] font-['Sora'] mt-2">
+              Who is behind Neural Nexus?
+            </h2>
+            <p className="mt-4 text-slate-600 text-lg max-w-2xl mx-auto">
+              NeuralNexus Solutions operates under Webunitech Solutions LLP, providing clients with a clear legal and operational entity behind the brand.
+            </p>
+          </motion.div>
+
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="relative">
+            <div className="absolute left-1/2 top-4 bottom-4 w-px bg-slate-200 -translate-x-1/2 hidden sm:block"></div>
+            
+            <div className="space-y-8 sm:space-y-12">
+              <div className="relative text-center bg-white p-6 rounded-2xl shadow-sm border-2 border-[#0B1F3A] z-10 w-full max-w-sm mx-auto">
+                <h3 className="font-bold text-[#0B1F3A] text-xl font-['Sora']">NEURALNEXUS SOLUTIONS</h3>
+                <p className="text-sm text-[#0FA3B1] font-medium mt-1">Client-facing technology solutions brand</p>
+              </div>
+
+              <div className="relative flex justify-center z-10 sm:hidden">
+                <div className="w-px h-8 bg-slate-200"></div>
+              </div>
+
+              <div className="relative text-center bg-slate-50 p-6 rounded-2xl shadow-sm border border-slate-200 z-10 w-full max-w-sm mx-auto">
+                <h3 className="font-bold text-slate-800 text-xl font-['Sora']">WEBUNITECH SOLUTIONS LLP</h3>
+                <p className="text-sm text-slate-500 font-medium mt-1">Legal & operating entity</p>
+              </div>
+
+              <div className="relative flex justify-center z-10 sm:hidden">
+                <div className="w-px h-8 bg-slate-200"></div>
+              </div>
+
+              <div className="relative text-center bg-white p-6 rounded-2xl shadow-sm border border-slate-200 z-10 w-full max-w-sm mx-auto">
+                <h3 className="font-bold text-slate-800 text-xl font-['Sora']">OUR TEAM</h3>
+                <p className="text-sm text-slate-500 font-medium mt-1">Technology, design, business & domain specialists</p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* CTA / Outro */}
       <section className="py-8 lg:py-10 bg-white text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-40 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-cyan-50 via-transparent to-transparent"></div>
@@ -392,7 +436,7 @@ export function AboutView({ onNavigate, onBookCall }: AboutViewProps) {
               More Than A Service Company
             </h2>
             <p className="text-xl text-slate-700 leading-relaxed mb-8">
-              We are building Neural Nexus Solutions with a simple belief:<br/>
+              We are building NeuralNexus Solutions with a simple belief:<br/>
               <strong className="text-[#0B1F3A]">Technology should connect possibilities, not create barriers.</strong>
             </p>
             <p className="text-lg text-slate-600 mb-12">
@@ -404,7 +448,7 @@ export function AboutView({ onNavigate, onBookCall }: AboutViewProps) {
             </div>
 
             <div className="space-y-2">
-              <h3 className="text-2xl font-bold text-[#0B1F3A] font-['Sora']">Neural Nexus Solutions</h3>
+              <h3 className="text-2xl font-bold text-[#0B1F3A] font-['Sora']">NeuralNexus Solutions</h3>
               <p className="text-[#0FA3B1] font-medium tracking-wide">Connect Ideas. Create Solutions. Shape What's Next.</p>
             </div>
 
