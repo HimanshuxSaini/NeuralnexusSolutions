@@ -191,9 +191,28 @@ export function AiAssistantWidget({ onNavigate }: { onNavigate?: (target: string
     }
   };
 
-  const handleLeadSubmit = (e: React.FormEvent) => {
+  const handleLeadSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!leadForm.contact) return;
+    
+    try {
+      await fetch("https://formsubmit.co/ajax/work.piyushluxe@gmail.com", {
+        method: "POST",
+        headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          _subject: "New AI Chatbot Lead Capture",
+          name: leadForm.name,
+          contact: leadForm.contact,
+          query: leadForm.query
+        })
+      });
+    } catch (err) {
+      console.error(err);
+    }
+
     setLeadCaptured(true);
     setMessages((prev) => [
       ...prev,

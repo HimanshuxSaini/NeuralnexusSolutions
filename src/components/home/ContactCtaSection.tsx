@@ -36,16 +36,35 @@ export function ContactCtaSection({ initialService, initialNotes }: ContactCtaSe
     'Ongoing Monthly Retainer'
   ];
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.email.trim() || !formData.name.trim()) return;
 
     setIsSubmitting(true);
-    // Simulate real pipeline processing
-    setTimeout(() => {
+
+    try {
+      await fetch("https://formsubmit.co/ajax/work.piyushluxe@gmail.com", {
+        method: "POST",
+        headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          _subject: "New Project Brief Submitted",
+          name: formData.name,
+          email: formData.email,
+          whatsappNumber: formData.phone,
+          targetService: formData.service,
+          deliveryTimeline: formData.timeline,
+          projectDescription: formData.desc
+        })
+      });
       setIsSubmitting(false);
       setSubmitted(true);
-    }, 1000);
+    } catch (err) {
+      console.error(err);
+      setIsSubmitting(false);
+    }
   };
 
   const handleWhatsAppDirect = () => {

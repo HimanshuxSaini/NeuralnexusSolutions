@@ -12,9 +12,26 @@ export function Footer({ onNavigate, onOpenLegal }: FooterProps) {
   const [newsletterEmail, setNewsletterEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
 
-  const handleSubscribe = (e: React.FormEvent) => {
+  const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!newsletterEmail.trim()) return;
+
+    try {
+      await fetch("https://formsubmit.co/ajax/work.piyushluxe@gmail.com", {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          _subject: "New Newsletter Subscriber",
+          email: newsletterEmail
+        })
+      });
+    } catch (err) {
+      console.error(err);
+    }
+
     setSubscribed(true);
   };
 

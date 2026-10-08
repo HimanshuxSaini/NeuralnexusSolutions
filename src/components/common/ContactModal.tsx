@@ -19,22 +19,38 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
 
   if (!isOpen) return null;
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate API call
-    setTimeout(() => {
+    try {
+      await fetch("https://formsubmit.co/ajax/work.piyushluxe@gmail.com", {
+        method: "POST",
+        headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          _subject: "New Free Consultation Request",
+          name: formData.name,
+          whatsappNumber: formData.phone,
+          companyOrProject: formData.project,
+          requirement: formData.message
+        })
+      });
+      
       setIsSubmitting(false);
       setIsSuccess(true);
       
-      // Auto close after success
       setTimeout(() => {
         setIsSuccess(false);
         setFormData({ name: '', phone: '', project: '', message: '' });
         onClose();
       }, 2500);
-    }, 1200);
+    } catch (err) {
+      console.error(err);
+      setIsSubmitting(false);
+    }
   };
 
   return (
