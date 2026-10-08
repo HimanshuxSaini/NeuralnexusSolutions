@@ -267,9 +267,7 @@ export function ExpertTeamSection({ onSelectMember, onViewAllTeam }: ExpertTeamS
                           className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                           loading="lazy"
                         />
-                        <div className="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-black/70 backdrop-blur-xs text-[10px] text-white font-mono font-medium">
-                          {member.experienceYears}+ yrs exp
-                        </div>
+
                       </div>
 
                       {/* Header */}
@@ -378,9 +376,7 @@ export function ExpertTeamSection({ onSelectMember, onViewAllTeam }: ExpertTeamS
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       loading="lazy"
                     />
-                    <div className="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-black/60 backdrop-blur-xs text-[10px] text-white font-mono">
-                      {member.experienceYears}+ yrs exp
-                    </div>
+
                   </div>
 
                   <h3 className="font-bold text-base text-[#0B1F3A] font-['Sora'] group-hover:text-[#0FA3B1] transition-colors">

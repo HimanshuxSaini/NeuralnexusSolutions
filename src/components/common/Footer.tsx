@@ -149,8 +149,8 @@ export function Footer({ onNavigate, onOpenLegal }: FooterProps) {
               <li><button onClick={() => onNavigate('team')} className="hover:text-white">Piyush Pandey (AI/ML Lead)</button></li>
               <li><button onClick={() => onNavigate('team')} className="hover:text-white">Pardeep Kumar Singh (Software & Cloud)</button></li>
               <li><button onClick={() => onNavigate('team')} className="hover:text-white">Himanshu Saini (WhatsApp & Full-Stack)</button></li>
-              <li><button onClick={() => onNavigate('team')} className="hover:text-white">Tannu Antil (Data Analytics & Research)</button></li>
-              <li><button onClick={() => onNavigate('team')} className="hover:text-white">Pintu Singh (Growth Marketing & SEO)</button></li>
+              <li><button onClick={() => onNavigate('team')} className="hover:text-white">Tannu Antil (Business Analyst & ML)</button></li>
+              <li><button onClick={() => onNavigate('team')} className="hover:text-white">Pintu Singh (Video Editor & Motion Graphics)</button></li>
             </ul>
           </div>
 

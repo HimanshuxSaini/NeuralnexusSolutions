@@ -42,7 +42,7 @@ const SUGGESTION_PAIRS: SuggestionPair[] = [
     whatsappText: 'TALK TO EXPERTS • HIRE LEADS • ',
     whatsappMessage: 'Hello! I would like to speak directly with Piyush, Pardeep, or Himanshu for technical consulting.',
     aiText: 'RESEARCH PAPERS • AI MODELS • ',
-    aiPrompt: 'Tell me about your research paper reproduction and LaTeX documentation services.'
+    aiPrompt: 'Tell me about your research paper reproduction and Mendeley documentation services.'
   }
 ];
 
@@ -170,9 +170,9 @@ export function FloatingActionStack({ onNavigate }: FloatingActionStackProps) {
       };
     }
 
-    if (q.includes('research') || q.includes('paper') || q.includes('latex') || q.includes('thesis') || q.includes('arxiv')) {
+    if (q.includes('research') || q.includes('paper') || q.includes('mendeley') || q.includes('thesis') || q.includes('arxiv')) {
       return {
-        text: "Our Research Services include academic paper reproduction in PyTorch/CUDA and publication-grade LaTeX documentation adhering strictly to IEEE/ACM guidelines. Tannu Antil and Piyush Pandey direct this division.",
+        text: "Our Research Services include academic paper reproduction in PyTorch/CUDA and publication-grade Mendeley documentation adhering strictly to IEEE/ACM guidelines. Piyush Pandey directs this division.",
         quickActions: [
           { label: 'Research Documentation', action: 'service:research-documentation' },
           { label: 'Technical Implementation', action: 'service:research-technical-implementation' }
@@ -182,7 +182,7 @@ export function FloatingActionStack({ onNavigate }: FloatingActionStackProps) {
 
     if (q.includes('team') || q.includes('expert') || q.includes('piyush') || q.includes('himanshu') || q.includes('pardeep')) {
       return {
-        text: "NeuralNexus Solutions is powered by 5 verified senior experts: Piyush Pandey (AI/ML & Research), Pardeep Kumar Singh (Software & Cloud), Himanshu Saini (Full-Stack & WhatsApp Automation), Tannu Antil (Data Analytics & Research Docs), and Pintu Singh (Growth Marketing & SEO).",
+        text: "NeuralNexus Solutions is powered by 5 verified senior experts: Piyush Pandey (AI/ML & Research), Pardeep Kumar Singh (Software & Cloud), Himanshu Saini (Full-Stack & WhatsApp Automation), Tannu Antil (Business Analyst & ML Enthusiast), and Pintu Singh (Video Editing & Motion Graphics).",
         quickActions: [
           { label: 'View All Team Profiles', action: 'team' },
           { label: 'Book Discovery Call', action: 'contact' }
@@ -213,8 +213,7 @@ export function FloatingActionStack({ onNavigate }: FloatingActionStackProps) {
     return {
       text: "Thanks for asking! We specialize in custom software, AI/ML models, WhatsApp automation, research paper implementation, SEO, and UI/UX design. Would you like to check our pricing estimator or speak with an expert directly?",
       quickActions: [
-        { label: 'Book a Consultation', action: 'contact' },
-        { label: 'View Case Studies', action: 'cases' }
+        { label: 'Book a Consultation', action: 'contact' }
       ]
     };
   };

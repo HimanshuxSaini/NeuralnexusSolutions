@@ -61,9 +61,7 @@ export function TeamView({ onNavigate, onBookCallWithMember }: TeamViewProps) {
                     <div className="text-xs text-[#0FA3B1] font-semibold">
                       {member.role}
                     </div>
-                    <div className="text-[11px] text-slate-400 font-mono">
-                      {member.experienceYears}+ years industry exp
-                    </div>
+
                   </div>
                 </div>
 

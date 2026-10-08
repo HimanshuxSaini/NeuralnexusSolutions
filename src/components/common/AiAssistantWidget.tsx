@@ -78,9 +78,9 @@ export function AiAssistantWidget({ onNavigate }: { onNavigate?: (target: string
       };
     }
 
-    if (q.includes('research') || q.includes('paper') || q.includes('latex') || q.includes('thesis') || q.includes('arxiv')) {
+    if (q.includes('research') || q.includes('paper') || q.includes('mendeley') || q.includes('thesis') || q.includes('arxiv')) {
       return {
-        text: "Our Research Services include academic paper reproduction in PyTorch/CUDA and publication-grade LaTeX documentation adhering strictly to IEEE/ACM guidelines. Tannu Antil and Piyush Pandey direct this division.",
+        text: "Our Research Services include academic paper reproduction in PyTorch/CUDA and publication-grade Mendeley documentation adhering strictly to IEEE/ACM guidelines. Piyush Pandey directs this division.",
         quickActions: [
           { label: 'Research Documentation', action: 'service:research-documentation' },
           { label: 'Technical Implementation', action: 'service:research-technical-implementation' }
@@ -90,7 +90,7 @@ export function AiAssistantWidget({ onNavigate }: { onNavigate?: (target: string
 
     if (q.includes('team') || q.includes('expert') || q.includes('who are you') || q.includes('piyush') || q.includes('himanshu')) {
       return {
-        text: "NeuralNexus Solutions is powered by 5 verified senior experts: Piyush Pandey (AI/ML & Research), Pardeep Kumar Singh (Software & Cloud), Himanshu Saini (Full-Stack & WhatsApp Automation), Tannu Antil (Data Analytics & Research Docs), and Pintu Singh (Growth Marketing & SEO).",
+        text: "NeuralNexus Solutions is powered by 5 verified senior experts: Piyush Pandey (AI/ML & Research), Pardeep Kumar Singh (Software & Cloud), Himanshu Saini (Full-Stack & WhatsApp Automation), Tannu Antil (Business Analyst & ML Enthusiast), and Pintu Singh (Video Editing & Motion Graphics).",
         quickActions: [
           { label: 'View All Team Profiles', action: 'team' },
           { label: 'Book Discovery Call', action: 'contact' }
@@ -122,8 +122,7 @@ export function AiAssistantWidget({ onNavigate }: { onNavigate?: (target: string
       return {
         text: "We deliver 15 services organized into 5 pillars: 1) Software & Product Engineering, 2) AI, Data & Automation, 3) Research Services, 4) Growth & Marketing (SEO/Ads), and 5) Design & Creative (UI/UX, Video). Which area can we assist you with?",
         quickActions: [
-          { label: 'Browse All 15 Services', action: 'services' },
-          { label: 'Case Studies', action: 'cases' }
+          { label: 'Browse All 15 Services', action: 'services' }
         ]
       };
     }
@@ -132,8 +131,7 @@ export function AiAssistantWidget({ onNavigate }: { onNavigate?: (target: string
     return {
       text: "Thanks for asking! We specialize in custom software, AI/ML models, WhatsApp automation, research paper implementation, SEO, and UI/UX design. Would you like to check our pricing estimator or speak with an expert directly?",
       quickActions: [
-        { label: 'Book a Consultation', action: 'contact' },
-        { label: 'View Case Studies', action: 'cases' }
+        { label: 'Book a Consultation', action: 'contact' }
       ]
     };
   };

@@ -31,7 +31,7 @@ export function ContactView({ onNavigate, initialService, initialNotes }: Contac
               Get in Touch or Request a Quote
             </h1>
             <p className="mt-4 text-base text-slate-300 leading-relaxed">
-              Whether you need a custom ERP, WhatsApp automation bot, AI model deployment, or LaTeX paper reproduction, our senior team is ready to assist.
+              Whether you need a custom ERP, WhatsApp automation bot, AI model deployment, or Mendeley paper reproduction, our senior team is ready to assist.
             </p>
           </div>
         </div>

@@ -30,7 +30,7 @@ export function TeamMemberModal({
             </div>
             <div>
               <div className="text-[11px] text-[#0FA3B1] font-semibold uppercase tracking-wider">
-                Expert Profile · {member.experienceYears}+ Years Experience
+                Expert Profile
               </div>
               <h3 className="text-2xl font-bold font-['Sora'] text-white">
                 {member.name}

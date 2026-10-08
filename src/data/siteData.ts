@@ -49,7 +49,7 @@ export interface TeamMember {
   avatar: string;
   skills: string[];
   contributedProjects: string[];
-  experienceYears: number;
+
 }
 
 
@@ -341,11 +341,11 @@ export const SERVICES: ServiceItem[] = [
     pillarId: 'research-services',
     pillarName: 'Research Services',
     title: 'Research Documentation & Technical Writing',
-    shortDesc: 'Rigorous academic papers, literature reviews, thesis technical support, and LaTeX formatting.',
+    shortDesc: 'Rigorous academic papers, literature reviews, thesis technical support, and Mendeley formatting.',
     oneLinePromise: 'Publishable research documentation formulated with mathematical rigor and academic standards.',
     whatWeDeliver: [
       { title: 'Comprehensive Literature Reviews', description: 'Systematic surveys synthesizing state-of-the-art papers, methodologies, and benchmarks.' },
-      { title: 'LaTeX & IEEE/ACM Formatting', description: 'Impeccable typesetting adhering strictly to target conference and journal publication guidelines.' },
+      { title: 'Mendeley & IEEE/ACM Formatting', description: 'Impeccable typesetting adhering strictly to target conference and journal publication guidelines.' },
       { title: 'Technical Methodology Formulation', description: 'Formal mathematical formulation of algorithms, proofs, pseudo-code, and system architectures.' },
       { title: 'Citation & Reference Management', description: 'Clean BibTeX bibliographies, plagiarism screening, and citation integrity checks.' }
     ],
@@ -355,11 +355,11 @@ export const SERVICES: ServiceItem[] = [
       { step: 3, title: 'Drafting & Mathematical Modeling', description: 'Iterative drafting of abstract, methodology, experimental results, and discussion.' },
       { step: 4, title: 'Peer Review & Proofing', description: 'Rigorous technical proofreading, formatting verification, and final submission prep.' }
     ],
-    tools: ['LaTeX', 'Overleaf', 'BibTeX', 'Zotero', 'Python', 'Jupyter', 'Grammarly Academic'],
+    tools: ['Mendeley', 'Overleaf', 'BibTeX', 'Zotero', 'Python', 'Jupyter', 'Grammarly Academic'],
 
     engagementModels: [
-      { type: 'Full Paper Package', typicalDuration: '3 - 6 Weeks', pricingEstimate: '₹1,03,000 – ₹3,01,000', description: 'Comprehensive literature review, methodology drafting, LaTeX formatting, and revisions.', recommendedFor: 'Scholars, postgraduate researchers, corporate R&D' },
-      { type: 'Technical Review & Formatting', typicalDuration: '1 - 2 Weeks', pricingEstimate: '₹52,000 – ₹1,03,000', description: 'Camera-ready LaTeX typesetting, bibliography standardization, and clarity polish.', recommendedFor: 'Pre-submission conference papers' }
+      { type: 'Full Paper Package', typicalDuration: '3 - 6 Weeks', pricingEstimate: '₹1,03,000 – ₹3,01,000', description: 'Comprehensive literature review, methodology drafting, Mendeley formatting, and revisions.', recommendedFor: 'Scholars, postgraduate researchers, corporate R&D' },
+      { type: 'Technical Review & Formatting', typicalDuration: '1 - 2 Weeks', pricingEstimate: '₹52,000 – ₹1,03,000', description: 'Camera-ready Mendeley typesetting, bibliography standardization, and clarity polish.', recommendedFor: 'Pre-submission conference papers' }
     ],
     faqs: [
       { question: 'Do you ensure academic integrity and originality?', answer: 'Absolutely. All documentation is developed with 100% genuine research citations, original writing, and zero uncredited duplication.' },
@@ -585,9 +585,8 @@ export const TEAM_MEMBERS: TeamMember[] = [
     specialization: 'Large Language Models, Deep Learning & Paper Replication',
     bio: 'Piyush leads the AI, Machine Learning, and Research Engineering division at NeuralNexus Solutions. He specializes in deploying production LLMs, reproducing complex arXiv research papers into clean code, and fine-tuning custom domain models.',
     avatar: '/piyush.png',
-    skills: ['Python', 'PyTorch', 'TensorFlow', 'LLMs & RAG', 'Computer Vision', 'FastAPI', 'Research Reproducibility', 'CUDA'],
-    contributedProjects: ['multimodal-ai-research', 'whatsapp-commerce-bot'],
-    experienceYears: 6
+    skills: ['Python', 'PyTorch', 'TensorFlow', 'LLMs & RAG', 'Computer Vision', 'FastAPI', 'Research Reproducibility', 'CUDA', 'GenAI and Model Deployment on Cloud (AWS, Azure, DevOps)'],
+    contributedProjects: ['multimodal-ai-research', 'whatsapp-commerce-bot']
   },
   {
     id: 'pardeep-kumar-singh',
@@ -597,8 +596,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     bio: 'Pardeep oversees full-stack software development and cloud operations. He has architected enterprise ERPs, microservices, and database systems that process millions of daily transactions with 99.99% uptime.',
     avatar: '/pardeep.png',
     skills: ['React', 'Next.js', 'Node.js', 'PostgreSQL', 'Docker', 'AWS Cloud', 'ERP Modules', 'System Security'],
-    contributedProjects: ['enterprise-erp', 'telehealth-platform'],
-    experienceYears: 7
+    contributedProjects: ['enterprise-erp', 'telehealth-platform']
   },
   {
     id: 'himanshu-saini',
@@ -608,30 +606,27 @@ export const TEAM_MEMBERS: TeamMember[] = [
     bio: 'Himanshu architects high-converting conversational flows and automated messaging pipelines. He bridges backend CRM systems with WhatsApp Business APIs to drive instant lead conversions and support automation.',
     avatar: '/himanshu.jpeg',
     skills: ['WhatsApp Cloud API', 'TypeScript', 'React Native', 'Node.js', 'Webhooks', 'Lead Pipelines', 'PostgreSQL', 'Tailwind CSS'],
-    contributedProjects: ['whatsapp-commerce-bot', 'telehealth-platform'],
-    experienceYears: 1
+    contributedProjects: ['whatsapp-commerce-bot', 'telehealth-platform']
   },
   {
     id: 'tannu-antil',
     name: 'Tannu Antil',
-    role: 'Data Analytics & Research Documentation Lead',
-    specialization: 'Business Intelligence, Statistical Modeling & Technical Literature',
-    bio: 'Tannu spearheads data analytics, automated reporting, and academic research documentation. She specializes in turning messy enterprise data into clear Power BI/Tableau insights and writing publication-grade research papers.',
+    role: 'Business Analyst & ML Enthusiast',
+    specialization: 'Analytics, Machine Learning, & Data Storytelling',
+    bio: 'Specializes in transforming messy data into actionable insights through analytics, machine learning, and data storytelling. Builds practical solutions that connect data, technology, and real-world business decisions.',
     avatar: '/tannu.png',
-    skills: ['Data Analytics', 'LaTeX', 'Power BI & Tableau', 'Python', 'SQL', 'Academic Writing', 'ETL Pipelines', 'Pandas'],
-    contributedProjects: ['multimodal-ai-research', 'enterprise-erp'],
-    experienceYears: 5
+    skills: ['Python', 'SQL', 'Machine Learning', 'Power BI', 'Excel', 'EDA', 'Data Storytelling', 'Business Insights'],
+    contributedProjects: ['multimodal-ai-research', 'enterprise-erp']
   },
   {
     id: 'pintu-singh',
     name: 'Pintu Singh',
-    role: 'Growth Marketing & SEO Strategist / UI/UX',
-    specialization: 'Technical SEO, Conversion Optimization & Brand Growth',
-    bio: 'Pintu drives growth strategy, organic search dominance, and digital design. He combines technical SEO with conversion rate optimization and crisp UI design to generate consistent inbound revenue for clients.',
+    role: 'Senior Video Editor & Motion Graphics Designer',
+    specialization: 'Story-driven editing, motion graphics, color grading, typography',
+    bio: 'Creates cinematic, high-impact videos that turn ideas into engaging visual stories. Specializes in story-driven editing, motion graphics, color grading, typography, and platform-optimized content for brands, creators, and digital platforms.',
     avatar: '/pintu.png',
-    skills: ['Technical SEO', 'Conversion Rate Optimization', 'Google Ads', 'Figma', 'UI/UX Design', 'Content Strategy', 'Social Campaigns'],
-    contributedProjects: ['b2b-saas-growth', 'fintech-design-system'],
-    experienceYears: 6
+    skills: ['Video Editing', 'Motion Graphics', 'Premiere Pro', 'After Effects', 'DaVinci Resolve', 'Color Grading', 'CapCut', 'Typography'],
+    contributedProjects: ['b2b-saas-growth', 'fintech-design-system']
   }
 ];
 
@@ -818,7 +813,7 @@ export const INDUSTRIES_SERVED = [
   {
     name: 'Education & Academics',
     description: 'Publishable research paper reproduction, university portals, and automated student enquiry pipelines.',
-    features: ['Rigorous LaTeX formatting', 'Empirical benchmark replication', 'WhatsApp admissions chatbot']
+    features: ['Rigorous Mendeley formatting', 'Empirical benchmark replication', 'WhatsApp admissions chatbot']
   },
   {
     name: 'Healthcare & Clinics',

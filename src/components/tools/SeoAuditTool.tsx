@@ -252,7 +252,7 @@ export function SeoAuditTool({ onBookConsultation }: { onBookConsultation?: (url
               onClick={() => onBookConsultation && onBookConsultation(report.domain)}
               className="text-xs font-semibold text-[#0FA3B1] hover:text-[#0D8B97] flex items-center gap-1 cursor-pointer"
             >
-              <span>Have Pintu Singh & our team fix these issues for you</span>
+              <span>Have our expert team fix these issues for you</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </button>
           </div>
