@@ -206,7 +206,7 @@ export function AiAssistantWidget({ onNavigate }: { onNavigate?: (target: string
           _subject: "New AI Chatbot Lead Capture",
           name: leadForm.name,
           contact: leadForm.contact,
-          query: leadForm.query
+          service: leadForm.service
         })
       });
     } catch (err) {

@@ -56,7 +56,7 @@ export function ContactCtaSection({ initialService, initialNotes }: ContactCtaSe
           whatsappNumber: formData.phone,
           targetService: formData.service,
           deliveryTimeline: formData.timeline,
-          projectDescription: formData.desc
+          projectDescription: formData.message
         })
       });
       setIsSubmitting(false);

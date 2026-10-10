@@ -293,8 +293,7 @@ export function FloatingActionStack({ onNavigate }: FloatingActionStackProps) {
         body: JSON.stringify({
           _subject: "New Floating Chatbot Lead Capture",
           name: leadForm.name,
-          contact: leadForm.contact,
-          query: leadForm.query
+          contact: leadForm.contact
         })
       });
     } catch (err) {

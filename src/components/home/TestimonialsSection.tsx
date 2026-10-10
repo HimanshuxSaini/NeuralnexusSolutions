@@ -1,5 +1,5 @@
 import React from 'react';
-import { CASE_STUDIES } from '../../data/siteData';
+const CASE_STUDIES: any[] = [];
 import { Quote, Star } from 'lucide-react';
 
 export function TestimonialsSection() {
