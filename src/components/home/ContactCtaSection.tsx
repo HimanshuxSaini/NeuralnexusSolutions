@@ -43,7 +43,7 @@ export function ContactCtaSection({ initialService, initialNotes }: ContactCtaSe
     setIsSubmitting(true);
 
     try {
-      await fetch("https://formsubmit.co/ajax/work.piyushluxe@gmail.com", {
+      await fetch("https://formsubmit.co/ajax/sales.neuralnexus@gmail.com", {
         method: "POST",
         headers: { 
           'Content-Type': 'application/json',
@@ -113,7 +113,7 @@ export function ContactCtaSection({ initialService, initialNotes }: ContactCtaSe
                 </div>
                 <div>
                   <div className="font-bold text-xs text-[#0B1F3A]">Direct Engineering Email</div>
-                  <div className="text-[11px] text-slate-500 font-mono">contact@neuralnexussolutions.com</div>
+                  <a href="mailto:sales.neuralnexus@gmail.com" className="text-[11px] text-slate-500 font-mono hover:text-[#0FA3B1] transition-colors">sales.neuralnexus@gmail.com</a>
                 </div>
               </div>
             </div>

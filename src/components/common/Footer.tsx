@@ -17,7 +17,7 @@ export function Footer({ onNavigate, onOpenLegal }: FooterProps) {
     if (!newsletterEmail.trim()) return;
 
     try {
-      await fetch("https://formsubmit.co/ajax/work.piyushluxe@gmail.com", {
+      await fetch("https://formsubmit.co/ajax/sales.neuralnexus@gmail.com", {
         method: "POST",
         headers: {
           'Content-Type': 'application/json',
@@ -174,7 +174,7 @@ export function Footer({ onNavigate, onOpenLegal }: FooterProps) {
           <div>
             <div className="font-semibold text-white mb-2 uppercase tracking-wider text-[11px]">Direct Contact</div>
             <ul className="space-y-1.5">
-              <li><span>Email: contact@neuralnexussolutions.com</span></li>
+              <li><a href="mailto:sales.neuralnexus@gmail.com" className="hover:text-white transition-colors">Email: sales.neuralnexus@gmail.com</a></li>
 
               <li><span>Response SLA: Within 24 Business Hours</span></li>
               <li className="pt-2">

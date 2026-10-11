@@ -196,7 +196,7 @@ export function AiAssistantWidget({ onNavigate }: { onNavigate?: (target: string
     if (!leadForm.contact) return;
     
     try {
-      await fetch("https://formsubmit.co/ajax/work.piyushluxe@gmail.com", {
+      await fetch("https://formsubmit.co/ajax/sales.neuralnexus@gmail.com", {
         method: "POST",
         headers: { 
           'Content-Type': 'application/json',
