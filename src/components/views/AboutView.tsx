@@ -93,42 +93,40 @@ export function AboutView({ onNavigate, onBookCall }: AboutViewProps) {
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
-              className="relative w-full aspect-[4/3] lg:aspect-square flex items-center justify-center"
+              className="relative w-full min-h-[380px] sm:min-h-[440px] aspect-[4/3] lg:aspect-square flex items-center justify-center mt-6 lg:mt-0"
             >
               {/* Decorative elements */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-[400px] max-h-[400px] bg-gradient-to-br from-[#0FA3B1]/20 to-blue-500/20 rounded-full blur-3xl -z-10"></div>
               
               <div className="relative w-full h-full max-w-lg mx-auto">
-                {/* First Image (Main/Back) */}
+                {/* First Image (Top) */}
                 <motion.div 
                   initial={{ opacity: 0, y: 20, rotate: -5 }}
                   animate={{ opacity: 1, y: 0, rotate: -2 }}
                   transition={{ duration: 0.8, delay: 0.3 }}
-                  className="absolute top-0 right-4 w-3/4 aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border-4 border-[#0B1F3A] z-10"
+                  className="absolute top-2 right-2 sm:right-4 w-[75%] sm:w-3/4 aspect-[4/3] rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl border-4 border-[#0B1F3A] z-10"
                 >
                   <img 
-                    src="/team%20image.jpeg" 
-                    alt="NeuralNexus Solutions Team" 
+                    src="/1745838599846.jpg" 
+                    alt="Neural Nexus Hackathon Moment" 
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F3A]/60 to-transparent"></div>
                 </motion.div>
 
-                {/* Second Image (Front/Overlap) */}
+                {/* Second Image (Bottom / Overlap) */}
                 <motion.div 
                   initial={{ opacity: 0, y: 40, rotate: 5 }}
                   animate={{ opacity: 1, y: 0, rotate: 3 }}
                   transition={{ duration: 0.8, delay: 0.5 }}
-                  className="absolute bottom-12 left-0 w-2/3 aspect-square rounded-3xl overflow-hidden shadow-2xl border-4 border-[#0B1F3A] z-20"
+                  className="absolute bottom-4 sm:bottom-10 left-2 sm:left-0 w-[65%] sm:w-2/3 aspect-square rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl border-4 border-[#0B1F3A] z-20"
                 >
                   <img 
-                    src="/1745838599846.jpg" 
-                    alt="Neural Nexus Hackathon Moment" 
+                    src="/team%20image.jpeg" 
+                    alt="NeuralNexus Solutions Team" 
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                   />
                 </motion.div>
-
-
               </div>
             </motion.div>
           </div>

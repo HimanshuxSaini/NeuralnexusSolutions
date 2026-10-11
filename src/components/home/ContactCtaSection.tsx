@@ -163,7 +163,7 @@ export function ContactCtaSection({ initialService, initialNotes }: ContactCtaSe
                     <input
                       type="text"
                       required
-                      placeholder="Jane Doe"
+                      placeholder="Your Name"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       className="w-full px-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-[#0FA3B1] text-slate-900 placeholder:text-slate-400"
@@ -177,7 +177,7 @@ export function ContactCtaSection({ initialService, initialNotes }: ContactCtaSe
                     <input
                       type="email"
                       required
-                      placeholder="jane@company.com"
+                      placeholder="yourname@company.com"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       className="w-full px-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-[#0FA3B1] text-slate-900 placeholder:text-slate-400"
@@ -192,7 +192,7 @@ export function ContactCtaSection({ initialService, initialNotes }: ContactCtaSe
                     </label>
                     <input
                       type="tel"
-                      placeholder="+91 82990 32271"
+                      placeholder="Enter your phone number"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       className="w-full px-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-[#0FA3B1] text-slate-900 placeholder:text-slate-400"

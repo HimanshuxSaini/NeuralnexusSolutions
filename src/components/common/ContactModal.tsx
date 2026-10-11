@@ -94,7 +94,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                   required
                   type="text" 
                   className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-[#0FA3B1]/20 focus:border-[#0FA3B1] outline-none transition-all text-sm"
-                  placeholder="Rahul Sharma"
+                  placeholder="Your Name"
                   value={formData.name}
                   onChange={(e) => setFormData({...formData, name: e.target.value})}
                 />
@@ -108,7 +108,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                     required
                     type="tel" 
                     className="w-full pl-12 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-[#0FA3B1]/20 focus:border-[#0FA3B1] outline-none transition-all text-sm"
-                    placeholder="82990 32271"
+                    placeholder="Enter your phone number"
                     value={formData.phone}
                     onChange={(e) => setFormData({...formData, phone: e.target.value})}
                   />
