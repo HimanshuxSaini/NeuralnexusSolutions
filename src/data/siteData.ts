@@ -585,7 +585,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     specialization: 'Large Language Models, Deep Learning & Paper Replication',
     bio: 'Piyush leads the AI, Machine Learning, and Research Engineering division at NeuralNexus Solutions. He specializes in deploying production LLMs, reproducing complex arXiv research papers into clean code, and fine-tuning custom domain models.',
     avatar: '/piyush.png',
-    skills: ['Python', 'PyTorch', 'TensorFlow', 'LLMs & RAG', 'Computer Vision', 'FastAPI', 'Research Reproducibility', 'CUDA', 'GenAI and Model Deployment on Cloud (AWS, Azure, DevOps)'],
+    skills: ['Python', 'PyTorch', 'TensorFlow', 'LLMs & RAG', 'Computer Vision', 'FastAPI', 'Research Reproducibility', 'CUDA', 'GenAI', 'Model Deployment on Cloud (AWS, Azure, DevOps)'],
     contributedProjects: ['multimodal-ai-research', 'whatsapp-commerce-bot']
   },
   {
