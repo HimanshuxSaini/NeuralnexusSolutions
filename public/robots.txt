@@ -1,0 +1,41 @@
+# ========================================================
+# NeuralNexus Solutions — Professional robots.txt
+# https://neuralnexussolutions.com
+# ========================================================
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /*?*preview=
+
+# Search Engine Specific Optimization
+User-agent: Googlebot
+Allow: /
+Allow: /src/
+Allow: /public/
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Applebot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# AI Crawlers & LLM Indexers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Sitemaps
+Sitemap: https://neuralnexussolutions.com/sitemap.xml
+Host: https://neuralnexussolutions.com

@@ -583,7 +583,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     name: 'Piyush Pandey',
     role: 'Lead AI/ML Architect & Research Systems',
     specialization: 'Large Language Models, Deep Learning & Paper Replication',
-    bio: 'Piyush leads the AI, Machine Learning, and Research Engineering division at NeuralNexus Solutions. He specializes in deploying production LLMs, reproducing complex arXiv research papers into clean code, and fine-tuning custom domain models.',
+    bio: 'Piyush leads the AI, Machine Learning, and Research Engineering division at NeuralNexus Solutions. He specializes in deploying production LLMs, reproducing complex IEEE research papers into clean code, and fine-tuning custom domain models.',
     avatar: '/piyush.png',
     skills: ['Python', 'PyTorch', 'TensorFlow', 'LLMs & RAG', 'Computer Vision', 'FastAPI', 'Research Reproducibility', 'CUDA', 'GenAI', 'Model Deployment on Cloud (AWS, Azure, DevOps)'],
     contributedProjects: ['multimodal-ai-research', 'whatsapp-commerce-bot']

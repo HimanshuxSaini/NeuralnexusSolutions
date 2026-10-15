@@ -1,0 +1,16 @@
+/* TEAM */
+Lead AI/ML Architect & Research Systems: Piyush Pandey
+Lead Software & Cloud Architect: Pardeep Kumar Singh
+Full-Stack & WhatsApp Automation Specialist: Himanshu Saini
+Design Systems, Web UI/UX & Growth Strategy: Tannu Antil
+Senior Video Editor & Motion Graphics Designer: Pintu Singh
+
+/* SITE */
+Site Name: NeuralNexus Solutions
+URL: https://neuralnexussolutions.com
+Tagline: Where AI, Software and Growth Connect
+Language: English
+Doctype: HTML5
+IDE: Antigravity IDE
+Technologies: React 19, TypeScript, TailwindCSS, Vite
+Standards: HTML5, CSS3, Schema.org JSON-LD, sitemaps.org

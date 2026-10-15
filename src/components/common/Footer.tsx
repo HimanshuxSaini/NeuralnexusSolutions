@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { PILLARS, SERVICES } from '../../data/siteData';
 import { NeuralNexusLogo } from './NeuralNexusLogo';
-import { Mail, Phone, MapPin, Send, CheckCircle2, Github, Linkedin, Twitter, ArrowUpRight } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, CheckCircle2, ArrowUpRight } from 'lucide-react';
 
 interface FooterProps {
   onNavigate: (view: string, param?: string) => void;

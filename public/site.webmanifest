@@ -1,0 +1,29 @@
+{
+  "name": "NeuralNexus Solutions",
+  "short_name": "NeuralNexus",
+  "description": "Where AI, Software and Growth Connect. High-impact software development, AI & automation, research implementation, growth marketing, and design.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B1F3A",
+  "theme_color": "#0FA3B1",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo-icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": [
+    "business",
+    "productivity",
+    "technology"
+  ]
+}
