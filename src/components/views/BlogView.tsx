@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BLOG_POSTS, BlogPost } from '../../data/siteData';
 import { Breadcrumbs } from '../common/Breadcrumbs';
+import { buildArticleSchema } from '../../hooks/useSEO';
 import { ArrowRight, BookOpen, Clock, Calendar, CheckCircle2, User, ChevronLeft } from 'lucide-react';
 
 interface BlogViewProps {
@@ -39,6 +40,11 @@ export function BlogView({ onNavigate, initialPost }: BlogViewProps) {
           </button>
 
           <article className="bg-white rounded-3xl border border-slate-200/80 p-8 sm:p-12 shadow-xs">
+            {/* Article JSON-LD for rich search results */}
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', ...buildArticleSchema(selectedPost) }) }}
+            />
             <div className="flex items-center gap-2 text-xs text-slate-500 mb-3">
               <span className="text-[#0FA3B1] font-semibold">{selectedPost.category}</span>
               <span>·</span>

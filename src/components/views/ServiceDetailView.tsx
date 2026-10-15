@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ServiceItem, PILLARS } from '../../data/siteData';
 import { ArrowRight, CheckCircle2, ChevronDown, Layers, MessageCircle, ShieldCheck, Clock, Zap, ExternalLink } from 'lucide-react';
 import { Breadcrumbs } from '../common/Breadcrumbs';
+import { buildServiceSchema } from '../../hooks/useSEO';
 
 interface ServiceDetailViewProps {
   service: ServiceItem;
@@ -32,8 +33,31 @@ export function ServiceDetailView({
     window.open(`https://wa.me/918299032271?text=${text}`, '_blank');
   };
 
+  // Service + FAQ JSON-LD for this specific service page
+  const serviceSchema = buildServiceSchema(service);
+  const serviceFaqSchema = service.faqs?.length ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: service.faqs.map(f => ({
+      '@type': 'Question',
+      name: f.question,
+      acceptedAnswer: { '@type': 'Answer', text: f.answer }
+    }))
+  } : null;
+
   return (
     <div className="bg-[#F8FAFC] min-h-screen pb-8">
+      {/* Service-specific structured data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', ...serviceSchema }) }}
+      />
+      {serviceFaqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceFaqSchema) }}
+        />
+      )}
       <Breadcrumbs items={breadcrumbs} onNavigate={onNavigate} />
 
       {/* Block 1: Hero */}

@@ -3,7 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
+import { useSEO, buildBreadcrumbSchema } from './hooks/useSEO';
 import { Header } from './components/common/Header';
 import { Footer } from './components/common/Footer';
 import { FloatingActionStack } from './components/common/FloatingActionStack';
@@ -68,6 +69,74 @@ export default function App() {
 
 
   const currentServiceObj = SERVICES.find(s => s.slug === currentServiceSlug) || SERVICES[0];
+
+  // ─── Dynamic SEO per View ───────────────────────────────────────
+  const seoConfig = useMemo(() => {
+    const BASE = 'https://neuralnexussolutions.com';
+    switch (currentView) {
+      case 'service':
+        return {
+          title: `${currentServiceObj.title} — NeuralNexus Solutions`,
+          description: currentServiceObj.oneLinePromise || currentServiceObj.shortDesc,
+          canonical: `${BASE}/service/${currentServiceObj.slug}`,
+          structuredData: buildBreadcrumbSchema([
+            { name: 'Services', url: `${BASE}/services` },
+            { name: currentServiceObj.pillarName },
+            { name: currentServiceObj.title, url: `${BASE}/service/${currentServiceObj.slug}` },
+          ]),
+        };
+      case 'services':
+        return {
+          title: 'All Services — NeuralNexus Solutions',
+          description: '15+ specialized services across software engineering, AI & automation, research implementation, growth marketing, and design — delivered by a startup-grade engineering team.',
+          canonical: `${BASE}/services`,
+          structuredData: buildBreadcrumbSchema([{ name: 'Services', url: `${BASE}/services` }]),
+        };
+      case 'about':
+        return {
+          title: 'About Us & Mission — NeuralNexus Solutions',
+          description: 'Five engineering minds united by a hackathon podium finish. Learn how NeuralNexus Solutions became a multi-domain technology studio serving clients across India and globally.',
+          canonical: `${BASE}/about`,
+          structuredData: buildBreadcrumbSchema([{ name: 'About & Mission', url: `${BASE}/about` }]),
+        };
+      case 'team':
+        return {
+          title: 'Our Expert Team — NeuralNexus Solutions',
+          description: 'Meet the senior engineers, architects, and designers behind NeuralNexus Solutions. AI/ML specialists, full-stack developers, and growth strategists.',
+          canonical: `${BASE}/team`,
+          structuredData: buildBreadcrumbSchema([{ name: 'Team', url: `${BASE}/team` }]),
+        };
+      case 'process':
+        return {
+          title: 'Our 6-Step Process — NeuralNexus Solutions',
+          description: 'From discovery call to post-launch support — our proven 6-step engineering process ensures on-time, transparent, production-grade delivery.',
+          canonical: `${BASE}/process`,
+          structuredData: buildBreadcrumbSchema([{ name: 'Process', url: `${BASE}/process` }]),
+        };
+      case 'blog':
+        return {
+          title: 'Insights & Technical Blog — NeuralNexus Solutions',
+          description: 'Technical deep-dives on AI, WhatsApp automation, ERP migration, Core Web Vitals, and research paper reproduction from the NeuralNexus engineering team.',
+          canonical: `${BASE}/blog`,
+          structuredData: buildBreadcrumbSchema([{ name: 'Blog', url: `${BASE}/blog` }]),
+        };
+      case 'contact':
+        return {
+          title: 'Contact & Request a Quote — NeuralNexus Solutions',
+          description: 'Get in touch with NeuralNexus Solutions for custom software, AI model deployment, WhatsApp automation, or research paper implementation. Free discovery call available.',
+          canonical: `${BASE}/contact`,
+          structuredData: buildBreadcrumbSchema([{ name: 'Contact', url: `${BASE}/contact` }]),
+        };
+      default: // home
+        return {
+          title: 'NeuralNexus Solutions — Where AI, Software & Growth Connect',
+          description: 'High-impact full-stack software development, generative AI & LLMs, WhatsApp Cloud API automation, research implementation, growth marketing, and UI/UX design.',
+          canonical: `${BASE}/`,
+        };
+    }
+  }, [currentView, currentServiceObj]);
+
+  useSEO(seoConfig);
 
   return (
     <div className="min-h-screen flex flex-col bg-[#F8FAFC] text-slate-800 font-['Inter']">

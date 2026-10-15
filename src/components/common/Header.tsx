@@ -110,7 +110,7 @@ export function Header({ currentView, onNavigate }: HeaderProps) {
           </div>
 
           {/* Desktop Navigation: Core items on screen, others in More */}
-          <nav className="hidden lg:flex items-center gap-1 xl:gap-2">
+          <nav className="hidden lg:flex items-center gap-1 xl:gap-2" aria-label="Main Navigation">
             {/* Home with active underline indicator */}
             <button
               onClick={() => onNavigate('home')}

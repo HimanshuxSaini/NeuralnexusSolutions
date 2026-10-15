@@ -22,15 +22,49 @@
     <meta property="og:image:alt" content="NeuralNexus Solutions Logo" />
     <meta property="og:locale" content="en_US" />
 
+    <!-- Twitter / X Card (Rich link previews on X, Slack, Discord) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@NeuralNexusSol" />
+    <meta name="twitter:creator" content="@NeuralNexusSol" />
+    <meta name="twitter:title" content="NeuralNexus Solutions — Where AI, Software & Growth Connect" />
+    <meta name="twitter:description" content="High-impact full-stack software development, generative AI & LLMs, WhatsApp Cloud API automation, research implementation, growth marketing, and UI/UX design." />
+    <meta name="twitter:image" content="https://neuralnexussolutions.com/new-logo.png" />
+    <meta name="twitter:image:alt" content="NeuralNexus Solutions Logo" />
+
+    <!-- Geo & Local SEO -->
+    <meta name="geo.region" content="IN-DL" />
+    <meta name="geo.placename" content="Delhi NCR" />
+    <meta name="geo.position" content="28.6139;77.2090" />
+    <meta name="ICBM" content="28.6139, 77.2090" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="rating" content="General" />
+    <meta name="distribution" content="global" />
+
     <!-- Mobile & PWA -->
-    <meta name="theme-color" content="#0B1F3A" />
-    <link rel="icon" type="image/png" href="/logo-icon.png" />
-    <link rel="apple-touch-icon" href="/logo-icon.png" />
+    <meta name="theme-color" content="#0B1F3A" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#F8FAFC" media="(prefers-color-scheme: light)" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="NeuralNexus" />
+    <meta name="application-name" content="NeuralNexus Solutions" />
+    <meta name="msapplication-TileColor" content="#0B1F3A" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/logo-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
 
-    <!-- Fonts -->
+    <!-- DNS Prefetch & Preconnect for third-party origins -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <link rel="dns-prefetch" href="https://formsubmit.co" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Fonts (preloaded for faster LCP) -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;500;600;700;800&display=swap" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
     <!-- Structured Data: Organization & ProfessionalService -->
@@ -90,6 +124,26 @@
   <body class="bg-[#F8FAFC] text-slate-800 antialiased selection:bg-[#0FA3B1]/20 selection:text-[#0B1F3A]">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Noscript fallback for crawlers and users without JavaScript -->
+    <noscript>
+      <div style="max-width:800px;margin:60px auto;padding:32px;font-family:Inter,system-ui,sans-serif;color:#0B1F3A;">
+        <h1>NeuralNexus Solutions — Where AI, Software &amp; Growth Connect</h1>
+        <p>NeuralNexus Solutions is a technology solutions studio delivering 15+ specialized services across software engineering, AI &amp; machine learning, WhatsApp Cloud API automation, academic research implementation, growth marketing, SEO, UI/UX design, and video production.</p>
+        <h2>Our Services</h2>
+        <ul>
+          <li><strong>Software &amp; Product Engineering</strong> — Web/Mobile App Development, Custom Software, ERP Systems</li>
+          <li><strong>AI, Data &amp; Automation</strong> — Machine Learning, Chatbot Integration, WhatsApp Automation, Data Analytics</li>
+          <li><strong>Research Services</strong> — Research Documentation, Technical Paper Implementation</li>
+          <li><strong>Growth &amp; Marketing</strong> — Digital Marketing, SEO, Social Media Marketing</li>
+          <li><strong>Design &amp; Creative</strong> — UI/UX Design, Graphic Marketing, Video Editing &amp; Motion Graphics</li>
+        </ul>
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:sales.neuralnexus@gmail.com">sales.neuralnexus@gmail.com</a> | Phone: <a href="tel:+918299032271">+91 82990 32271</a></p>
+        <p>Location: Delhi NCR, India &amp; Global Remote</p>
+        <p><a href="https://neuralnexussolutions.com/sitemap.xml">View Sitemap</a></p>
+      </div>
+    </noscript>
   </body>
 </html>
 
