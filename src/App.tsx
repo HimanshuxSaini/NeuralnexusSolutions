@@ -72,7 +72,7 @@ export default function App() {
 
   // ─── Dynamic SEO per View ───────────────────────────────────────
   const seoConfig = useMemo(() => {
-    const BASE = 'https://neuralnexussolutions.com';
+    const BASE = 'https://www.neuralnexussolutions.in';
     switch (currentView) {
       case 'service':
         return {

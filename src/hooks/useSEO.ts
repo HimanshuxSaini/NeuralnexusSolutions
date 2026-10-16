@@ -12,7 +12,7 @@ interface SEOConfig {
 }
 
 const SITE_NAME = 'NeuralNexus Solutions';
-const BASE_URL = 'https://neuralnexussolutions.com';
+const BASE_URL = 'https://www.neuralnexussolutions.in';
 const DEFAULT_OG_IMAGE = `${BASE_URL}/new-logo.png`;
 
 /**
@@ -108,7 +108,7 @@ export function buildBreadcrumbSchema(items: { name: string; url?: string }[]) {
   return {
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://neuralnexussolutions.com/' },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${BASE_URL}/` },
       ...items.map((item, idx) => ({
         '@type': 'ListItem',
         position: idx + 2,
@@ -134,11 +134,11 @@ export function buildServiceSchema(service: {
     provider: {
       '@type': 'Organization',
       name: 'NeuralNexus Solutions',
-      url: 'https://neuralnexussolutions.com',
+      url: BASE_URL,
     },
     name: service.title,
     description: service.shortDesc,
-    url: `https://neuralnexussolutions.com/service/${service.slug}`,
+    url: `${BASE_URL}/service/${service.slug}`,
     category: service.pillarName,
     areaServed: {
       '@type': 'Place',
@@ -171,16 +171,16 @@ export function buildArticleSchema(post: {
       name: 'NeuralNexus Solutions',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://neuralnexussolutions.com/new-logo.png',
+        url: `${BASE_URL}/new-logo.png`,
       },
     },
     datePublished: post.date,
     dateModified: post.date,
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://neuralnexussolutions.com/blog/${post.slug}`,
+      '@id': `${BASE_URL}/blog/${post.slug}`,
     },
     articleSection: post.category,
-    url: `https://neuralnexussolutions.com/blog/${post.slug}`,
+    url: `${BASE_URL}/blog/${post.slug}`,
   };
 }
