@@ -62,6 +62,14 @@ export function useSEO({
     updateMeta('twitter:description', ogDescription || description, 'name');
     updateMeta('twitter:image', ogImage || DEFAULT_OG_IMAGE, 'name');
 
+    // — Google Analytics 4 SPA Page View —
+    if (typeof window !== 'undefined' && typeof (window as any).gtag === 'function') {
+      (window as any).gtag('event', 'page_view', {
+        page_title: document.title,
+        page_location: canonicalUrl,
+      });
+    }
+
     // — JSON-LD structured data —
     let scriptEl: HTMLScriptElement | null = null;
     if (structuredData) {
