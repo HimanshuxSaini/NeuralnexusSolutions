@@ -181,7 +181,7 @@ export function ExpertTeamSection({ onSelectMember, onViewAllTeam }: ExpertTeamS
               Meet the Core Team
             </h2>
             <p className="mt-2.5 text-sm sm:text-base text-slate-600 max-w-2xl">
-              No account managers or junior buffers. You build and communicate directly with our five senior leads.
+              No account managers or junior buffers. You build and communicate directly with our senior leads.
             </p>
           </div>
 
@@ -362,7 +362,7 @@ export function ExpertTeamSection({ onSelectMember, onViewAllTeam }: ExpertTeamS
         {/* VIEW MODE 2: CLEAN 5-COLUMN COMPACT GRID                       */}
         {/* ============================================================== */}
         {viewMode === 'grid' && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 animate-in fade-in duration-200">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6 animate-in fade-in duration-200">
             {TEAM_MEMBERS.map((member) => (
               <div
                 key={member.id}

@@ -81,7 +81,7 @@ export function FloatingActionStack({ onNavigate }: FloatingActionStackProps) {
       quickActions: [
         { label: 'Explore 15 Services', action: 'services' },
         { label: 'WhatsApp Automation Demo', action: 'whatsapp' },
-        { label: 'Meet the 5 Experts', action: 'team' }
+        { label: 'Meet the Expert Team', action: 'team' }
       ]
     }
   ]);

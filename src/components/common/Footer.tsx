@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { PILLARS, SERVICES } from '../../data/siteData';
 import { NeuralNexusLogo } from './NeuralNexusLogo';
-import { Mail, Phone, MapPin, Send, CheckCircle2, ArrowUpRight } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, CheckCircle2, ArrowUpRight, Instagram } from 'lucide-react';
 
 interface FooterProps {
   onNavigate: (view: string, param?: string) => void;
@@ -57,7 +57,7 @@ export function Footer({ onNavigate, onOpenLegal }: FooterProps) {
               Where AI, software and growth connect. A startup-style engineering studio delivering custom software, AI & automation pipelines, research paper implementation, and data-driven marketing.
             </p>
 
-            <div className="flex items-center gap-4 text-xs text-slate-400 pt-2">
+            <div className="flex flex-wrap items-center gap-4 text-xs text-slate-400 pt-2">
               <div className="flex items-center gap-1.5">
                 <MapPin className="w-3.5 h-3.5 text-[#0FA3B1]" />
                 <span>Delhi NCR & Global Remote</span>
@@ -66,6 +66,16 @@ export function Footer({ onNavigate, onOpenLegal }: FooterProps) {
                 <Phone className="w-3.5 h-3.5 text-[#0FA3B1]" />
                 <span>+91 82990 32271</span>
               </div>
+              <a
+                href="https://www.instagram.com/neuralnexussolutions"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 text-slate-300 hover:text-[#E1306C] transition-colors"
+                title="Follow us on Instagram"
+              >
+                <Instagram className="w-3.5 h-3.5 text-[#E1306C]" />
+                <span>Instagram</span>
+              </a>
             </div>
           </div>
 
@@ -166,6 +176,7 @@ export function Footer({ onNavigate, onOpenLegal }: FooterProps) {
               <li><button onClick={() => onNavigate('team')} className="hover:text-white">Piyush Pandey (AI/ML Lead)</button></li>
               <li><button onClick={() => onNavigate('team')} className="hover:text-white">Pardeep Kumar Singh (Software & Cloud)</button></li>
               <li><button onClick={() => onNavigate('team')} className="hover:text-white">Himanshu Saini (WhatsApp & Full-Stack)</button></li>
+              <li><button onClick={() => onNavigate('team')} className="hover:text-white">Arjun Pandey (Full-Stack & Database)</button></li>
               <li><button onClick={() => onNavigate('team')} className="hover:text-white">Tannu Antil (Business Analyst & ML)</button></li>
               <li><button onClick={() => onNavigate('team')} className="hover:text-white">Pintu Singh (Video Editor & Motion Graphics)</button></li>
             </ul>
@@ -175,7 +186,17 @@ export function Footer({ onNavigate, onOpenLegal }: FooterProps) {
             <div className="font-semibold text-white mb-2 uppercase tracking-wider text-[11px]">Direct Contact</div>
             <ul className="space-y-1.5">
               <li><a href="mailto:sales.neuralnexus@gmail.com" className="hover:text-white transition-colors">Email: sales.neuralnexus@gmail.com</a></li>
-
+              <li>
+                <a
+                  href="https://www.instagram.com/neuralnexussolutions"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-slate-300 hover:text-[#E1306C] transition-colors"
+                >
+                  <Instagram className="w-3.5 h-3.5 text-[#E1306C]" />
+                  <span>Instagram: @neuralnexussolutions</span>
+                </a>
+              </li>
               <li><span>Response SLA: Within 24 Business Hours</span></li>
               <li className="pt-2">
                 <button

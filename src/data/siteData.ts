@@ -423,7 +423,7 @@ export const SERVICES: ServiceItem[] = [
       { type: 'Funnel & Audit Sprint', typicalDuration: '2 Weeks', pricingEstimate: '₹77,000', description: 'Comprehensive teardown of your current ad campaigns, tracking, and conversion leaks.', recommendedFor: 'Brands with underperforming ads' }
     ],
     faqs: [
-      { question: 'What ad platforms do you specialize in?', answer: 'We manage Google Search & Display, Meta (Instagram & Facebook), LinkedIn Ads for B2B, and YouTube ads.' }
+      { question: 'What ad platforms do you specialize in?', answer: 'We manage Google Search & Display, Meta (Instagram & Facebook), and LinkedIn Ads for B2B.' }
     ]
   },
   {
@@ -554,7 +554,7 @@ export const SERVICES: ServiceItem[] = [
     shortDesc: 'Viral short-form reels, high-production product promos, motion explainer videos, and animated subtitles.',
     oneLinePromise: 'Dynamic motion and storytelling that hooks viewers in the first 3 seconds and boosts engagement.',
     whatWeDeliver: [
-      { title: 'Short-Form Reels & Shorts', description: 'Paced reels for Instagram, YouTube Shorts, and TikTok with motion graphics and dynamic subtitles.' },
+      { title: 'Short-Form Reels & Social Content', description: 'Paced reels for Instagram with custom motion graphics, sound design, and dynamic subtitles.' },
       { title: 'Product Explainer Videos', description: 'Clean 2D motion graphics and UI screencast animations explaining your software features.' },
       { title: 'Corporate Promos & Case Stories', description: 'Polished client testimonials, interview cuts, and high-end brand reels.' },
       { title: 'Sound Design & Color Grading', description: 'Immersive sound effects, voice leveling, and cinematic color correction.' }
@@ -627,6 +627,16 @@ export const TEAM_MEMBERS: TeamMember[] = [
     avatar: '/pintu.png',
     skills: ['Video Editing', 'Motion Graphics', 'Premiere Pro', 'After Effects', 'DaVinci Resolve', 'Color Grading', 'CapCut', 'Typography'],
     contributedProjects: ['b2b-saas-growth', 'fintech-design-system']
+  },
+  {
+    id: 'arjun-pandey',
+    name: 'Arjun Pandey',
+    role: 'Full Stack Development & Database Specialist',
+    specialization: 'Full Stack Web Applications, Database Architecture & API Systems',
+    bio: 'Arjun specializes in robust full-stack software development and high-performance database engineering. He architects scalable backends, reliable data models, and modern user interfaces designed for performance and scale.',
+    avatar: '/arjun.jpeg',
+    skills: ['Full Stack Development', 'Database Design', 'PostgreSQL', 'MongoDB', 'React', 'Node.js', 'REST APIs', 'SQL Optimization'],
+    contributedProjects: ['enterprise-erp', 'telehealth-platform']
   }
 ];
 

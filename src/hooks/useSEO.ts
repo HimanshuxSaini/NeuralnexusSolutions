@@ -61,7 +61,6 @@ export function useSEO({
     updateMeta('twitter:title', ogTitle || title, 'name');
     updateMeta('twitter:description', ogDescription || description, 'name');
     updateMeta('twitter:image', ogImage || DEFAULT_OG_IMAGE, 'name');
-    updateMeta('twitter:site', '@NeuralNexusSol', 'name');
 
     // — JSON-LD structured data —
     let scriptEl: HTMLScriptElement | null = null;
