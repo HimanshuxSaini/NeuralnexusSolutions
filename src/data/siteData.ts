@@ -630,7 +630,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     id: 'arjun-panday',
-    name: 'Arjun Pandey',
+    name: 'Arjun Panday',
     role: 'Full Stack Development & Database Specialist',
     specialization: 'Full Stack Web Applications, Database Architecture & API Systems',
     bio: 'Arjun specializes in robust full-stack software development and high-performance database engineering. He architects scalable backends, reliable data models, and modern user interfaces designed for performance and scale.',
