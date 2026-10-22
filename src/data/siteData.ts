@@ -629,7 +629,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     contributedProjects: ['b2b-saas-growth', 'fintech-design-system']
   },
   {
-    id: 'arjun-pandey',
+    id: 'arjun-panday',
     name: 'Arjun Pandey',
     role: 'Full Stack Development & Database Specialist',
     specialization: 'Full Stack Web Applications, Database Architecture & API Systems',
@@ -637,6 +637,16 @@ export const TEAM_MEMBERS: TeamMember[] = [
     avatar: '/arjun.jpeg',
     skills: ['Full Stack Development', 'Database Design', 'PostgreSQL', 'MongoDB', 'React', 'Node.js', 'REST APIs', 'SQL Optimization'],
     contributedProjects: ['enterprise-erp', 'telehealth-platform']
+  },
+  {
+    id: 'alok-kumar-dwivedi',
+    name: 'Alok Kumar Dwivedi',
+    role: 'AI & MERN Stack Developer',
+    specialization: 'MERN Stack Applications, AI Model Integration & Full-Stack Systems',
+    bio: 'Alok specializes in engineering intelligent web applications leveraging the MERN stack alongside artificial intelligence capabilities. He develops responsive frontends, scalable Node.js/Express backends, robust database models in MongoDB, and seamless AI integrations.',
+    avatar: '/alok.jpeg',
+    skills: ['React', 'Node.js', 'Express.js', 'MongoDB', 'AI Integration', 'JavaScript / TypeScript', 'REST APIs', 'Tailwind CSS'],
+    contributedProjects: ['enterprise-erp', 'whatsapp-commerce-bot']
   }
 ];
 

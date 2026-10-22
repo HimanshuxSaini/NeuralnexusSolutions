@@ -88,9 +88,9 @@ export function AiAssistantWidget({ onNavigate }: { onNavigate?: (target: string
       };
     }
 
-    if (q.includes('team') || q.includes('expert') || q.includes('who are you') || q.includes('piyush') || q.includes('himanshu') || q.includes('arjun')) {
+    if (q.includes('team') || q.includes('expert') || q.includes('who are you') || q.includes('piyush') || q.includes('himanshu') || q.includes('arjun') || q.includes('alok')) {
       return {
-        text: "NeuralNexus Solutions is powered by senior verified experts: Piyush Pandey (AI/ML & Research), Pardeep Kumar Singh (Software & Cloud), Himanshu Saini (Full-Stack & WhatsApp Automation), Arjun Pandey (Full Stack Development & Database), Tannu Antil (Business Analyst & ML Enthusiast), and Pintu Singh (Video Editing & Motion Graphics).",
+        text: "NeuralNexus Solutions is powered by senior verified experts: Piyush Pandey (AI/ML & Research), Pardeep Kumar Singh (Software & Cloud), Himanshu Saini (Full-Stack & WhatsApp Automation), Arjun Pandey (Full Stack Development & Database), Alok Kumar Dwivedi (AI & MERN Stack Developer), Tannu Antil (Business Analyst & ML Enthusiast), and Pintu Singh (Video Editing & Motion Graphics).",
         quickActions: [
           { label: 'View All Team Profiles', action: 'team' },
           { label: 'Book Discovery Call', action: 'contact' }
