@@ -791,8 +791,20 @@ export const PROCESS_STEPS = [
 
 export const GLOBAL_FAQS = [
   {
+    question: 'What is NeuralNexus Solutions (neuralnexussolutions) and what software solutions do you provide?',
+    answer: 'NeuralNexus Solutions (often searched as neuralnexus or neuralnexussolutions) is an elite software engineering and artificial intelligence solutions company based in India and serving clients globally. We specialize in custom full-stack web and mobile applications, generative AI and LLM systems, WhatsApp Cloud API automation, and enterprise ERP solutions.'
+  },
+  {
+    question: 'What specialized services does NeuralNexus Solutions offer across software and AI?',
+    answer: 'We deliver 15+ specialized services across 5 technology pillars: (1) Software & Product Engineering (Custom web/mobile apps, enterprise ERPs, cloud systems), (2) AI, Data & Automation (Machine learning, custom LLMs, RAG pipelines, WhatsApp Cloud API chatbots), (3) Academic & Industrial Research Services (IEEE/ACM paper reproduction, empirical benchmarking), (4) Growth Marketing & Technical SEO (Core Web Vitals, Generative Engine Optimization), and (5) Design Systems (UI/UX design, motion graphics).'
+  },
+  {
+    question: 'Who are the lead software engineers and AI architects at NeuralNexus Solutions?',
+    answer: 'Our verified engineering leadership includes Piyush Pandey (AI/ML & Research), Pardeep Kumar Singh (Software & Cloud), Himanshu Saini (Full-Stack & WhatsApp Automation), Arjun Pandey (Full-Stack & Database), Alok Kumar Dwivedi (AI & MERN Stack), Tannu Antil (Business Analyst & ML), and Pintu Singh (Video Editing & Motion Graphics).'
+  },
+  {
     question: 'What makes NeuralNexus Solutions different from typical freelance agencies?',
-    answer: 'We lead with deep technical depth in AI/ML, automation, and research implementation, complemented by seasoned full-stack software engineers, growth marketers, and UI/UX specialists. We do not use inflated claims or junior subcontracting: you collaborate directly with the five senior experts responsible for engineering your project.'
+    answer: 'We lead with deep technical depth in AI/ML, automation, and research implementation, complemented by seasoned full-stack software engineers, growth marketers, and UI/UX specialists. We do not use inflated claims or junior subcontracting: you collaborate directly with the verified senior architects responsible for engineering your project.'
   },
   {
     question: 'Do we own 100% of the intellectual property and source code?',

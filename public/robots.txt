@@ -26,8 +26,14 @@ Allow: /
 User-agent: DuckDuckBot
 Allow: /
 
-# AI Crawlers & LLM Indexers
+# AI Crawlers & LLM Search Indexers (Google AI Overviews, Perplexity, OpenAI, Anthropic)
+User-agent: Google-Extended
+Allow: /
+
 User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: ClaudeBot
@@ -36,6 +42,13 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-# Sitemaps
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Sitemaps & AI Knowledge Graph
 Sitemap: https://www.neuralnexussolutions.in/sitemap.xml
+# LLM Context: https://www.neuralnexussolutions.in/llms.txt
 Host: https://www.neuralnexussolutions.in

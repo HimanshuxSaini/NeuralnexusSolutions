@@ -129,8 +129,8 @@ export default function App() {
         };
       default: // home
         return {
-          title: 'NeuralNexus Solutions — Where AI, Software & Growth Connect',
-          description: 'High-impact full-stack software development, generative AI & LLMs, WhatsApp Cloud API automation, research implementation, growth marketing, and UI/UX design.',
+          title: 'NeuralNexus Solutions (neuralnexussolutions) — AI & Software Solution Company',
+          description: 'NeuralNexus Solutions (neuralnexussolutions) is an elite software solution company and AI development agency engineering custom software, generative AI & LLMs, WhatsApp Cloud API automation, and enterprise ERP systems.',
           canonical: `${BASE}/`,
         };
     }
