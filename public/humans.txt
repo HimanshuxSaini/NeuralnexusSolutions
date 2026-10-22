@@ -10,6 +10,7 @@ Senior Video Editor & Motion Graphics Designer: Pintu Singh
 /* SITE */
 Site Name: NeuralNexus Solutions
 URL: https://www.neuralnexussolutions.in
+Instagram: https://www.instagram.com/neuralnexus_solutions (@neuralnexus_solutions)
 Tagline: Where AI, Software and Growth Connect
 Language: English
 Doctype: HTML5

@@ -67,7 +67,7 @@ export function Footer({ onNavigate, onOpenLegal }: FooterProps) {
                 <span>+91 82990 32271</span>
               </div>
               <a
-                href="https://www.instagram.com/neuralnexussolutions"
+                href="https://www.instagram.com/neuralnexus_solutions"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-1.5 text-slate-300 hover:text-[#E1306C] transition-colors"
@@ -189,13 +189,13 @@ export function Footer({ onNavigate, onOpenLegal }: FooterProps) {
               <li><a href="mailto:sales.neuralnexus@gmail.com" className="hover:text-white transition-colors">Email: sales.neuralnexus@gmail.com</a></li>
               <li>
                 <a
-                  href="https://www.instagram.com/neuralnexussolutions"
+                  href="https://www.instagram.com/neuralnexus_solutions"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 text-slate-300 hover:text-[#E1306C] transition-colors"
                 >
                   <Instagram className="w-3.5 h-3.5 text-[#E1306C]" />
-                  <span>Instagram: @neuralnexussolutions</span>
+                  <span>Instagram: @neuralnexus_solutions</span>
                 </a>
               </li>
               <li><span>Response SLA: Within 24 Business Hours</span></li>

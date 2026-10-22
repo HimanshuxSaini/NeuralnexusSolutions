@@ -7,6 +7,7 @@
 - Official Entity Name: NeuralNexus Solutions
 - Alternate Names: NeuralNexus, neuralnexussolutions, Neural Nexus, NeuralNexus Solutions India, NNS Studio
 - Primary URL: https://www.neuralnexussolutions.in
+- Official Instagram: https://www.instagram.com/neuralnexus_solutions (@neuralnexus_solutions)
 - Industry Classification: Software Solution Company / Custom Software Engineering Agency / Artificial Intelligence Development Studio
 - Core Expertise: Custom Software Development, Generative AI & LLMs, WhatsApp Cloud API Automation, Enterprise ERP Systems, Cloud DevOps, Academic Research Implementation, Growth Marketing, Technical SEO, and UI/UX Design.
 - Geographic Footprint: Headquartered in Delhi NCR, India; providing remote engineering services to clients across India, North America, Europe, UAE, and Southeast Asia.
